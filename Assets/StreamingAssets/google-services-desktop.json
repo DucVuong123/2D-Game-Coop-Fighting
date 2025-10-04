@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "30785982515",
+    "project_id": "d-game-coop-fighting",
+    "storage_bucket": "d-game-coop-fighting.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30785982515:ios:4fc62c54283fb4aaf29346",
+        "android_client_info": {
+          "package_name": "com.CoopFightingGame"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyPcJN91817kIX1ySx3TMEyGaIdiNvxXk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30785982515-sha73uvg746vbfktup7cdm2hov198825.apps.googleusercontent.com"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}
