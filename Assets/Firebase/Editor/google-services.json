@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "30785982515",
+    "project_id": "d-game-coop-fighting",
+    "storage_bucket": "d-game-coop-fighting.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30785982515:android:35ca030d19f42846f29346",
+        "android_client_info": {
+          "package_name": "com.CoopFightingGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30785982515-mjt70u76ipjqsliaprir9vs5lkpm54m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.CoopFightingGame",
+            "certificate_hash": "583e60a382f6f6419a9a67ff194475b13855adca"
+          }
+        },
+        {
+          "client_id": "30785982515-aae77cku680ti0fbhkucnqedt231gl21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtXATTUcBCqDBGi6Mg1BiqekDlnsZEcyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30785982515-aae77cku680ti0fbhkucnqedt231gl21.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "30785982515-sha73uvg746vbfktup7cdm2hov198825.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CoopFightingGame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
