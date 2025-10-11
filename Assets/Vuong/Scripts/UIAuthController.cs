@@ -10,11 +10,17 @@ public class UIAuthController : MonoBehaviour
     [SerializeField]private InputField user_Password_RS;
     [SerializeField] private Button button_Register;
     [SerializeField] private GameObject panel_Register;
+    [SerializeField] private GameObject button_RegistertoLogin;
     [Header("LogIn")]
     [SerializeField]private InputField user_Name_LI;
     [SerializeField]private InputField user_Password_LI;
     [SerializeField] private Button button_login;
+    [SerializeField] private Button button_logintoRegister;
     [SerializeField] private GameObject panel_Login;
+
+    [Header("Amin")]
+    [SerializeField] private Animator Amin;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,4 +56,13 @@ public class UIAuthController : MonoBehaviour
             }
         });
     }
+    public void OnLoginToRegister()
+    {
+        Amin.SetBool("toRegis", true);
+    }
+     public void OnRegisterToLogin()
+    {
+        Amin.SetBool("toRegis",false);
+    }
+    
 }
