@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Ui_Click : MonoBehaviour
@@ -10,11 +11,16 @@ public class Ui_Click : MonoBehaviour
     [SerializeField] private Button SelectInforModeDK;
     [SerializeField] private Button SelectModeCoop;
     [SerializeField] private Button SelectModeDk;
+    [SerializeField] private Button inforMenu;
+    [SerializeField] private Button PlayGame;
 
     [SerializeField] private Button SelectSetting;
     [SerializeField] private Button SaveSetting;
+
     [SerializeField] private TextMeshProUGUI tmpText;
 
+
+    [Header("Đối tượng")]
     [SerializeField] private GameObject TextInforModeCoop;
     [SerializeField] private GameObject TextInforModeDK;
     [SerializeField] private GameObject TextSelectModeCoop;
@@ -61,6 +67,8 @@ public class Ui_Click : MonoBehaviour
         if (SelectModeDk) SelectModeDk.onClick.AddListener(OnclickSelectDK);
         if (SelectSetting) SelectSetting.onClick.AddListener(OnSetting);
         if (SaveSetting) SaveSetting.onClick.AddListener(SaveSettingMenu);
+        if (inforMenu) inforMenu.onClick.AddListener(inforCaptant);
+        if (PlayGame) PlayGame.onClick.AddListener(PlayonGame);
 
         // Trạng thái ban đầu theo Mode
         ApplyModeUI(Mode);
@@ -157,5 +165,13 @@ public class Ui_Click : MonoBehaviour
         MainMenu.SetActive(true);
         SettingMenu.SetActive(false);
         OnAnimationEnd();
+    }
+    public void inforCaptant()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void PlayonGame()
+    {
+        SceneManager.LoadScene(4);
     }
 }

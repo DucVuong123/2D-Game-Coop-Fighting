@@ -2198,7 +2198,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 640649044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1840540698}
+        m_TargetAssemblyTypeName: Ui_Click, Assembly-CSharp
+        m_MethodName: inforCaptant
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &640649044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3828,7 +3840,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 989817955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1840540698}
+        m_TargetAssemblyTypeName: Ui_Click, Assembly-CSharp
+        m_MethodName: PlayonGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &989817955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6972,6 +6996,8 @@ MonoBehaviour:
   SelectInforModeDK: {fileID: 2106532147}
   SelectModeCoop: {fileID: 1139114371}
   SelectModeDk: {fileID: 2081425032}
+  inforMenu: {fileID: 640649043}
+  PlayGame: {fileID: 989817954}
   SelectSetting: {fileID: 2125708527}
   SaveSetting: {fileID: 1009585787}
   tmpText: {fileID: 1390191719}
