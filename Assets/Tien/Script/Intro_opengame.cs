@@ -12,7 +12,7 @@ public class Intro_Opengame_UI : MonoBehaviour
     public float holdTime = 2f;
     public bool loop = false; 
     [Header("Ảnh fade in")]
-    public Image fadeInImage;        // Kéo ảnh UI cần hiện dần vào đây
+    public Image fadeInImage;        
     public float fadeInDelay = 0f;
     public float fadeOutDuration = 4f;
 
