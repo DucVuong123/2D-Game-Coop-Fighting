@@ -31,6 +31,7 @@ public class Ui_Click : MonoBehaviour
     [SerializeField] private GameObject UIProfile;
     [SerializeField] private GameObject ModeMenu;
     [SerializeField] private GameObject SettingMenu;
+    [SerializeField] private GameObject GameNameAndMode;
     
     [Header("Animation")]
     [SerializeField] private Animator animator;
@@ -156,6 +157,7 @@ public class Ui_Click : MonoBehaviour
         ModeMenu.SetActive(false);
         UIProfile.SetActive(false);
         MainMenu.SetActive(false);
+        GameNameAndMode.SetActive(false);
         SettingMenu.SetActive(true);
     }
     public void SaveSettingMenu()
@@ -163,6 +165,7 @@ public class Ui_Click : MonoBehaviour
         ModeMenu.SetActive(true);
         UIProfile.SetActive(true);
         MainMenu.SetActive(true);
+        GameNameAndMode.SetActive(true);
         SettingMenu.SetActive(false);
         OnAnimationEnd();
     }

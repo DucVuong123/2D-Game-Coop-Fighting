@@ -18,7 +18,12 @@ public class AnimPauseResume : MonoBehaviour
     void Awake()
     {
         if (!animator) animator = GetComponent<Animator>();
-        if (backButton) backButton.onClick.AddListener(ResumeFromPause);
+        if (backButton)
+        {
+            backButton.onClick.AddListener(ResumeFromPause);
+            Debug.Log(backButton.onClick);
+        }
+     
     }
 
     // GỌI TỪ ANIMATION EVENT
