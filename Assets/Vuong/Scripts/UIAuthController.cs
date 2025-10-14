@@ -1,5 +1,6 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIAuthController : MonoBehaviour
 {
@@ -49,6 +50,7 @@ public class UIAuthController : MonoBehaviour
                 Debug.Log("Đăng nhập thành công! Xin chào " + acc.username);
                 // Lưu accountId vào PlayerPrefs để giữ session
                 PlayerPrefs.SetString("accountId", acc.accountId);
+                SceneManager.LoadScene(2);
             }
             else
             {
