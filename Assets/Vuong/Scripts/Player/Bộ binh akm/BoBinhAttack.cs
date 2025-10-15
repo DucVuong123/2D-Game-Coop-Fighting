@@ -29,5 +29,6 @@ public class BoBinhAttack : PlayerAttackBase
     {
         BulletController bulletInstance = Instantiate(bullet_Prefab, bullet_Spawn_Pos.position, bullet_Prefab.transform.rotation);
         bulletInstance.dame = info.Damge;
+        bulletInstance.dir = Mathf.Sign(transform.localScale.x);
     }
 }

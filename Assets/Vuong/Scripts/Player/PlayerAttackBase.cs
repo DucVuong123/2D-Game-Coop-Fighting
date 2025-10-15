@@ -3,7 +3,7 @@ using UnityEngine;
 public abstract class PlayerAttackBase : MonoBehaviour
 {
     protected PlayerInfo info;
-    protected bool isAttack;
+    public bool isAttack;
     protected float time_Attack;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()

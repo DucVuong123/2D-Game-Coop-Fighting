@@ -11,11 +11,21 @@ public class BoBinhSpecialSkill : PlayerSpecialSkillBase
     protected override void EndSpecialSkill()
     {
         info.AttackSpeed = old_Attack;
-        GetComponent<PlayerAttackBase>().UpdateTimeAttack();
     }
 
     protected override void EnterSpecialSkill()
     {
        info.AttackSpeed=0.2f;
+        GetComponent<PlayerAttackBase>().UpdateTimeAttack();
+    }
+
+    protected override void EnterPassiveSkill()
+    {
+       
+    }
+
+    protected override void EndPassiveSkill()
+    {
+       
     }
 }

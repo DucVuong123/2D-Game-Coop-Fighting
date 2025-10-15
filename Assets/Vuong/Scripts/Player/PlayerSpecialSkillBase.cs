@@ -38,4 +38,7 @@ public abstract class PlayerSpecialSkillBase : MonoBehaviour
     }
     protected abstract void EnterSpecialSkill();
     protected abstract void EndSpecialSkill();
+
+    protected abstract void EnterPassiveSkill();
+    protected abstract void EndPassiveSkill();
 }

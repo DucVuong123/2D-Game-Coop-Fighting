@@ -3,6 +3,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     public float dame;
+    public float dir;
     [SerializeField] private float speed;
     // Start is called before the first frame update
     void Start()
@@ -13,7 +14,7 @@ public class BulletController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector2.right* dir * speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

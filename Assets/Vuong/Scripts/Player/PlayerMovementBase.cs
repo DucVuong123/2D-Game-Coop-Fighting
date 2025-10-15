@@ -1,4 +1,7 @@
-﻿using System.Net;
+﻿using NUnit.Framework;
+using System.Collections.Generic;
+using System.Net;
+using System.Xml.Linq;
 using UnityEngine;
 
 public abstract class PlayerMovementBase : MonoBehaviour
@@ -13,8 +16,8 @@ public abstract class PlayerMovementBase : MonoBehaviour
     protected bool isWalking_Left = false;
 
     [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;     
-    [SerializeField] private float radius;      
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float radius;
     [SerializeField] private LayerMask groundLayer;
     public bool IsGrounded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -98,12 +101,13 @@ public abstract class PlayerMovementBase : MonoBehaviour
     {
         click_Down_Run_Check = 0;
     }
-    private bool isRightAndLeftDown() => isWalking_Left && isWalking_Right;
-    private bool isRightOrLeftDown() => isWalking_Left || isWalking_Right;
+    public bool isRightAndLeftDown() => isWalking_Left && isWalking_Right;
+    public bool isRightOrLeftDown() => isWalking_Left || isWalking_Right;
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, radius);
     }
+   
 }
