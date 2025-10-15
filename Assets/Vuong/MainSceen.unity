@@ -3345,6 +3345,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Du_Kich
       objectReference: {fileID: 0}
+    - target: {fileID: 2683548934471377769, guid: 778d41130600a8d4c838755b184cb2d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3794060045715573236, guid: 778d41130600a8d4c838755b184cb2d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.1
