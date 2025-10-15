@@ -1,16 +1,44 @@
 using UnityEngine;
 
-public class PlayerAttackBase : PlayerMovementBase
+public abstract class PlayerAttackBase : MonoBehaviour
 {
+    protected PlayerInfo info;
+    protected bool isAttack;
+    protected float time_Attack;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
+    {
+        info = GetComponent<PlayerInfo>();
+    }
+    protected virtual void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
-        
+        if(isAttack)
+        {
+            if (time_Attack <= 0)
+            {
+                TriggerAttackAffterAttackTime();
+                UpdateTimeAttack();
+            }
+            else
+            {
+                time_Attack -= Time.deltaTime;
+            }
+        }     
     }
+    public abstract void OnPointerDownAttack();
+    public abstract void OnPointerUpAttack();
+    protected virtual void TriggerAttackAffterAttackTime()
+    { 
+    
+    }
+    public void UpdateTimeAttack()
+    {
+        time_Attack = info.AttackSpeed;
+    }    
 }

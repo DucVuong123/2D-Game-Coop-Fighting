@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using UnityEngine;
 
-public class PlayerMovementBase : MonoBehaviour
+public abstract class PlayerMovementBase : MonoBehaviour
 {
     protected PlayerInfo info;
     protected Rigidbody2D rb;
@@ -23,18 +23,15 @@ public class PlayerMovementBase : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         info = GetComponent<PlayerInfo>();
     }
-    void Start()
+   protected virtual void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         CheckGrounded();
-    }
-    void FixedUpdate()
-    {
         Move();
     }
     protected virtual void Move()
@@ -56,7 +53,6 @@ public class PlayerMovementBase : MonoBehaviour
     }
     public void OnPointDownJump()
     {
-        Debug.Log(IsGrounded);
         if(IsGrounded)
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, info.JumpForce);
     }

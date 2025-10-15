@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BoBinhMovement : PlayerMovementBase
+public class DuKichMovement : PlayerMovementBase
 {
     protected override void Start()
     {

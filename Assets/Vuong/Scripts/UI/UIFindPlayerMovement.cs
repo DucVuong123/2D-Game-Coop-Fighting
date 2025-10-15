@@ -3,34 +3,34 @@ using UnityEngine;
 public class UIFindPlayerMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is create
-    private PlayerBase m_Player;
+    private PlayerMovementBase m_Player;
     private void Awake()
     {
-        m_Player = FindObjectOfType<PlayerBase>();
+        m_Player = FindObjectOfType<PlayerMovementBase>();
     }
     public void OnPointerDownRight()
     {
-        m_Player.player_Movement.OnPointerDownRight();
+        m_Player.OnPointerDownRight();
     }
     public void OnPointerDownLeft()
     {
-        m_Player.player_Movement.OnPointerDownLeft();
+        m_Player.OnPointerDownLeft();
     }
     public void OnPointerUpRight()
     {
-        m_Player.player_Movement.OnPointerUpRight();
+        m_Player.OnPointerUpRight();
     }
     public void OnPointerUpLeft()
     {
-        m_Player.player_Movement.OnPointerUpLeft();
+        m_Player.OnPointerUpLeft();
     }
 
     public void OnPointerDownCheckRun()
     {
-        m_Player.player_Movement.OnPointerDownCheckRun();
+        m_Player.OnPointerDownCheckRun();
     }
     public void OnPointDownJump()
     {
-        m_Player.player_Movement.OnPointDownJump();
+        m_Player.OnPointDownJump();
     }
 }
