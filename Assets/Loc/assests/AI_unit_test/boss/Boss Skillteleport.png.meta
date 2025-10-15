@@ -1,0 +1,1924 @@
+fileFormatVersion: 2
+guid: 556430354aca0be46aad88433c690ae7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -921843555684240891
+    second: Boss Skillteleport_0
+  - first:
+      213: 1638922030414185679
+    second: Boss Skillteleport_1
+  - first:
+      213: 6642271266975365356
+    second: Boss Skillteleport_2
+  - first:
+      213: 2909515015678955073
+    second: Boss Skillteleport_3
+  - first:
+      213: 7471351846095413057
+    second: Boss Skillteleport_4
+  - first:
+      213: 1775729924238916738
+    second: Boss Skillteleport_5
+  - first:
+      213: -6433279222542721145
+    second: Boss Skillteleport_6
+  - first:
+      213: 6488271057707243080
+    second: Boss Skillteleport_7
+  - first:
+      213: 586105367470556435
+    second: Boss Skillteleport_8
+  - first:
+      213: 5717476939850332266
+    second: Boss Skillteleport_9
+  - first:
+      213: -8302991873836202849
+    second: Boss Skillteleport_10
+  - first:
+      213: -4323595785249843774
+    second: Boss Skillteleport_11
+  - first:
+      213: -280197554809056767
+    second: Boss Skillteleport_12
+  - first:
+      213: 247389980606328351
+    second: Boss Skillteleport_13
+  - first:
+      213: -6117509528131569850
+    second: Boss Skillteleport_14
+  - first:
+      213: 4025821607085090133
+    second: Boss Skillteleport_15
+  - first:
+      213: 6643138601177190559
+    second: Boss Skillteleport_16
+  - first:
+      213: -152721480667857268
+    second: Boss Skillteleport_17
+  - first:
+      213: -4798203693060483090
+    second: Boss Skillteleport_18
+  - first:
+      213: 3585441791168582539
+    second: Boss Skillteleport_19
+  - first:
+      213: 2921421272601404266
+    second: Boss Skillteleport_20
+  - first:
+      213: -6309779278017391525
+    second: Boss Skillteleport_21
+  - first:
+      213: 4619394363064926423
+    second: Boss Skillteleport_22
+  - first:
+      213: 6012829921152828587
+    second: Boss Skillteleport_23
+  - first:
+      213: -937076465891872340
+    second: Boss Skillteleport_24
+  - first:
+      213: 585991928654995989
+    second: Boss Skillteleport_25
+  - first:
+      213: -948533928664815440
+    second: Boss Skillteleport_26
+  - first:
+      213: -2568517431820837377
+    second: Boss Skillteleport_27
+  - first:
+      213: -5564376370003328676
+    second: Boss Skillteleport_28
+  - first:
+      213: 3955259326591637671
+    second: Boss Skillteleport_29
+  - first:
+      213: -4891334703245925097
+    second: Boss Skillteleport_30
+  - first:
+      213: -6248276040723409742
+    second: Boss Skillteleport_31
+  - first:
+      213: -7576187413932624489
+    second: Boss Skillteleport_32
+  - first:
+      213: -6366371852704881499
+    second: Boss Skillteleport_33
+  - first:
+      213: -2577286437381473962
+    second: Boss Skillteleport_34
+  - first:
+      213: -7728635528812806741
+    second: Boss Skillteleport_35
+  - first:
+      213: 7292412887943076670
+    second: Boss Skillteleport_36
+  - first:
+      213: 4256382172390572196
+    second: Boss Skillteleport_37
+  - first:
+      213: 4124458750312512860
+    second: Boss Skillteleport_38
+  - first:
+      213: 8890450215502027133
+    second: Boss Skillteleport_39
+  - first:
+      213: 4613859215874686745
+    second: Boss Skillteleport_40
+  - first:
+      213: -8310259071594758255
+    second: Boss Skillteleport_41
+  - first:
+      213: 725215521497918823
+    second: Boss Skillteleport_42
+  - first:
+      213: 3107812242876284598
+    second: Boss Skillteleport_43
+  - first:
+      213: 5531177975584667241
+    second: Boss Skillteleport_44
+  - first:
+      213: 340104701913479514
+    second: Boss Skillteleport_45
+  - first:
+      213: 7189873204542967767
+    second: Boss Skillteleport_46
+  - first:
+      213: -3757818317558074476
+    second: Boss Skillteleport_47
+  - first:
+      213: -7567075866006302071
+    second: Boss Skillteleport_48
+  - first:
+      213: 5347237463687746286
+    second: Boss Skillteleport_49
+  - first:
+      213: 3882954487148339380
+    second: Boss Skillteleport_50
+  - first:
+      213: 8947545270062654324
+    second: Boss Skillteleport_51
+  - first:
+      213: 1419798648639488112
+    second: Boss Skillteleport_52
+  - first:
+      213: -1566314538066047416
+    second: Boss Skillteleport_53
+  - first:
+      213: -7467004135466442949
+    second: Boss Skillteleport_54
+  - first:
+      213: 6756672084892910464
+    second: Boss Skillteleport_55
+  - first:
+      213: 549996037841801425
+    second: Boss Skillteleport_56
+  - first:
+      213: 6178819167812592255
+    second: Boss Skillteleport_57
+  - first:
+      213: -3032718070263204927
+    second: Boss Skillteleport_58
+  - first:
+      213: -1955999701231206742
+    second: Boss Skillteleport_59
+  - first:
+      213: -5797578739055963418
+    second: Boss Skillteleport_60
+  - first:
+      213: 4369289173558878864
+    second: Boss Skillteleport_61
+  - first:
+      213: -6115454698370238041
+    second: Boss Skillteleport_62
+  - first:
+      213: 9052063460208777100
+    second: Boss Skillteleport_63
+  - first:
+      213: 6076920525208610262
+    second: Boss Skillteleport_64
+  - first:
+      213: -8365582709072854962
+    second: Boss Skillteleport_65
+  - first:
+      213: -4637490772203780886
+    second: Boss Skillteleport_66
+  - first:
+      213: -4343286715383061818
+    second: Boss Skillteleport_67
+  - first:
+      213: -3968189221586126207
+    second: Boss Skillteleport_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss Skillteleport_0
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 67
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50235f49b24f433f0800000000000000
+      internalID: -921843555684240891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_1
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 335
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4466d37ee9eb610800000000000000
+      internalID: 1638922030414185679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_2
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 339
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b9d966861e2c50800000000000000
+      internalID: 6642271266975365356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_3
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 339
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e8532dd7ca06820800000000000000
+      internalID: 2909515015678955073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_4
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 335
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fd97a4be29fa760800000000000000
+      internalID: 7471351846095413057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_5
+      rect:
+        serializedVersion: 2
+        x: 3759
+        y: 335
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cba4735f8a4a810800000000000000
+      internalID: 1775729924238916738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_6
+      rect:
+        serializedVersion: 2
+        x: 4003
+        y: 67
+        width: 242
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f907fc1a668b6a0800000000000000
+      internalID: -6433279222542721145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 75
+        width: 230
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84696119628fa0a50800000000000000
+      internalID: 6488271057707243080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_8
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 67
+        width: 242
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3154805f9b3422800800000000000000
+      internalID: 586105367470556435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_9
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 327
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68344bfbfe885f40800000000000000
+      internalID: 5717476939850332266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_10
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 327
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94c903c1e8d5cc80800000000000000
+      internalID: -8302991873836202849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_11
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 327
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c59ecb6a808ff3c0800000000000000
+      internalID: -4323595785249843774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_12
+      rect:
+        serializedVersion: 2
+        x: 3779
+        y: 331
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1025ca6fec98c1cf0800000000000000
+      internalID: -280197554809056767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_13
+      rect:
+        serializedVersion: 2
+        x: 4411
+        y: 75
+        width: 230
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ee70b60e7ee6300800000000000000
+      internalID: 247389980606328351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_14
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 319
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64776a10f7d3a1ba0800000000000000
+      internalID: -6117509528131569850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_15
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 323
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55526630c679ed730800000000000000
+      internalID: 4025821607085090133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_16
+      rect:
+        serializedVersion: 2
+        x: 3715
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f901ad46c5b213c50800000000000000
+      internalID: 6643138601177190559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_17
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e783b5f9c61edf0800000000000000
+      internalID: -152721480667857268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_18
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 311
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee79923c92b596db0800000000000000
+      internalID: -4798203693060483090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_19
+      rect:
+        serializedVersion: 2
+        x: 2907
+        y: 311
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b839175005c02c130800000000000000
+      internalID: 3585441791168582539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_20
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 311
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a632da84b29fa8820800000000000000
+      internalID: 2921421272601404266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_21
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 307
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5417a26d292f68a0800000000000000
+      internalID: -6309779278017391525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_22
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 291
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d04de7d2b26b1040800000000000000
+      internalID: 4619394363064926423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_23
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba48729b4fcd17350800000000000000
+      internalID: 6012829921152828587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_24
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1f22b4be5def2f0800000000000000
+      internalID: -937076465891872340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_25
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5122abced8cd12800800000000000000
+      internalID: 585991928654995989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_26
+      rect:
+        serializedVersion: 2
+        x: 3699
+        y: 299
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8278cda6126d2f0800000000000000
+      internalID: -948533928664815440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_27
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 275
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd9bec110bca5cd0800000000000000
+      internalID: -2568517431820837377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_28
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 287
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51cf5d3c2d57c2b0800000000000000
+      internalID: -5564376370003328676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_29
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 287
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a89b04d667e3e630800000000000000
+      internalID: 3955259326591637671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_30
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 287
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7156c77b00d7e1cb0800000000000000
+      internalID: -4891334703245925097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_31
+      rect:
+        serializedVersion: 2
+        x: 3603
+        y: 67
+        width: 242
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4d816bb0aa949a0800000000000000
+      internalID: -6248276040723409742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_32
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 271
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795b2c8ffa9fbd690800000000000000
+      internalID: -7576187413932624489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_33
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 67
+        width: 198
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4ea7bc78a16a7a0800000000000000
+      internalID: -6366371852704881499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_34
+      rect:
+        serializedVersion: 2
+        x: 3343
+        y: 275
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659f177e3a3ab3cd0800000000000000
+      internalID: -2577286437381473962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_35
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 275
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad36a24fee5eb490800000000000000
+      internalID: -7728635528812806741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_36
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 255
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bd35d72ead33560800000000000000
+      internalID: 7292412887943076670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_37
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 263
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a045a5d805b11b30800000000000000
+      internalID: 4256382172390572196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_38
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 263
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5df02f81650d3930800000000000000
+      internalID: 4124458750312512860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_39
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 259
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d791b4c0e59316b70800000000000000
+      internalID: 8890450215502027133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_40
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 223
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f7fd5f288b70040800000000000000
+      internalID: 4613859215874686745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_41
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 67
+        width: 226
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f702e67670cac80800000000000000
+      internalID: -8310259071594758255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_42
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 219
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dab78acab701a00800000000000000
+      internalID: 725215521497918823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_43
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 235
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be304dd4ca212b20800000000000000
+      internalID: 3107812242876284598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_44
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 231
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96630383011b2cc40800000000000000
+      internalID: 5531177975584667241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_45
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 231
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a593ef7ac6b48b400800000000000000
+      internalID: 340104701913479514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_46
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 231
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df02e0069f87c360800000000000000
+      internalID: 7189873204542967767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_47
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 59
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493be73662c89dbc0800000000000000
+      internalID: -3757818317558074476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_48
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 227
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982534a87985cf690800000000000000
+      internalID: -7567075866006302071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_49
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 227
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2d4c07424353a40800000000000000
+      internalID: 5347237463687746286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_50
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 223
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b06c75888603e530800000000000000
+      internalID: 3882954487148339380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_51
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 215
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473afc954011c2c70800000000000000
+      internalID: 8947545270062654324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_52
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 215
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0708cb8395324b310800000000000000
+      internalID: 1419798648639488112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_53
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 219
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e0b00f935534ae0800000000000000
+      internalID: -1566314538066047416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_54
+      rect:
+        serializedVersion: 2
+        x: 2911
+        y: 215
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f5629fc4fdf5890800000000000000
+      internalID: -7467004135466442949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_55
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 215
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08307db767584cd50800000000000000
+      internalID: 6756672084892910464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_56
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 215
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0de6f7b7af1a700800000000000000
+      internalID: 549996037841801425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_57
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 211
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7228dcdb439fb550800000000000000
+      internalID: 6178819167812592255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_58
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 211
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3bd0eabfe99e5d0800000000000000
+      internalID: -3032718070263204927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_59
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 67
+        width: 174
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaef75392a4ead4e0800000000000000
+      internalID: -1955999701231206742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_60
+      rect:
+        serializedVersion: 2
+        x: 3215
+        y: 211
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2563d8adcda8fa0800000000000000
+      internalID: -5797578739055963418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_61
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 191
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092efe69a55d2ac30800000000000000
+      internalID: 4369289173558878864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_62
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 199
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9f5a75a5a812ba0800000000000000
+      internalID: -6115454698370238041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_63
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 199
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c879906d1c36f9d70800000000000000
+      internalID: 9052063460208777100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_64
+      rect:
+        serializedVersion: 2
+        x: 3203
+        y: 199
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5e651550f855450800000000000000
+      internalID: 6076920525208610262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_65
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 179
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40009e49da77eb80800000000000000
+      internalID: -8365582709072854962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_66
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 187
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae444a196b254afb0800000000000000
+      internalID: -4637490772203780886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_67
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 187
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c26beb7ebb89b3c0800000000000000
+      internalID: -4343286715383061818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Skillteleport_68
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 187
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a33d56de82ee8c0800000000000000
+      internalID: -3968189221586126207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boss Skillteleport_0: -921843555684240891
+      Boss Skillteleport_1: 1638922030414185679
+      Boss Skillteleport_10: -8302991873836202849
+      Boss Skillteleport_11: -4323595785249843774
+      Boss Skillteleport_12: -280197554809056767
+      Boss Skillteleport_13: 247389980606328351
+      Boss Skillteleport_14: -6117509528131569850
+      Boss Skillteleport_15: 4025821607085090133
+      Boss Skillteleport_16: 6643138601177190559
+      Boss Skillteleport_17: -152721480667857268
+      Boss Skillteleport_18: -4798203693060483090
+      Boss Skillteleport_19: 3585441791168582539
+      Boss Skillteleport_2: 6642271266975365356
+      Boss Skillteleport_20: 2921421272601404266
+      Boss Skillteleport_21: -6309779278017391525
+      Boss Skillteleport_22: 4619394363064926423
+      Boss Skillteleport_23: 6012829921152828587
+      Boss Skillteleport_24: -937076465891872340
+      Boss Skillteleport_25: 585991928654995989
+      Boss Skillteleport_26: -948533928664815440
+      Boss Skillteleport_27: -2568517431820837377
+      Boss Skillteleport_28: -5564376370003328676
+      Boss Skillteleport_29: 3955259326591637671
+      Boss Skillteleport_3: 2909515015678955073
+      Boss Skillteleport_30: -4891334703245925097
+      Boss Skillteleport_31: -6248276040723409742
+      Boss Skillteleport_32: -7576187413932624489
+      Boss Skillteleport_33: -6366371852704881499
+      Boss Skillteleport_34: -2577286437381473962
+      Boss Skillteleport_35: -7728635528812806741
+      Boss Skillteleport_36: 7292412887943076670
+      Boss Skillteleport_37: 4256382172390572196
+      Boss Skillteleport_38: 4124458750312512860
+      Boss Skillteleport_39: 8890450215502027133
+      Boss Skillteleport_4: 7471351846095413057
+      Boss Skillteleport_40: 4613859215874686745
+      Boss Skillteleport_41: -8310259071594758255
+      Boss Skillteleport_42: 725215521497918823
+      Boss Skillteleport_43: 3107812242876284598
+      Boss Skillteleport_44: 5531177975584667241
+      Boss Skillteleport_45: 340104701913479514
+      Boss Skillteleport_46: 7189873204542967767
+      Boss Skillteleport_47: -3757818317558074476
+      Boss Skillteleport_48: -7567075866006302071
+      Boss Skillteleport_49: 5347237463687746286
+      Boss Skillteleport_5: 1775729924238916738
+      Boss Skillteleport_50: 3882954487148339380
+      Boss Skillteleport_51: 8947545270062654324
+      Boss Skillteleport_52: 1419798648639488112
+      Boss Skillteleport_53: -1566314538066047416
+      Boss Skillteleport_54: -7467004135466442949
+      Boss Skillteleport_55: 6756672084892910464
+      Boss Skillteleport_56: 549996037841801425
+      Boss Skillteleport_57: 6178819167812592255
+      Boss Skillteleport_58: -3032718070263204927
+      Boss Skillteleport_59: -1955999701231206742
+      Boss Skillteleport_6: -6433279222542721145
+      Boss Skillteleport_60: -5797578739055963418
+      Boss Skillteleport_61: 4369289173558878864
+      Boss Skillteleport_62: -6115454698370238041
+      Boss Skillteleport_63: 9052063460208777100
+      Boss Skillteleport_64: 6076920525208610262
+      Boss Skillteleport_65: -8365582709072854962
+      Boss Skillteleport_66: -4637490772203780886
+      Boss Skillteleport_67: -4343286715383061818
+      Boss Skillteleport_68: -3968189221586126207
+      Boss Skillteleport_7: 6488271057707243080
+      Boss Skillteleport_8: 586105367470556435
+      Boss Skillteleport_9: 5717476939850332266
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
