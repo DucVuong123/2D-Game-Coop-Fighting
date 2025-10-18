@@ -2,35 +2,32 @@ using UnityEngine;
 
 public class BulletBotcanh : MonoBehaviour
 {
-    public float dame;
+     public float dame;
     public float dir;
     [SerializeField] public float speed;
-
+    // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 20); // Tự huỷ nếu không trúng gì sau 20s
+        Destroy(gameObject, 20);
     }
-    void Update()
-{
-    transform.Translate(Vector2.right * dir * speed * Time.deltaTime);
-}
 
-   private void OnTriggerEnter2D(Collider2D collision)
-{
-    Debug.Log("Trigger với: " + collision.name);
+    // Update is called once per frame
+   public float dirY = 0f; // chiều Y ngẫu nhiên
 
-    if (collision.CompareTag("Player"))
+    private void Update()
     {
-        Debug.Log("Đạn trúng Player!");
+        // Di chuyển theo cả X và Y
+        Vector2 move = new Vector2(dir, dirY).normalized * speed * Time.deltaTime;
+        transform.Translate(move);
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.TryGetComponent(out IHitable hit))
         {
             hit.OnHit(dame);
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
     }
-}
-
 
 }

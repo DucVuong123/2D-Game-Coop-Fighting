@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4373671103293111522}
   - component: {fileID: 3212147261252056502}
   - component: {fileID: 2145247429306260149}
+  - component: {fileID: 7423504244588852683}
   m_Layer: 0
   m_Name: Bulletbot
   m_TagString: Untagged
@@ -162,3 +163,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7423504244588852683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8634783168629232308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7bbd280f77cf80418c6b35eb3b2b678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 0
+  dir: 0
+  speed: 0

@@ -9,9 +9,13 @@ public abstract class EyeBotBase : MonoBehaviour
     public LayerMask playerMask;
     public LayerMask obstacleMask;
 
-    [SerializeField]protected bool faceRight = true;
+    [SerializeField] protected bool faceRight = true;
     protected Transform detectedPlayer;
     protected bool isPlayerDetected = false;
+
+    [Header("Flip Settings")]
+    [SerializeField] private float flipCooldown = 0.5f; // giây
+    private float lastFlipTime = -Mathf.Infinity;
 
     protected virtual void Update()
     {
@@ -21,29 +25,43 @@ public abstract class EyeBotBase : MonoBehaviour
     void ScanForPlayer()
     {
         if (!eyePoint) eyePoint = transform;
+
         Vector2 origin = eyePoint.position;
         Vector2 dirFront = faceRight ? Vector2.right : Vector2.left;
         Vector2 dirBack = -dirFront;
 
         int rayMask = playerMask.value | obstacleMask.value;
 
+        // --- Kiểm tra phía trước ---
         if (SeenAlongDir(origin, dirFront, frontRange, rayMask, out RaycastHit2D hitF))
         {
-            if (!isPlayerDetected) OnPlayerDetected(hitF.collider.transform);
+            if (!isPlayerDetected)
+                OnPlayerDetected(hitF.collider.transform);
+
             isPlayerDetected = true;
             detectedPlayer = hitF.collider.transform;
             return;
         }
 
-                if (backRange > 0 && SeenAlongDir(origin, dirBack, backRange, rayMask, out RaycastHit2D hitB))
+        // --- Kiểm tra phía sau ---
+        if (backRange > 0 && SeenAlongDir(origin, dirBack, backRange, rayMask, out RaycastHit2D hitB))
         {
-            Flip();
-            if (!isPlayerDetected) OnPlayerDetected(hitB.collider.transform);
+            // Flip nếu cooldown đủ
+            if (Time.time - lastFlipTime >= flipCooldown)
+            {
+                Flip();
+                lastFlipTime = Time.time;
+            }
+
+            if (!isPlayerDetected)
+                OnPlayerDetected(hitB.collider.transform);
+
             isPlayerDetected = true;
             detectedPlayer = hitB.collider.transform;
             return;
         }
 
+        // --- Nếu không thấy player ---
         if (isPlayerDetected)
         {
             OnPlayerLost();
@@ -69,16 +87,23 @@ public abstract class EyeBotBase : MonoBehaviour
         RaycastHit2D[] hits = Physics2D.RaycastAll(origin, dir, dist, mask);
         if (hits.Length == 0) return false;
 
+        // Sắp xếp theo khoảng cách
         System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
+
         var first = hits[0];
         int firstLayer = first.collider.gameObject.layer;
 
-        if ((obstacleMask.value & (1 << firstLayer)) != 0) return false;
+        // Nếu gặp obstacle trước player => return false
+        if ((obstacleMask.value & (1 << firstLayer)) != 0)
+            return false;
+
+        // Nếu gặp player
         if ((playerMask.value & (1 << firstLayer)) != 0)
         {
             hitPlayer = first;
             return true;
         }
+
         return false;
     }
 }

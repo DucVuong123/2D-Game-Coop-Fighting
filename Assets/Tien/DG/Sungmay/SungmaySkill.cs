@@ -1,5 +1,6 @@
 using UnityEngine;
-public class LinhcanhSkill : ISkill
+
+public class SungmaySkill : ISkill
 {
     public void UseSkill(Transform user, Transform target)
     {
