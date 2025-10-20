@@ -1,5 +1,6 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class GameController : MonoBehaviour
 
     [Header("Charactor")]
     [SerializeField] private List<GameObject> charsList;
-     private Dictionary<string, GameObject> Chars;
+    private Dictionary<string, GameObject> Chars;
 
     [Header("MainPlayers")]
+    public GameObject Player_Choice;
     public GameObject Main_Player;
 
 
@@ -42,10 +44,12 @@ public class GameController : MonoBehaviour
 
     public void nextMap()
     {
-        if(currentMap!=null) Destroy(currentMap);
-        currentMap = Instantiate(Maps[currentMapIndex = currentMapIndex < Maps.Count - 1 ? currentMapIndex++ : 0], Vector2.zero, Quaternion.identity);
+
+        if (currentMap != null) Destroy(currentMap);
+        currentMap = Instantiate(Maps[currentMapIndex = currentMapIndex < Maps.Count - 1 ? currentMapIndex + 1 : 0], Vector2.zero, Quaternion.identity);
+        if (Main_Player == null) { Main_Player = Instantiate(Player_Choice, currentMap.GetComponent<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
         Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
-    }    
+    }
 
 
     public void Get_Main_Player(PlayerMovementBase _Charactor)
@@ -53,12 +57,29 @@ public class GameController : MonoBehaviour
         switch (_Charactor)
         {
             case DuKichMovement:
-                Main_Player = Chars["Du_Kich"];
+                Player_Choice = Chars["Du_Kich"];
                 break;
 
             case BoBinhMovement:
-                Main_Player = Chars["Bo_Binh"];
+                Player_Choice = Chars["Bo_Binh"];
                 break;
         }
+    }
+
+
+    public void In_Game()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded_InGame;
+        SceneManager.LoadScene(1);
+    }
+
+    private void OnSceneLoaded_InGame(Scene scene, LoadSceneMode mode)
+    {
+        // Hủy đăng ký event để không bị gọi lại nhiều lần
+        SceneManager.sceneLoaded -= OnSceneLoaded_InGame;
+        if (Main_Player == null) Main_Player = Instantiate(Player_Choice,Vector2.zero, Quaternion.identity);
+        nextMap();
+
+
     }
 }
