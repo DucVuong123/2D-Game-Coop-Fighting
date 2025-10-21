@@ -6,8 +6,10 @@ public class UIFindPlayerAttack : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        m_Player = FindObjectOfType<PlayerAttackBase>();
+        Invoke(nameof(Find_Player), 0.2f);
     }
+
+    private void Find_Player() => m_Player = FindObjectOfType<PlayerAttackBase>();
     public void OnPointerDownAttack()
     {
         m_Player.OnPointerDownAttack();

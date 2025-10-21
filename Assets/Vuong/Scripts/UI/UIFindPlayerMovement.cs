@@ -6,8 +6,12 @@ public class UIFindPlayerMovement : MonoBehaviour
     private PlayerMovementBase m_Player;
     private void Awake()
     {
-        m_Player = FindObjectOfType<PlayerMovementBase>();
+        Invoke(nameof(Delay_FindPlayer), 0.2f);
     }
+
+    private void Delay_FindPlayer() => m_Player = FindObjectOfType<PlayerMovementBase>();
+
+
     public void OnPointerDownRight()
     {
         m_Player.OnPointerDownRight();

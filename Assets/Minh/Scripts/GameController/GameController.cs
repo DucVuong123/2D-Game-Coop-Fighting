@@ -70,7 +70,7 @@ public class GameController : MonoBehaviour
     public void In_Game()
     {
         SceneManager.sceneLoaded += OnSceneLoaded_InGame;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
     private void OnSceneLoaded_InGame(Scene scene, LoadSceneMode mode)

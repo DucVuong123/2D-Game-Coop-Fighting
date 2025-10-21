@@ -6,8 +6,11 @@ public class UIFindPlayerClamLadder : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        m_Player = FindObjectOfType<PlayerLadderMovement>();
+        Invoke(nameof(Find_Player), 0.2f);
     }
+
+    private void Find_Player() => m_Player = FindObjectOfType<PlayerLadderMovement>();
+
     public void OnPointerDownClamUp()
     {
         m_Player.OnPointerDownClampUp();

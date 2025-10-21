@@ -234,7 +234,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   IsGrounded: 0
 --- !u!114 &3103579514375002414
 MonoBehaviour:
@@ -251,6 +251,9 @@ MonoBehaviour:
   isAttack: 0
   bullet_Prefab: {fileID: 5640487757827896851, guid: 8016c0d6b8f7b9240af0d72c81c62afb, type: 3}
   bullet_Spawn_Pos: {fileID: 168968509996185058}
+  burstInterval: 0.2
+  burstCount: 4
+  restTime: 1
 --- !u!114 &7494305034652031887
 MonoBehaviour:
   m_ObjectHideFlags: 0

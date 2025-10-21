@@ -8,13 +8,23 @@ public class UIFindPlayerSpecialSkill : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        m_Player = FindObjectOfType<PlayerSpecialSkillBase>();
+        Invoke(nameof(FinPlayer_Delay), 0.2f);
     }
     private void Start()
     {
+/*        skill_Amount_Text.text = m_Player.skill_Amount.ToString();
+        m_Player.OnEnterSkill += M_Player_OnEnterSkill;*/
+    }
+
+
+   private void FinPlayer_Delay()
+    {
+        m_Player = FindObjectOfType<PlayerSpecialSkillBase>();
         skill_Amount_Text.text = m_Player.skill_Amount.ToString();
         m_Player.OnEnterSkill += M_Player_OnEnterSkill;
     }
+
+
 
     private void M_Player_OnEnterSkill(object sender, System.EventArgs e)
     {

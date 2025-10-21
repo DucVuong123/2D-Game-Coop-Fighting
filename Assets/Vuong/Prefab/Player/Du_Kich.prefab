@@ -261,7 +261,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   IsGrounded: 0
 --- !u!114 &1602108724347602895
 MonoBehaviour:
@@ -279,7 +279,7 @@ MonoBehaviour:
   checkDistance: 0.5
   Enemy_Layer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   rayOrigin: {fileID: 7593599755715345085}
 --- !u!114 &655958094946987374
 MonoBehaviour:
@@ -332,7 +332,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 7958981926802068495}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   clamp_Speed: 8
 --- !u!114 &5451855580081178880
 MonoBehaviour:
