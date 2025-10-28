@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870956933521943376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2784656433134345523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PoinB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4897019629694873069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Actackpoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 701446551380034017}
   - component: {fileID: 982473984388269264}
   - component: {fileID: 4691654895961832334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: linhdc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5309155410699098346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PoinA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
