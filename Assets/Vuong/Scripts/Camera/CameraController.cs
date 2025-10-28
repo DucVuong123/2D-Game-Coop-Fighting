@@ -6,11 +6,11 @@ public class CameraController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        player = FindObjectOfType<PlayerBase>();
+        
     }
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerBase>();
     }
 
     // Update is called once per frame
