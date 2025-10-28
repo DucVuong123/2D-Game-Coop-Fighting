@@ -225,7 +225,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nu_du_kich_idle1_0: -6210107394663095263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6892351439274958983}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Ladder_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168968509996185058}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Bullet_Spanw_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 6508425098955451778}
   - component: {fileID: 7396151704457389560}
   - component: {fileID: 2853110957368194496}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Bo_Binh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 83.3, y: 0.2, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9105795246708484150}
@@ -234,7 +234,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   IsGrounded: 0
 --- !u!114 &3103579514375002414
 MonoBehaviour:
@@ -297,7 +297,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 6892351439274958983}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   clamp_Speed: 8
 --- !u!70 &7396151704457389560
 CapsuleCollider2D:
@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9105795246708484150}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Ground_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
