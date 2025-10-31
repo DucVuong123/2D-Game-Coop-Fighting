@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 3c9f1ecd3545b194e8be947222b3dd0e
+guid: 57bdfa4fc046d5e44ae2c6b813302a6f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5819229353764665423
-    second: Idle amin_0
+      213: 7095094301726135429
+    second: pixilart-sprite (13)_0
   - first:
-      213: -3945652423319999473
-    second: Idle amin_1
+      213: -3257218223375499911
+    second: pixilart-sprite (13)_1
   - first:
-      213: 6685607389127122992
-    second: Idle amin_2
+      213: 2464325563066677782
+    second: pixilart-sprite (13)_2
   - first:
-      213: 352902984479791576
-    second: Idle amin_3
+      213: 8942018190656325794
+    second: pixilart-sprite (13)_3
   - first:
-      213: 8505287399534537823
-    second: Idle amin_4
+      213: -5676958980932041965
+    second: pixilart-sprite (13)_4
   - first:
-      213: 7427610134346332824
-    second: Idle amin_5
+      213: -3975004740677663891
+    second: pixilart-sprite (13)_5
   - first:
-      213: -4183027798159228656
-    second: Idle amin_6
+      213: 252405498714005968
+    second: pixilart-sprite (13)_6
+  - first:
+      213: -3180928305070209651
+    second: pixilart-sprite (13)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,29 +117,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle amin_0
+      name: pixilart-sprite (13)_0
       rect:
         serializedVersion: 2
-        x: 155
+        x: 143
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -146,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b7c45efbb1fd3fa0800000000000000
-      internalID: -5819229353764665423
+      spriteID: 584d84e0da6d67260800000000000000
+      internalID: 7095094301726135429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_1
+      name: pixilart-sprite (13)_1
       rect:
         serializedVersion: 2
         x: 555
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -168,19 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0c2ad4a60a3e39c0800000000000000
-      internalID: -3945652423319999473
+      spriteID: 97d36c788490cc2d0800000000000000
+      internalID: -3257218223375499911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_2
+      name: pixilart-sprite (13)_2
       rect:
         serializedVersion: 2
-        x: 955
+        x: 943
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -190,19 +180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03026a0af7c08cc50800000000000000
-      internalID: 6685607389127122992
+      spriteID: 61af0850b0b033220800000000000000
+      internalID: 2464325563066677782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_3
+      name: pixilart-sprite (13)_3
       rect:
         serializedVersion: 2
-        x: 1353
+        x: 1355
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -212,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d9d7160563c5e400800000000000000
-      internalID: 352902984479791576
+      spriteID: 2a8c625ea2e681c70800000000000000
+      internalID: 8942018190656325794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_4
+      name: pixilart-sprite (13)_4
       rect:
         serializedVersion: 2
-        x: 1755
+        x: 1743
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -234,19 +224,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5cacd1b3d9d80670800000000000000
-      internalID: 8505287399534537823
+      spriteID: 313051972e36731b0800000000000000
+      internalID: -5676958980932041965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_5
+      name: pixilart-sprite (13)_5
       rect:
         serializedVersion: 2
         x: 2155
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -256,19 +246,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89afdc3601c241760800000000000000
-      internalID: 7427610134346332824
+      spriteID: d630a63bf32f5d8c0800000000000000
+      internalID: -3975004740677663891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_6
+      name: pixilart-sprite (13)_6
       rect:
         serializedVersion: 2
-        x: 2555
+        x: 2543
         y: 179
-        width: 94
+        width: 106
         height: 166
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -278,8 +268,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01182255166e2f5c0800000000000000
-      internalID: -4183027798159228656
+      spriteID: 0d1243ab679b08300800000000000000
+      internalID: 252405498714005968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (13)_7
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 179
+        width: 106
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d850e405f821bd3d0800000000000000
+      internalID: -3180928305070209651
       vertices: []
       indices: 
       edges: []
@@ -288,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 629cc4bf8db14f943bf4d7a39ac30bdd
+    spriteID: 897954f7404d97f4996fa16b4850fb3b
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle amin_0: -5819229353764665423
-      Idle amin_1: -3945652423319999473
-      Idle amin_2: 6685607389127122992
-      Idle amin_3: 352902984479791576
-      Idle amin_4: 8505287399534537823
-      Idle amin_5: 7427610134346332824
-      Idle amin_6: -4183027798159228656
+      pixilart-sprite (13)_0: 7095094301726135429
+      pixilart-sprite (13)_1: -3257218223375499911
+      pixilart-sprite (13)_2: 2464325563066677782
+      pixilart-sprite (13)_3: 8942018190656325794
+      pixilart-sprite (13)_4: -5676958980932041965
+      pixilart-sprite (13)_5: -3975004740677663891
+      pixilart-sprite (13)_6: 252405498714005968
+      pixilart-sprite (13)_7: -3180928305070209651
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
