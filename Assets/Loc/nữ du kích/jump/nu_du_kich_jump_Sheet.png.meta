@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 3c9f1ecd3545b194e8be947222b3dd0e
+guid: 80bce0d66ff31a241bfdde48fd856166
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5819229353764665423
-    second: Idle amin_0
+      213: 5637831387892693111
+    second: nu_du_kich_jump_Sheet_0
   - first:
-      213: -3945652423319999473
-    second: Idle amin_1
+      213: 492390872088274589
+    second: nu_du_kich_jump_Sheet_1
   - first:
-      213: 6685607389127122992
-    second: Idle amin_2
+      213: 42732488666558872
+    second: nu_du_kich_jump_Sheet_2
   - first:
-      213: 352902984479791576
-    second: Idle amin_3
+      213: -6831880066039746524
+    second: nu_du_kich_jump_Sheet_3
   - first:
-      213: 8505287399534537823
-    second: Idle amin_4
+      213: -6371627620835042089
+    second: nu_du_kich_jump_Sheet_4
   - first:
-      213: 7427610134346332824
-    second: Idle amin_5
+      213: 491446238954302811
+    second: nu_du_kich_jump_Sheet_5
   - first:
-      213: -4183027798159228656
-    second: Idle amin_6
+      213: 8576768807603906985
+    second: nu_du_kich_jump_Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,172 +114,159 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle amin_0
+      name: nu_du_kich_jump_Sheet_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 179
-        width: 94
-        height: 166
+        x: 16
+        y: 0
+        width: 38
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b7c45efbb1fd3fa0800000000000000
-      internalID: -5819229353764665423
+      spriteID: 77834ead6c99d3e40800000000000000
+      internalID: 5637831387892693111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_1
+      name: nu_du_kich_jump_Sheet_1
       rect:
         serializedVersion: 2
-        x: 555
-        y: 179
-        width: 94
-        height: 166
+        x: 81
+        y: 0
+        width: 38
+        height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0c2ad4a60a3e39c0800000000000000
-      internalID: -3945652423319999473
+      spriteID: d96677da3e255d600800000000000000
+      internalID: 492390872088274589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_2
+      name: nu_du_kich_jump_Sheet_2
       rect:
         serializedVersion: 2
-        x: 955
-        y: 179
-        width: 94
-        height: 166
+        x: 144
+        y: 0
+        width: 38
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03026a0af7c08cc50800000000000000
-      internalID: 6685607389127122992
+      spriteID: 891b657d8f0d79000800000000000000
+      internalID: 42732488666558872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_3
+      name: nu_du_kich_jump_Sheet_3
       rect:
         serializedVersion: 2
-        x: 1353
-        y: 179
-        width: 94
-        height: 166
+        x: 208
+        y: 0
+        width: 36
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d9d7160563c5e400800000000000000
-      internalID: 352902984479791576
+      spriteID: 420f0abd6494031a0800000000000000
+      internalID: -6831880066039746524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_4
+      name: nu_du_kich_jump_Sheet_4
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 179
-        width: 94
-        height: 166
+        x: 272
+        y: 0
+        width: 36
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5cacd1b3d9d80670800000000000000
-      internalID: 8505287399534537823
+      spriteID: 7dc5f0bef6e6397a0800000000000000
+      internalID: -6371627620835042089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_5
+      name: nu_du_kich_jump_Sheet_5
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 179
-        width: 94
-        height: 166
+        x: 333
+        y: 0
+        width: 39
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89afdc3601c241760800000000000000
-      internalID: 7427610134346332824
+      spriteID: b5da21320c7f1d600800000000000000
+      internalID: 491446238954302811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_6
+      name: nu_du_kich_jump_Sheet_6
       rect:
         serializedVersion: 2
-        x: 2555
-        y: 179
-        width: 94
-        height: 166
+        x: 398
+        y: 0
+        width: 38
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01182255166e2f5c0800000000000000
-      internalID: -4183027798159228656
+      spriteID: 9a9a1e1f9cdc60770800000000000000
+      internalID: 8576768807603906985
       vertices: []
       indices: 
       edges: []
@@ -288,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 629cc4bf8db14f943bf4d7a39ac30bdd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -297,14 +284,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Idle amin_0: -5819229353764665423
-      Idle amin_1: -3945652423319999473
-      Idle amin_2: 6685607389127122992
-      Idle amin_3: 352902984479791576
-      Idle amin_4: 8505287399534537823
-      Idle amin_5: 7427610134346332824
-      Idle amin_6: -4183027798159228656
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

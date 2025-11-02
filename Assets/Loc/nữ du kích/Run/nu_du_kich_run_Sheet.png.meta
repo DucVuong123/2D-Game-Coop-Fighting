@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 3c9f1ecd3545b194e8be947222b3dd0e
+guid: 5165fc8636daae34c9a78d9597ed2511
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5819229353764665423
-    second: Idle amin_0
+      213: 3617645839853383412
+    second: nu_du_kich_run_Sheet_0
   - first:
-      213: -3945652423319999473
-    second: Idle amin_1
+      213: -5032560105383450740
+    second: nu_du_kich_run_Sheet_1
   - first:
-      213: 6685607389127122992
-    second: Idle amin_2
+      213: -6082931805677672069
+    second: nu_du_kich_run_Sheet_2
   - first:
-      213: 352902984479791576
-    second: Idle amin_3
+      213: 3200643907170049369
+    second: nu_du_kich_run_Sheet_3
   - first:
-      213: 8505287399534537823
-    second: Idle amin_4
+      213: 2789751511052829552
+    second: nu_du_kich_run_Sheet_4
   - first:
-      213: 7427610134346332824
-    second: Idle amin_5
+      213: -2790849617097797018
+    second: nu_du_kich_run_Sheet_5
   - first:
-      213: -4183027798159228656
-    second: Idle amin_6
+      213: 7286743637013292942
+    second: nu_du_kich_run_Sheet_6
+  - first:
+      213: -6063125602345519378
+    second: nu_du_kich_run_Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,172 +117,181 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle amin_0
+      name: nu_du_kich_run_Sheet_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 179
-        width: 94
-        height: 166
+        x: 15
+        y: 0
+        width: 39
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b7c45efbb1fd3fa0800000000000000
-      internalID: -5819229353764665423
+      spriteID: 4fe61a769b5743230800000000000000
+      internalID: 3617645839853383412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_1
+      name: nu_du_kich_run_Sheet_1
       rect:
         serializedVersion: 2
-        x: 555
-        y: 179
-        width: 94
-        height: 166
+        x: 74
+        y: 0
+        width: 40
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0c2ad4a60a3e39c0800000000000000
-      internalID: -3945652423319999473
+      spriteID: c8721df6f31c82ab0800000000000000
+      internalID: -5032560105383450740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_2
+      name: nu_du_kich_run_Sheet_2
       rect:
         serializedVersion: 2
-        x: 955
-        y: 179
-        width: 94
-        height: 166
+        x: 142
+        y: 0
+        width: 37
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03026a0af7c08cc50800000000000000
-      internalID: 6685607389127122992
+      spriteID: b7928a160c5159ba0800000000000000
+      internalID: -6082931805677672069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_3
+      name: nu_du_kich_run_Sheet_3
       rect:
         serializedVersion: 2
-        x: 1353
-        y: 179
-        width: 94
-        height: 166
+        x: 205
+        y: 0
+        width: 40
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d9d7160563c5e400800000000000000
-      internalID: 352902984479791576
+      spriteID: 95d93630da8fa6c20800000000000000
+      internalID: 3200643907170049369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_4
+      name: nu_du_kich_run_Sheet_4
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 179
-        width: 94
-        height: 166
+        x: 268
+        y: 0
+        width: 38
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5cacd1b3d9d80670800000000000000
-      internalID: 8505287399534537823
+      spriteID: 073c9e3f73037b620800000000000000
+      internalID: 2789751511052829552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_5
+      name: nu_du_kich_run_Sheet_5
       rect:
         serializedVersion: 2
-        x: 2155
-        y: 179
-        width: 94
-        height: 166
+        x: 334
+        y: 1
+        width: 36
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89afdc3601c241760800000000000000
-      internalID: 7427610134346332824
+      spriteID: 662d95f4f09e449d0800000000000000
+      internalID: -2790849617097797018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_6
+      name: nu_du_kich_run_Sheet_6
       rect:
         serializedVersion: 2
-        x: 2555
-        y: 179
-        width: 94
-        height: 166
+        x: 394
+        y: 1
+        width: 42
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01182255166e2f5c0800000000000000
-      internalID: -4183027798159228656
+      spriteID: e87e3852bb6bf1560800000000000000
+      internalID: 7286743637013292942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nu_du_kich_run_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee67e9373637bdba0800000000000000
+      internalID: -6063125602345519378
       vertices: []
       indices: 
       edges: []
@@ -288,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 629cc4bf8db14f943bf4d7a39ac30bdd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -297,14 +309,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Idle amin_0: -5819229353764665423
-      Idle amin_1: -3945652423319999473
-      Idle amin_2: 6685607389127122992
-      Idle amin_3: 352902984479791576
-      Idle amin_4: 8505287399534537823
-      Idle amin_5: 7427610134346332824
-      Idle amin_6: -4183027798159228656
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

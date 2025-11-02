@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 3c9f1ecd3545b194e8be947222b3dd0e
+guid: f4cddc5c01372e443917022988ff41a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5819229353764665423
-    second: Idle amin_0
+      213: 3704248067283132098
+    second: nu_du_kic_attack_Sheet_0
   - first:
-      213: -3945652423319999473
-    second: Idle amin_1
+      213: 7701937060234509333
+    second: nu_du_kic_attack_Sheet_1
   - first:
-      213: 6685607389127122992
-    second: Idle amin_2
+      213: 1434413669332946286
+    second: nu_du_kic_attack_Sheet_2
   - first:
-      213: 352902984479791576
-    second: Idle amin_3
-  - first:
-      213: 8505287399534537823
-    second: Idle amin_4
-  - first:
-      213: 7427610134346332824
-    second: Idle amin_5
-  - first:
-      213: -4183027798159228656
-    second: Idle amin_6
+      213: -9136025651254090225
+    second: nu_du_kic_attack_Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,172 +105,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle amin_0
+      name: nu_du_kic_attack_Sheet_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 179
-        width: 94
-        height: 166
+        x: 16
+        y: 0
+        width: 35
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b7c45efbb1fd3fa0800000000000000
-      internalID: -5819229353764665423
+      spriteID: 2ce9652cdf1286330800000000000000
+      internalID: 3704248067283132098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_1
+      name: nu_du_kic_attack_Sheet_1
       rect:
         serializedVersion: 2
-        x: 555
-        y: 179
-        width: 94
-        height: 166
+        x: 80
+        y: 0
+        width: 37
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0c2ad4a60a3e39c0800000000000000
-      internalID: -3945652423319999473
+      spriteID: 51cb1bd13f6c2ea60800000000000000
+      internalID: 7701937060234509333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_2
+      name: nu_du_kic_attack_Sheet_2
       rect:
         serializedVersion: 2
-        x: 955
-        y: 179
-        width: 94
-        height: 166
+        x: 142
+        y: 0
+        width: 41
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03026a0af7c08cc50800000000000000
-      internalID: 6685607389127122992
+      spriteID: e6d0e85e1af08e310800000000000000
+      internalID: 1434413669332946286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle amin_3
+      name: nu_du_kic_attack_Sheet_3
       rect:
         serializedVersion: 2
-        x: 1353
-        y: 179
-        width: 94
-        height: 166
+        x: 203
+        y: 0
+        width: 46
+        height: 56
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d9d7160563c5e400800000000000000
-      internalID: 352902984479791576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle amin_4
-      rect:
-        serializedVersion: 2
-        x: 1755
-        y: 179
-        width: 94
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5cacd1b3d9d80670800000000000000
-      internalID: 8505287399534537823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle amin_5
-      rect:
-        serializedVersion: 2
-        x: 2155
-        y: 179
-        width: 94
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 89afdc3601c241760800000000000000
-      internalID: 7427610134346332824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle amin_6
-      rect:
-        serializedVersion: 2
-        x: 2555
-        y: 179
-        width: 94
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01182255166e2f5c0800000000000000
-      internalID: -4183027798159228656
+      spriteID: f06a42e2311563180800000000000000
+      internalID: -9136025651254090225
       vertices: []
       indices: 
       edges: []
@@ -288,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 629cc4bf8db14f943bf4d7a39ac30bdd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -297,14 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Idle amin_0: -5819229353764665423
-      Idle amin_1: -3945652423319999473
-      Idle amin_2: 6685607389127122992
-      Idle amin_3: 352902984479791576
-      Idle amin_4: 8505287399534537823
-      Idle amin_5: 7427610134346332824
-      Idle amin_6: -4183027798159228656
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
