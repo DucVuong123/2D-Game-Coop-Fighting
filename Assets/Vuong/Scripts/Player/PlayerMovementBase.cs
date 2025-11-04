@@ -35,7 +35,33 @@ public abstract class PlayerMovementBase : MonoBehaviour
     protected virtual void Update()
     {
         CheckGrounded();
+        MoveWithKey();
         Move();
+    }
+    private void MoveWithKey()
+    {
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            OnPointerDownRight();
+            OnPointerDownCheckRun();
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            OnPointerUpRight();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            OnPointerDownLeft();
+            OnPointerDownCheckRun();
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            OnPointerUpLeft();
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            OnPointDownJump();
+        }
     }
     protected virtual void Move()
     {

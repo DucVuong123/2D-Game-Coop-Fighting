@@ -20,7 +20,7 @@ public abstract class PlayerSpecialSkillBase : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-
+        UseSkillWithKey();
     }
     public virtual void OnPointerDownSkill()
     {
@@ -36,6 +36,7 @@ public abstract class PlayerSpecialSkillBase : MonoBehaviour
     {
 
     }
+    protected abstract void UseSkillWithKey();
     protected abstract void EnterSpecialSkill();
     protected abstract void EndSpecialSkill();
 

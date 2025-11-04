@@ -10,8 +10,8 @@ public class PlayerLadderMovement : MonoBehaviour
     public float clamp_Speed = 8;
     private Rigidbody2D rb;
     private float old_Gravity;
-    private bool isClimbingUp;
-    private bool isClimbingDown;
+   [SerializeField] private bool isClimbingUp;
+    [SerializeField] private bool isClimbingDown;
     private bool isHitLadder;
     void Start()
     {
@@ -21,6 +21,7 @@ public class PlayerLadderMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        ClampWithKey();
         Collider2D hitInfo = Physics2D.OverlapBox(pos_Check_Ladder.position, boxSize, 0, whatIsLadder);
 
         if (hitInfo != null)
@@ -43,6 +44,25 @@ public class PlayerLadderMovement : MonoBehaviour
         else if(!isHitLadder)
         {
             rb.gravityScale = old_Gravity;
+        }
+    }
+    private void ClampWithKey()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            OnPointerDownClampUp();
+        }
+        if (Input.GetKeyUp(KeyCode.U))
+        {
+            OnPointerUpClampUp();
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            OnPointerDownClampDown();
+        }
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            OnPointerUpClampDown();
         }
     }
     public void OnPointerDownClampUp()

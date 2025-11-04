@@ -28,4 +28,18 @@ public class BoBinhSpecialSkill : PlayerSpecialSkillBase
     {
        
     }
+
+    protected override void UseSkillWithKey()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            OnPointerDownSkill();
+
+        }
+        if (Input.GetKeyUp(KeyCode.K))
+        {
+            OnPointerUpSkill();
+        }
+       
+    }
 }

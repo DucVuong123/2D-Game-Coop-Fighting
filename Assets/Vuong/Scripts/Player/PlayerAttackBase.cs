@@ -18,7 +18,8 @@ public abstract class PlayerAttackBase : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        if(isAttack)
+        AttackWithKey();
+        if (isAttack)
         {
             if (time_Attack <= 0)
             {
@@ -31,6 +32,7 @@ public abstract class PlayerAttackBase : MonoBehaviour
             }
         }     
     }
+    public abstract void AttackWithKey();
     public abstract void OnPointerDownAttack();
     public abstract void OnPointerUpAttack();
     protected virtual void TriggerAttackAffterAttackTime()

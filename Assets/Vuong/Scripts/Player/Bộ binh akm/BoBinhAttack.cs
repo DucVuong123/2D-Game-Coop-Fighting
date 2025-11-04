@@ -12,6 +12,19 @@ public class BoBinhAttack : PlayerAttackBase
 
     private bool isShooting = false;
 
+    public override void AttackWithKey()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            OnPointerDownAttack();
+
+        }
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            OnPointerUpAttack();
+        }
+    }
+
     public override void OnPointerDownAttack()
     {
         isAttack = true;

@@ -17,6 +17,18 @@ public class DuKichAttack : PlayerAttackBase
     {
         isAttack = false;
     }
+    public override void AttackWithKey()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            OnPointerDownAttack();
+
+        }
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            OnPointerUpAttack();
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()

@@ -51,6 +51,19 @@ public class DuKichSpecialSkill : PlayerSpecialSkillBase
         Collider2D hit = Physics2D.OverlapCircle(grass_Check_Pos.position, radius, grass_Layer);
         IsInGrass = (hit != null);
     }
+    protected override void UseSkillWithKey()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            OnPointerDownSkill();
+
+        }
+        if (Input.GetKeyUp(KeyCode.K))
+        {
+            OnPointerUpSkill();
+        }
+
+    }
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
