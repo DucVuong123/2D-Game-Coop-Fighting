@@ -44,7 +44,7 @@ public class Boss : EyeBotBase
         StartCoroutine(SkillRoutine());
     }
 
-    #region Shooting
+
     protected override void OnPlayerDetected(Transform player)
     {
         if (player == null) return;
@@ -102,71 +102,82 @@ public class Boss : EyeBotBase
             Destroy(bullet, 5f);
         }
     }
-    #endregion
 
-    #region Skills
     private IEnumerator SkillRoutine()
+{
+    while (true)
     {
-        while (true)
+        if (shootTarget != null)
+            lastSeenPlayerTime = Time.time;
+
+        if (skills != null && skills.Length > 0)
         {
-            if (shootTarget != null)
-                lastSeenPlayerTime = Time.time;
+           
+            float r = Random.value;
+            ISkill chosenSkill;
 
-            if (skills != null && skills.Length > 0)
+            if (r < 0.7f) 
             {
-                int index = Random.Range(0, skills.Length);
-                ISkill chosenSkill = skills[index];
-
-                if (chosenSkill is TeleportBossSkill tp)
-                {
-                    if (shootTarget == null || Time.time - lastSeenPlayerTime > losePlayerThreshold)
-                        tp.UseSkill(transform, null);
-                    else
-                        tp.UseSkill(transform, shootTarget);
-                }
-                else
-                {
-                    chosenSkill.UseSkill(transform, shootTarget);
-                }
+                chosenSkill = System.Array.Find(skills, s => s is TeleportBossSkill);
+                if (chosenSkill == null)
+                    chosenSkill = skills[Random.Range(0, skills.Length)]; 
             }
+            else
+            {
+                var others = System.Array.FindAll(skills, s => !(s is TeleportBossSkill));
+                if (others.Length > 0)
+                    chosenSkill = others[Random.Range(0, others.Length)];
+                else
+                    chosenSkill = skills[0]; // fallback
+            }
+            if (chosenSkill is TeleportBossSkill tp)
+            {
+                if (shootTarget == null || Time.time - lastSeenPlayerTime > losePlayerThreshold)
+                    tp.UseSkill(transform, null);
+                else
+                    tp.UseSkill(transform, shootTarget);
+            }
+            else
+            {
+                chosenSkill.UseSkill(transform, shootTarget);
+            }
+        }
 
-            yield return new WaitForSeconds(skillInterval);
+        yield return new WaitForSeconds(skillInterval);
+    }
+}
+
+
+
+    [System.Serializable]
+    public class TeleportBossSkill : ISkill
+    {
+        public Transform pointA;
+        public Transform pointB;
+        public Transform pointC;
+
+        public void UseSkill(Transform user, Transform target)
+        {
+            if (target == null)
+                user.position = pointC.position;
+            else
+                user.position = Random.value > 0.5f ? pointA.position : pointB.position;
         }
     }
-    #endregion
-}
 
-// ==================== Skill Classes ====================
-
-
-[System.Serializable]
-public class TeleportBossSkill : ISkill
-{
-    public Transform pointA;
-    public Transform pointB;
-    public Transform pointC;
-
-    public void UseSkill(Transform user, Transform target)
+    [System.Serializable]
+    public class SummonBossSkill : ISkill
     {
-        if (target == null)
-            user.position = pointC.position;
-        else
-            user.position = Random.value > 0.5f ? pointA.position : pointB.position;
-    }
-}
+        public GameObject soldierPrefab;
+        public Transform summonPoint;
 
-[System.Serializable]
-public class SummonBossSkill : ISkill
-{
-    public GameObject soldierPrefab;
-    public Transform summonPoint;
-
-    public void UseSkill(Transform user, Transform target)
-    {
-        if (soldierPrefab != null && summonPoint != null)
+        public void UseSkill(Transform user, Transform target)
         {
-            for (int i = 0; i < 3; i++)
-                Object.Instantiate(soldierPrefab, summonPoint.position, Quaternion.identity);
+            if (soldierPrefab != null && summonPoint != null)
+            {
+                for (int i = 0; i < 3; i++)
+                    Object.Instantiate(soldierPrefab, summonPoint.position, Quaternion.identity);
+            }
         }
     }
 }

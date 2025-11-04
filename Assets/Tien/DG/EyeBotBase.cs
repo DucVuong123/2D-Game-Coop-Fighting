@@ -17,6 +17,15 @@ public abstract class EyeBotBase : MonoBehaviour
     [SerializeField] private float flipCooldown = 0.5f; // giây
     private float lastFlipTime = -Mathf.Infinity;
 
+    [SerializeField] private string botLayerName ="Enemy";
+
+    void Awake()
+    {
+        int botLayer = LayerMask.NameToLayer(botLayerName);
+        // Tắt va chạm giữa các đối tượng layer Bot với chính nó
+        Physics2D.IgnoreLayerCollision(botLayer, botLayer, true);
+    }
+
     protected virtual void Update()
     {
         ScanForPlayer();
