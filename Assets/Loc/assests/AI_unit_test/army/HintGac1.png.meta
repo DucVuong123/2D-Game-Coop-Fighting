@@ -185,7 +185,7 @@ TextureImporter:
         width: 118
         height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,7 +207,7 @@ TextureImporter:
         width: 118
         height: 278
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,28 +221,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HintGac1_2
-      rect:
-        serializedVersion: 2
-        x: 1311
-        y: 335
-        width: 86
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a000fb4cff6d2c060800000000000000
-      internalID: 6972371567128805386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: HintGac1_3
       rect:
         serializedVersion: 2
@@ -251,7 +229,7 @@ TextureImporter:
         width: 118
         height: 226
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,13 +246,13 @@ TextureImporter:
       name: HintGac1_4
       rect:
         serializedVersion: 2
-        x: 1295
+        x: 1294
         y: 103
-        width: 118
-        height: 226
+        width: 121
+        height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 8}
       customData: 
       outline: []
       physicsShape: []
@@ -290,7 +268,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 468cc0b2e59a3ff4eac56047ac92b583
     internalID: 0
     vertices: []
     indices: 
