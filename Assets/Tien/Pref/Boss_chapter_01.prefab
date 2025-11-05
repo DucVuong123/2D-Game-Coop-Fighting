@@ -196,12 +196,13 @@ MonoBehaviour:
   backRange: 15
   playerMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   faceRight: 1
   flipCooldown: 0.5
+  botLayerName: Enemy
   firePoint: {fileID: 7219432476615056301}
   bulletPrefab: {fileID: 8634783168629232308, guid: a41414d8fae9ec9499b8f5178f21dffc, type: 3}
   bulletSpeed: 10
@@ -214,6 +215,7 @@ MonoBehaviour:
   summonPoint: {fileID: 4078977342472017541}
   skillInterval: 5
   losePlayerThreshold: 10
+  animator: {fileID: 7351108467664835552}
 --- !u!1 &2714137406243415449
 GameObject:
   m_ObjectHideFlags: 0

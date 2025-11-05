@@ -28,6 +28,7 @@ public class Boss : EyeBotBase
     private float lastSeenPlayerTime = 0f;
 
     private ISkill[] skills;
+    [SerializeField] private Animator animator;
 
     private void Awake()
     {
@@ -50,7 +51,6 @@ public class Boss : EyeBotBase
         if (player == null) return;
         shootTarget = player;
         FlipTowardsPlayer(player);
-
         if (!isShooting)
             StartCoroutine(ShootRoutine());
     }
@@ -101,6 +101,10 @@ public class Boss : EyeBotBase
             bb.speed = bulletSpeed;
             Destroy(bullet, 5f);
         }
+        animator.SetBool("isAttacking", true);
+        animator.SetBool("isDie", false);
+        animator.SetBool("isTele", false);
+        animator.SetBool("isCalling", false);
     }
 
     private IEnumerator SkillRoutine()
@@ -132,14 +136,22 @@ public class Boss : EyeBotBase
             }
             if (chosenSkill is TeleportBossSkill tp)
             {
-                if (shootTarget == null || Time.time - lastSeenPlayerTime > losePlayerThreshold)
-                    tp.UseSkill(transform, null);
-                else
-                    tp.UseSkill(transform, shootTarget);
+                    if (shootTarget == null || Time.time - lastSeenPlayerTime > losePlayerThreshold)
+                        tp.UseSkill(transform, null);
+                    else
+                        tp.UseSkill(transform, shootTarget);
+                    animator.SetBool("isAttacking", false);
+                    animator.SetBool("isDie", false);
+                    animator.SetBool("isTele", true);
+                    animator.SetBool("isCalling", false); 
             }
             else
             {
-                chosenSkill.UseSkill(transform, shootTarget);
+                    chosenSkill.UseSkill(transform, shootTarget);
+                    animator.SetBool("isAttacking", false);
+                    animator.SetBool("isDie", false);
+                    animator.SetBool("isTele", false);
+                    animator.SetBool("isCalling", true); 
             }
         }
 
