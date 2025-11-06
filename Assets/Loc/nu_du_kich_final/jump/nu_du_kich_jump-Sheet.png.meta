@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: f4cddc5c01372e443917022988ff41a2
+guid: a99812bb7e95dc94c9b7b9855e5384ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3704248067283132098
-    second: nu_du_kic_attack_Sheet_0
+      213: 7912474929077043826
+    second: nu_du_kich_jump-Sheet_0
   - first:
-      213: 7701937060234509333
-    second: nu_du_kic_attack_Sheet_1
+      213: -5388931202240560027
+    second: nu_du_kich_jump-Sheet_1
   - first:
-      213: 1434413669332946286
-    second: nu_du_kic_attack_Sheet_2
+      213: 4421812816612883131
+    second: nu_du_kich_jump-Sheet_2
   - first:
-      213: -9136025651254090225
-    second: nu_du_kic_attack_Sheet_3
+      213: 6830410809270461733
+    second: nu_du_kich_jump-Sheet_3
+  - first:
+      213: -5673350244238392048
+    second: nu_du_kich_jump-Sheet_4
+  - first:
+      213: -1658900860566999966
+    second: nu_du_kich_jump-Sheet_5
+  - first:
+      213: -5839368700118444470
+    second: nu_du_kich_jump-Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_0
+      name: nu_du_kich_jump-Sheet_0
       rect:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 35
-        height: 54
+        width: 38
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +146,86 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ce9652cdf1286330800000000000000
-      internalID: 3704248067283132098
+      spriteID: 27242d1a602cecd60800000000000000
+      internalID: 7912474929077043826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_1
+      name: nu_du_kich_jump-Sheet_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 81
+        y: 0
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564ce639f9ba635b0800000000000000
+      internalID: -5388931202240560027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nu_du_kich_jump-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbafa75345f6d5d30800000000000000
+      internalID: 4421812816612883131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nu_du_kich_jump-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525ed84217e7ace50800000000000000
+      internalID: 6830410809270461733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nu_du_kich_jump-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 272
         y: 0
         width: 37
-        height: 54
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51cb1bd13f6c2ea60800000000000000
-      internalID: 7701937060234509333
+      spriteID: 0158bc5f2063441b0800000000000000
+      internalID: -5673350244238392048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_2
+      name: nu_du_kich_jump-Sheet_5
       rect:
         serializedVersion: 2
-        x: 142
+        x: 333
         y: 0
-        width: 41
-        height: 54
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6d0e85e1af08e310800000000000000
-      internalID: 1434413669332946286
+      spriteID: 26c6050e4766af8e0800000000000000
+      internalID: -1658900860566999966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_3
+      name: nu_du_kich_jump-Sheet_6
       rect:
         serializedVersion: 2
-        x: 203
+        x: 398
         y: 0
-        width: 46
-        height: 56
+        width: 39
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f06a42e2311563180800000000000000
-      internalID: -9136025651254090225
+      spriteID: a46d7e40b1566fea0800000000000000
+      internalID: -5839368700118444470
       vertices: []
       indices: 
       edges: []
@@ -222,11 +297,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      nu_du_kic_attack_Sheet_0: 3704248067283132098
-      nu_du_kic_attack_Sheet_1: 7701937060234509333
-      nu_du_kic_attack_Sheet_2: 1434413669332946286
-      nu_du_kic_attack_Sheet_3: -9136025651254090225
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

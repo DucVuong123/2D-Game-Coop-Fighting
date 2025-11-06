@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: f4cddc5c01372e443917022988ff41a2
+guid: 0934d9b67538ac142a55c7e128dbba27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3704248067283132098
-    second: nu_du_kic_attack_Sheet_0
+      213: 1018028179552704161
+    second: nu_du_kich_idle_Sheet_0
   - first:
-      213: 7701937060234509333
-    second: nu_du_kic_attack_Sheet_1
+      213: 2887956317314044016
+    second: nu_du_kich_idle_Sheet_1
   - first:
-      213: 1434413669332946286
-    second: nu_du_kic_attack_Sheet_2
+      213: 2249859663950740750
+    second: nu_du_kich_idle_Sheet_2
   - first:
-      213: -9136025651254090225
-    second: nu_du_kic_attack_Sheet_3
+      213: -7354624352835600488
+    second: nu_du_kich_idle_Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_0
+      name: nu_du_kich_idle_Sheet_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 14
         y: 0
-        width: 35
-        height: 54
+        width: 39
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ce9652cdf1286330800000000000000
-      internalID: 3704248067283132098
+      spriteID: 1a6939d4c33c02e00800000000000000
+      internalID: 1018028179552704161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_1
+      name: nu_du_kich_idle_Sheet_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 78
         y: 0
-        width: 37
-        height: 54
+        width: 42
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51cb1bd13f6c2ea60800000000000000
-      internalID: 7701937060234509333
+      spriteID: 070595438f4141820800000000000000
+      internalID: 2887956317314044016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_2
+      name: nu_du_kich_idle_Sheet_2
       rect:
         serializedVersion: 2
-        x: 142
+        x: 141
         y: 0
-        width: 41
-        height: 54
+        width: 42
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6d0e85e1af08e310800000000000000
-      internalID: 1434413669332946286
+      spriteID: e0d7340b17b193f10800000000000000
+      internalID: 2249859663950740750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_3
+      name: nu_du_kich_idle_Sheet_3
       rect:
         serializedVersion: 2
-        x: 203
+        x: 206
         y: 0
-        width: 46
-        height: 56
+        width: 42
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f06a42e2311563180800000000000000
-      internalID: -9136025651254090225
+      spriteID: 89ffbc81e102fe990800000000000000
+      internalID: -7354624352835600488
       vertices: []
       indices: 
       edges: []
@@ -222,11 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      nu_du_kic_attack_Sheet_0: 3704248067283132098
-      nu_du_kic_attack_Sheet_1: 7701937060234509333
-      nu_du_kic_attack_Sheet_2: 1434413669332946286
-      nu_du_kic_attack_Sheet_3: -9136025651254090225
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

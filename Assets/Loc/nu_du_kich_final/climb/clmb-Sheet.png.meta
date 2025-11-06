@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: f4cddc5c01372e443917022988ff41a2
+guid: 26c8817a685e55e40a9b943ff4da60a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3704248067283132098
-    second: nu_du_kic_attack_Sheet_0
+      213: 1556716907263871787
+    second: clmb-Sheet_0
   - first:
-      213: 7701937060234509333
-    second: nu_du_kic_attack_Sheet_1
-  - first:
-      213: 1434413669332946286
-    second: nu_du_kic_attack_Sheet_2
-  - first:
-      213: -9136025651254090225
-    second: nu_du_kic_attack_Sheet_3
+      213: -2568757543304813180
+    second: clmb-Sheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_0
+      name: clmb-Sheet_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 21
         y: 0
-        width: 35
-        height: 54
+        width: 26
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ce9652cdf1286330800000000000000
-      internalID: 3704248067283132098
+      spriteID: b2bce4187c19a9510800000000000000
+      internalID: 1556716907263871787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_1
+      name: clmb-Sheet_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 83
         y: 0
-        width: 37
-        height: 54
+        width: 26
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,52 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51cb1bd13f6c2ea60800000000000000
-      internalID: 7701937060234509333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 0
-        width: 41
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6d0e85e1af08e310800000000000000
-      internalID: 1434413669332946286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nu_du_kic_attack_Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 0
-        width: 46
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f06a42e2311563180800000000000000
-      internalID: -9136025651254090225
+      spriteID: 485263dcf90f95cd0800000000000000
+      internalID: -2568757543304813180
       vertices: []
       indices: 
       edges: []
@@ -222,11 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      nu_du_kic_attack_Sheet_0: 3704248067283132098
-      nu_du_kic_attack_Sheet_1: 7701937060234509333
-      nu_du_kic_attack_Sheet_2: 1434413669332946286
-      nu_du_kic_attack_Sheet_3: -9136025651254090225
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
