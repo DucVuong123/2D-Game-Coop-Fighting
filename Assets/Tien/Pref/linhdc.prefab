@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: -1087658974746702664, guid: fe1e0f688c9f39d4da7cc1e55f79a83b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.32, y: 0.54}
@@ -295,8 +295,9 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 64
-  faceRight: 0
+  faceRight: 1
   flipCooldown: 0.5
+  botLayerName: Enemy
   firePoint: {fileID: 4897019629694873069}
   bulletPrefab: {fileID: 8634783168629232308, guid: a41414d8fae9ec9499b8f5178f21dffc, type: 3}
   bulletSpeed: 10
@@ -305,6 +306,7 @@ MonoBehaviour:
   pointA: {fileID: 5309155410699098346}
   pointB: {fileID: 2784656433134345523}
   patrolSpeed: 3
+  animator: {fileID: 7101201096822384352}
 --- !u!1 &8865295062798260169
 GameObject:
   m_ObjectHideFlags: 0

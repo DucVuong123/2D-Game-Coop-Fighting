@@ -20,6 +20,8 @@ public class Linhdc : EyeBotBase
 
     private LinhdcSkill patrolSkill;
 
+     [SerializeField] private Animator animator;
+
     private void Start()
     {
         patrolSkill = new LinhdcSkill
@@ -29,8 +31,13 @@ public class Linhdc : EyeBotBase
             moveSpeed = patrolSpeed
         };
         patrolSkill.UseSkill(transform, null); // Bắt đầu patrol
+        animator.SetBool("isrunning", true);
+        animator.SetBool("isatking", false);
+        animator.SetBool("isdead", false);
+          
     }
 
+   
     protected override void OnPlayerDetected(Transform player)
     {
         if (player == null) return;
@@ -40,6 +47,9 @@ public class Linhdc : EyeBotBase
         // Dừng patrol khi phát hiện player
         patrolSkill.StopSkill();
         FlipTowardsPlayer(player);
+          animator.SetBool("isrunning", false);
+        animator.SetBool("isatking", true);
+        animator.SetBool("isdead", false);
 
         if (!isShooting)
             StartCoroutine(ShootRoutine());

@@ -241,7 +241,7 @@ MonoBehaviour:
     m_Bits: 64
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 136
+    m_Bits: 128
   faceRight: 0
   flipCooldown: 0.5
   botLayerName: 

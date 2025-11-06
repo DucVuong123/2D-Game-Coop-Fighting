@@ -1,12 +1,5 @@
 using UnityEngine;
 using System.Collections;
-
-/// <summary>
-/// Bot bắn tự động khi phát hiện player.
-/// Kế thừa EyeBotBase để detect player trước/sau.
-/// Khi detect player, sẽ tự flip hướng về player trước khi bắn.
-/// Bắn liên tục theo shootInterval, không bị dừng giữa chừng.
-/// </summary>
 public class Linhcanh : EyeBotBase
 {
     [Header("Shooting Settings")]
@@ -18,7 +11,7 @@ public class Linhcanh : EyeBotBase
 
     private bool isShooting = false;
     private Transform shootTarget;      // Target hiện tại để bắn
-
+    [SerializeField] private Animator animator;
     /// <summary>
     /// Khi phát hiện player
     /// </summary>
@@ -31,7 +24,11 @@ public class Linhcanh : EyeBotBase
 
         // Flip hướng về player
         FlipTowardsPlayer(player);
+        animator.SetBool("isIddle", true);
+        animator.SetBool("isDie", false);
+        animator.SetBool("isAttack", false);
 
+        
         // Bắt đầu Coroutine bắn nếu chưa chạy
         if (!isShooting)
             StartCoroutine(ShootRoutine());
