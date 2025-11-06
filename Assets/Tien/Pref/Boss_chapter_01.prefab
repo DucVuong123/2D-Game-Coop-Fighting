@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &180107351863698069
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3512352234557910998}
-  m_Layer: 8
-  m_Name: TeleB
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3512352234557910998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180107351863698069}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.46, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 963493662723629268}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000471344885279084
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4015287802084902698}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +43,7 @@ GameObject:
   - component: {fileID: 5358217844516257832}
   - component: {fileID: 7351108467664835552}
   - component: {fileID: 3730501748623850883}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Boss_chapter_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,9 +66,6 @@ Transform:
   - {fileID: 4015287802084902698}
   - {fileID: 7219432476615056301}
   - {fileID: 4078977342472017541}
-  - {fileID: 2397890510410232677}
-  - {fileID: 3512352234557910998}
-  - {fileID: 4110936186301858630}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5358217844516257832
@@ -192,61 +158,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eyePoint: {fileID: 4015287802084902698}
-  frontRange: 20
-  backRange: 15
+  frontRange: 10000
+  backRange: 10000
   playerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 512
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   faceRight: 1
   flipCooldown: 0.5
   botLayerName: Enemy
   firePoint: {fileID: 7219432476615056301}
   bulletPrefab: {fileID: 8634783168629232308, guid: a41414d8fae9ec9499b8f5178f21dffc, type: 3}
   bulletSpeed: 10
-  shootInterval: 0.2
+  shootInterval: 1
   damage: 1
-  pointA: {fileID: 2397890510410232677}
-  pointB: {fileID: 3512352234557910998}
-  pointC: {fileID: 4110936186301858630}
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  pointC: {fileID: 0}
   soldierPrefab: {fileID: 4048998831259969164, guid: 347d7e407c099b245bf3b9f43d2609df, type: 3}
   summonPoint: {fileID: 4078977342472017541}
-  skillInterval: 5
+  skillInterval: 40
   losePlayerThreshold: 10
   animator: {fileID: 7351108467664835552}
---- !u!1 &2714137406243415449
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2397890510410232677}
-  m_Layer: 8
-  m_Name: TeteA
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2397890510410232677
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2714137406243415449}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.81, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 963493662723629268}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5084403628179453175
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4078977342472017541}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Spanw_Linh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7219432476615056301}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Attackpoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,37 +239,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.11, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 963493662723629268}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9126997153938198471
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4110936186301858630}
-  m_Layer: 8
-  m_Name: TeleC
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4110936186301858630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9126997153938198471}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

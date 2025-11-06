@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5007236910050549623}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Atackpoin2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6400558446191780591}
   - component: {fileID: 3340446140382286771}
   - component: {fileID: 7899864189395619896}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Linh_quai_sungmay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3340446140382286771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -235,13 +235,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyePoint: {fileID: 1810799355934481143}
   frontRange: 50
-  backRange: 50
+  backRange: 0
   playerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 512
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   faceRight: 0
   flipCooldown: 0.5
   botLayerName: 
@@ -264,7 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2250759191802789949}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Atackpoin1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810799355934481143}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2278849579496447802}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Attackpoin3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

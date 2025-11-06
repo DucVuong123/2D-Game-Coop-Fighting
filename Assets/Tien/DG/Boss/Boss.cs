@@ -26,7 +26,6 @@ public class Boss : EyeBotBase
     private bool isShooting = false;
     private Transform shootTarget;
     private float lastSeenPlayerTime = 0f;
-
     private ISkill[] skills;
     [SerializeField] private Animator animator;
 
@@ -42,7 +41,7 @@ public class Boss : EyeBotBase
 
     private void Start()
     {
-        StartCoroutine(SkillRoutine());
+        
     }
 
 
@@ -51,6 +50,7 @@ public class Boss : EyeBotBase
         if (player == null) return;
         shootTarget = player;
         FlipTowardsPlayer(player);
+        StartCoroutine(SkillRoutine());
         if (!isShooting)
             StartCoroutine(ShootRoutine());
     }
@@ -110,7 +110,10 @@ public class Boss : EyeBotBase
     private IEnumerator SkillRoutine()
 {
     while (true)
-    {
+        {
+            
+                
+            
         if (shootTarget != null)
             lastSeenPlayerTime = Time.time;
 
@@ -120,7 +123,7 @@ public class Boss : EyeBotBase
             float r = Random.value;
             ISkill chosenSkill;
 
-            if (r < 0.7f) 
+            if (r < 0.9f) 
             {
                 chosenSkill = System.Array.Find(skills, s => s is TeleportBossSkill);
                 if (chosenSkill == null)
@@ -134,25 +137,26 @@ public class Boss : EyeBotBase
                 else
                     chosenSkill = skills[0]; // fallback
             }
-            if (chosenSkill is TeleportBossSkill tp)
-            {
-                    if (shootTarget == null || Time.time - lastSeenPlayerTime > losePlayerThreshold)
-                        tp.UseSkill(transform, null);
+                    if (chosenSkill is TeleportBossSkill tp)
+                    {
+                        if (shootTarget == null || Time.time - lastSeenPlayerTime > losePlayerThreshold)
+                            tp.UseSkill(transform, null);
+                        else
+                            tp.UseSkill(transform, shootTarget);
+                        animator.SetBool("isAttacking", false);
+                        animator.SetBool("isDie", false);
+                        animator.SetBool("isTele", true);
+                        animator.SetBool("isCalling", false);
+                    }
                     else
-                        tp.UseSkill(transform, shootTarget);
-                    animator.SetBool("isAttacking", false);
-                    animator.SetBool("isDie", false);
-                    animator.SetBool("isTele", true);
-                    animator.SetBool("isCalling", false); 
-            }
-            else
-            {
-                    chosenSkill.UseSkill(transform, shootTarget);
-                    animator.SetBool("isAttacking", false);
-                    animator.SetBool("isDie", false);
-                    animator.SetBool("isTele", false);
-                    animator.SetBool("isCalling", true); 
-            }
+                    {
+                        chosenSkill.UseSkill(transform, shootTarget);
+                        animator.SetBool("isAttacking", false);
+                        animator.SetBool("isDie", false);
+                        animator.SetBool("isTele", false);
+                        animator.SetBool("isCalling", true);
+                    }
+        
         }
 
         yield return new WaitForSeconds(skillInterval);
@@ -187,7 +191,6 @@ public class Boss : EyeBotBase
         {
             if (soldierPrefab != null && summonPoint != null)
             {
-                for (int i = 0; i < 3; i++)
                     Object.Instantiate(soldierPrefab, summonPoint.position, Quaternion.identity);
             }
         }
