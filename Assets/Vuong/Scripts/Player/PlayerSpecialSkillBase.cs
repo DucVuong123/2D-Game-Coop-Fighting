@@ -6,6 +6,7 @@ public abstract class PlayerSpecialSkillBase : MonoBehaviour
 
     protected PlayerInfo info;
    [SerializeField] protected float time_End_Skill;
+   [SerializeField] protected bool is_Use_Skill = false;
     public int skill_Amount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()

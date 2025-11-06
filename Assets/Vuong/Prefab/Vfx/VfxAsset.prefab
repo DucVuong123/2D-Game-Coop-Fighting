@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grenade_Explo: {fileID: 8084722094990636727, guid: f762f65693598b34f9b99f544a30c3e3, type: 3}
   blood_Hit: {fileID: 898202717913474418, guid: f353b6670948c9d48847c2ee60b6822d, type: 3}
+  bo_Binh_Skill: {fileID: 929519362839084665, guid: c2ded62eb24f2b048a337e88afc47b8b, type: 3}

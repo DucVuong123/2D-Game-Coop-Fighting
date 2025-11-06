@@ -6,6 +6,7 @@ public class VfxAsset : MonoBehaviour
     [Header("Vfx")]
     public GameObject grenade_Explo;
     public GameObject blood_Hit;
+    public GameObject bo_Binh_Skill;
    
     private void Awake()
     {
