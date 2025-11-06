@@ -17,6 +17,7 @@ public class UI_GameCtr : MonoBehaviour
 
     public void OnClickButton(BaseEventData evenData)
     {
+        Debug.Log("111111111111111111");
         GameController.Instance.In_Game();
     }
 }

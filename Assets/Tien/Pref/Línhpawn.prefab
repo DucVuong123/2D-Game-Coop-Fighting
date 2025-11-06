@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8871969994098226888}
   - component: {fileID: 6597540284519504002}
   - component: {fileID: 9009702037287144795}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: "L\xEDnhpawn"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.78, y: -0.02, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8121948009942603830}
   - {fileID: 8882474414138627165}
@@ -180,7 +180,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &9009702037287144795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,11 +194,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eyePoint: {fileID: 8121948009942603830}
-  frontRange: 20
-  backRange: 15
+  frontRange: 15
+  backRange: 10
   playerMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 512
   obstacleMask:
     serializedVersion: 2
     m_Bits: 64
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8882474414138627165}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Attackpoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8121948009942603830}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 867223586351422177}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: MoveA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3615247779496485381}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: MoveB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
