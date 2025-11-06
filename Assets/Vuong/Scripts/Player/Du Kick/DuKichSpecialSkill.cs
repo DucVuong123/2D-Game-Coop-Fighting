@@ -32,7 +32,7 @@ public class DuKichSpecialSkill : PlayerSpecialSkillBase
     protected override void EnterSpecialSkill()
     {
         GrenadeController grenadeInstance = Instantiate(grenade_Prefab, grenade_Spawn_Pos.position, grenade_Prefab.transform.rotation);
-        grenadeInstance.Throw(new Vector2(1,0.2f) * Mathf.Sign(transform.localScale.x), 500);
+        grenadeInstance.Throw(new Vector2(Mathf.Sign(transform.localScale.x), 0.6f).normalized, 500);
     }
 
     protected override void EnterPassiveSkill()

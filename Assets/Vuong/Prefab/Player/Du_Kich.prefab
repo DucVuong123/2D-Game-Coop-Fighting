@@ -276,10 +276,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAttack: 0
-  checkDistance: 0.5
+  checkDistance: 1
   Enemy_Layer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   rayOrigin: {fileID: 7593599755715345085}
 --- !u!114 &655958094946987374
 MonoBehaviour:
@@ -334,6 +334,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   clamp_Speed: 8
+  isClimbingUp: 0
+  isClimbingDown: 0
 --- !u!114 &5451855580081178880
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@ public class HealthSystem : MonoBehaviour,IHitable
 
     public void OnHit(float Dame)
     {
+        VfxAsset.Instance.SpawnVfx(VfxAsset.Instance.blood_Hit, transform.position, 3);
         Damge(Dame);
     }
 }

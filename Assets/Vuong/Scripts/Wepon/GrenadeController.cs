@@ -29,6 +29,7 @@ public class GrenadeController : MonoBehaviour
 
     public void Throw(Vector2 direction, float force)
     {
+        rb.AddTorque(1000, ForceMode2D.Force);
         rb.AddForce(direction.normalized * force, ForceMode2D.Force);
     }
 
@@ -67,7 +68,7 @@ public class GrenadeController : MonoBehaviour
                 enemy.OnHit(damage);
             }
         }
-
+        VfxAsset.Instance.SpawnVfx(VfxAsset.Instance.grenade_Explo, transform.position, 3);
         Destroy(gameObject); // xóa ngay sau khi nổ
     }
 
