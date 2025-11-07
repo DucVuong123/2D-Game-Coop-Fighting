@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nudukich_invisible-Sheet_0: -1292663917052957555
+      Nudukich_invisible-Sheet_1: -5765317402828435901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

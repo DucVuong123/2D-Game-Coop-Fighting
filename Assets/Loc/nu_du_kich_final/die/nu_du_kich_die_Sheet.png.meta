@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nu_du_kich_die_Sheet_0: -2951945303800869268
+      nu_du_kich_die_Sheet_1: -1643531384264166507
+      nu_du_kich_die_Sheet_2: -328323510983267095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

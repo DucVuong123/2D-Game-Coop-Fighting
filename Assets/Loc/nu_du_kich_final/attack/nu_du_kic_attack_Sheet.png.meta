@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nu_du_kic_attack_Sheet_0: 3704248067283132098
+      nu_du_kic_attack_Sheet_1: 7701937060234509333
+      nu_du_kic_attack_Sheet_2: 1434413669332946286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

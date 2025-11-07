@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nu_du_kich_idle_Sheet_0: 1018028179552704161
+      nu_du_kich_idle_Sheet_1: 2887956317314044016
+      nu_du_kich_idle_Sheet_2: 2249859663950740750
+      nu_du_kich_idle_Sheet_3: -7354624352835600488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

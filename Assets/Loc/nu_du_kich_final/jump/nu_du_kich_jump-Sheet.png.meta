@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nu_du_kich_jump-Sheet_0: 7912474929077043826
+      nu_du_kich_jump-Sheet_1: -5388931202240560027
+      nu_du_kich_jump-Sheet_2: 4421812816612883131
+      nu_du_kich_jump-Sheet_3: 6830410809270461733
+      nu_du_kich_jump-Sheet_4: -5673350244238392048
+      nu_du_kich_jump-Sheet_5: -1658900860566999966
+      nu_du_kich_jump-Sheet_6: -5839368700118444470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
