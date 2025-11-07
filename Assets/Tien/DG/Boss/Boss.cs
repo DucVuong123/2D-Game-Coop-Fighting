@@ -101,10 +101,10 @@ public class Boss : EyeBotBase
             bb.speed = bulletSpeed;
             Destroy(bullet, 5f);
         }
-        animator.SetBool("isAttacking", true);
-        animator.SetBool("isDie", false);
-        animator.SetBool("isTele", false);
-        animator.SetBool("isCalling", false);
+        // animator.SetBool("isAttacking", true);
+        // animator.SetBool("isDie", false);
+        // animator.SetBool("isTele", false);
+        // animator.SetBool("isCalling", false);
     }
 
     private IEnumerator SkillRoutine()
@@ -123,11 +123,12 @@ public class Boss : EyeBotBase
             float r = Random.value;
             ISkill chosenSkill;
 
-            if (r < 0.9f) 
+            if (r < 0.8f) 
             {
                 chosenSkill = System.Array.Find(skills, s => s is TeleportBossSkill);
-                if (chosenSkill == null)
-                    chosenSkill = skills[Random.Range(0, skills.Length)]; 
+                    if (chosenSkill == null)
+                        chosenSkill = skills[Random.Range(0, skills.Length)];
+                    FlipTowardsPlayer(shootTarget);
             }
             else
             {
@@ -143,18 +144,18 @@ public class Boss : EyeBotBase
                             tp.UseSkill(transform, null);
                         else
                             tp.UseSkill(transform, shootTarget);
-                        animator.SetBool("isAttacking", false);
-                        animator.SetBool("isDie", false);
-                        animator.SetBool("isTele", true);
-                        animator.SetBool("isCalling", false);
+                        // animator.SetBool("isAttacking", false);
+                        // animator.SetBool("isDie", false);
+                        // animator.SetBool("isTele", true);
+                        // animator.SetBool("isCalling", false);
                     }
                     else
                     {
                         chosenSkill.UseSkill(transform, shootTarget);
-                        animator.SetBool("isAttacking", false);
-                        animator.SetBool("isDie", false);
-                        animator.SetBool("isTele", false);
-                        animator.SetBool("isCalling", true);
+                        // animator.SetBool("isAttacking", false);
+                        // animator.SetBool("isDie", false);
+                        // animator.SetBool("isTele", false);
+                        // animator.SetBool("isCalling", true);
                     }
         
         }
@@ -191,7 +192,7 @@ public class Boss : EyeBotBase
         {
             if (soldierPrefab != null && summonPoint != null)
             {
-                    Object.Instantiate(soldierPrefab, summonPoint.position, Quaternion.identity);
+                    //Object.Instantiate(soldierPrefab, summonPoint.position, Quaternion.identity);
             }
         }
     }

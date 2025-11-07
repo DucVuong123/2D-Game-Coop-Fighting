@@ -24,7 +24,8 @@ public class Linhcanh : EyeBotBase
 
         // Flip hướng về player
         FlipTowardsPlayer(player);
-        animator.SetBool("isIddle", true);
+       animator.SetBool("isHint", true);
+        animator.SetBool("isIddle", false);
         animator.SetBool("isDie", false);
         animator.SetBool("isAttack", false);
 
@@ -42,6 +43,10 @@ public class Linhcanh : EyeBotBase
         shootTarget = null;
         isShooting = false;
         StopAllCoroutines();
+        animator.SetBool("isHint", false);
+        animator.SetBool("isIddle", true);
+        animator.SetBool("isDie", false);
+        animator.SetBool("isAttack", false);
     }
 
     /// <summary>
