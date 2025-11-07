@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,11 +45,16 @@ public class GameController : MonoBehaviour
 
     public void nextMap()
     {
-
+        if(currentMapIndex >= Maps.Count)
+        {
+            SceneManager.LoadScene(3);
+            return;
+        }
         if (currentMap != null) Destroy(currentMap);
         currentMap = Instantiate(Maps[currentMapIndex = currentMapIndex < Maps.Count - 1 ? currentMapIndex + 1 : 0], Vector2.zero, Quaternion.identity);
         if (Main_Player == null) { Main_Player = Instantiate(Player_Choice, currentMap.GetComponent<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
         Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
+        
     }
 
 
