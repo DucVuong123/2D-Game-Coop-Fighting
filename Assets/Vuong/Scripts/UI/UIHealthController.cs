@@ -8,7 +8,7 @@ public class UIHealthController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = transform.root.GetComponent<HealthSystem>();
+        health = transform.parent.parent.GetComponent<HealthSystem>();
         health.OnHealthChange += Health_OnHealthChange;
     }
 
@@ -20,6 +20,6 @@ public class UIHealthController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }

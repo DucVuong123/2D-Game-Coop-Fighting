@@ -82,6 +82,7 @@ GameObject:
   - component: {fileID: 4675668079395273271}
   - component: {fileID: 5451855580081178880}
   - component: {fileID: 809317491705523178}
+  - component: {fileID: 7854206916734771316}
   m_Layer: 6
   m_Name: Du_Kich
   m_TagString: Untagged
@@ -261,7 +262,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 256
   IsGrounded: 0
 --- !u!114 &1602108724347602895
 MonoBehaviour:
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time_End_Skill: 0
+  is_Use_Skill: 0
   skill_Amount: 10
   grenade_Prefab: {fileID: 5759110153194698825, guid: 5b935a012e105b5468e8bb80c04050c3, type: 3}
   grenade_Spawn_Pos: {fileID: 3267426894086151798}
@@ -332,7 +334,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 7958981926802068495}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 512
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0
@@ -370,6 +372,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7854206916734771316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2683548934471377769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e132cd60607efd4a834a0aa0fa92fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthAmount: 0
+  healthAmountMax: 100
 --- !u!1 &3015269843251056743
 GameObject:
   m_ObjectHideFlags: 0

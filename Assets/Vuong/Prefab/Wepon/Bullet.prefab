@@ -104,7 +104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dame: 10
   dir: 10
-  speed: 1
+  targetLayerName: Enemy
+  speed: 10
 --- !u!61 &1036966108788691395
 BoxCollider2D:
   m_ObjectHideFlags: 0

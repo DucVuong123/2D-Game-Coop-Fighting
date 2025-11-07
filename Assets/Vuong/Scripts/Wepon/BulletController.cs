@@ -4,6 +4,7 @@ public class BulletController : MonoBehaviour
 {
     public float dame;
     public float dir;
+    [SerializeField] private string targetLayerName = "Enemy";
     [SerializeField] private float speed;
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,15 @@ public class BulletController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out IHitable hit))
+        Debug.Log(collision.gameObject.layer + "==" + LayerMask.NameToLayer(targetLayerName));
+        if (collision.gameObject.layer == LayerMask.NameToLayer(targetLayerName))
         {
-            hit.OnHit(dame);
+            
+            if (collision.TryGetComponent(out IHitable hit))
+            {
+                hit.OnHit(dame);
+            }
+
             Destroy(gameObject);
         }
     }
