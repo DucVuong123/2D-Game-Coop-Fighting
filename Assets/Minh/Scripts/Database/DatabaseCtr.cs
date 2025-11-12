@@ -15,7 +15,7 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
         if (Instance == null)
         {
             Instance = this;
-            //DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -32,7 +32,6 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
     public void AddData<T>(string path, T data, Action<bool, string> callback = null)
     {
         string json = JsonUtility.ToJson(data);
-
         dbRef.Child(path).SetRawJsonValueAsync(json)
         .ContinueWithOnMainThread(task =>
         {
