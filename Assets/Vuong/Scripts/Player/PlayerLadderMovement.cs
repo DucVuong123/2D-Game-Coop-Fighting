@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class PlayerLadderMovement : MonoBehaviour
+using PurrNet;
+public class PlayerLadderMovement : NetworkBehaviour
 {
     [Header("Overlap")]
     public Vector2 boxSize = new Vector2(0.5f, 1f); 
@@ -13,6 +13,11 @@ public class PlayerLadderMovement : MonoBehaviour
    [SerializeField] private bool isClimbingUp;
     [SerializeField] private bool isClimbingDown;
     private bool isHitLadder;
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        enabled = isOwner;
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

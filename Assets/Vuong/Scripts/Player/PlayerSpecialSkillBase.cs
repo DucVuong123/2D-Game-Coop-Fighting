@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
-public abstract class PlayerSpecialSkillBase : MonoBehaviour
+using PurrNet;
+public abstract class PlayerSpecialSkillBase : NetworkBehaviour
 {
     public event EventHandler OnEnterSkill;
 
@@ -9,6 +10,11 @@ public abstract class PlayerSpecialSkillBase : MonoBehaviour
    [SerializeField] protected bool is_Use_Skill = false;
     public int skill_Amount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        enabled = isOwner;
+    }
     private void Awake()
     {
         info = GetComponent<PlayerInfo>();

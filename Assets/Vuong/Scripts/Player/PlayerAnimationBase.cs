@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-
-public abstract class PlayerAnimationBase : MonoBehaviour
+using PurrNet;
+public abstract class PlayerAnimationBase : NetworkBehaviour
 {
     [Header("Animation")]
     protected Animator animator;
@@ -12,6 +12,11 @@ public abstract class PlayerAnimationBase : MonoBehaviour
     protected PlayerAttackBase player_Attack;
     protected PlayerSpecialSkillBase player_Skill;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        enabled = isOwner;
+    }
     private void Awake()
     {
         animator = GetComponent<Animator>();

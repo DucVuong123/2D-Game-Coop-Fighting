@@ -1,11 +1,17 @@
+using System.Globalization;
 using UnityEngine;
-
-public abstract class PlayerAttackBase : MonoBehaviour
+using PurrNet;
+public abstract class PlayerAttackBase : NetworkBehaviour
 {
     protected PlayerInfo info;
     public bool isAttack;
     protected float time_Attack;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        enabled = isOwner;
+    }
     private void Awake()
     {
         info = GetComponent<PlayerInfo>();

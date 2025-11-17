@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Net;
 using System.Xml.Linq;
 using UnityEngine;
-
-public abstract class PlayerMovementBase : MonoBehaviour
+using PurrNet;
+public abstract class PlayerMovementBase : NetworkBehaviour
 {
     protected PlayerInfo info;
     protected Rigidbody2D rb;
@@ -20,6 +20,11 @@ public abstract class PlayerMovementBase : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private LayerMask groundLayer;
     public bool IsGrounded;
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        enabled = isOwner;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {

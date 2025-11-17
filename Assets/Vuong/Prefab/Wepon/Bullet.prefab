@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5640487757827896851}
   - component: {fileID: 1036966108788691395}
   - component: {fileID: 8648278419868999579}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dame: 10
   dir: 10
-  targetLayerName: Enemy
+  targetLayerName:
+    serializedVersion: 2
+    m_Bits: 64
   speed: 10
 --- !u!61 &1036966108788691395
 BoxCollider2D:
