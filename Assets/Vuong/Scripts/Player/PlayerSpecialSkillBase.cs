@@ -7,7 +7,7 @@ public abstract class PlayerSpecialSkillBase : NetworkBehaviour
 
     protected PlayerInfo info;
    [SerializeField] protected float time_End_Skill;
-   [SerializeField] protected bool is_Use_Skill = false;
+   public bool is_Use_Skill = false;
     public int skill_Amount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void OnSpawned(bool asServer)

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6892351439274958983}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Ladder_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168968509996185058}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Bullet_Spanw_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 2853110957368194496}
   - component: {fileID: 200002978559157880}
   - component: {fileID: 153750064303436034}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Bo_Binh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,6 +221,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76b807e71b4a314a9f4618f6fcdf94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &4660036494926386921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,11 +242,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544b6d91a2d0f0e4ea84451d9aa96036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   groundCheck: {fileID: 9105795246708484150}
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 8
   IsGrounded: 0
 --- !u!114 &3103579514375002414
 MonoBehaviour:
@@ -251,6 +269,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e305a2d2cfc5014c978e0af244a65ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   isAttack: 0
   bullet_Prefab: {fileID: 5640487757827896851, guid: 8016c0d6b8f7b9240af0d72c81c62afb, type: 3}
   bullet_Spawn_Pos: {fileID: 168968509996185058}
@@ -269,6 +296,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 931ca7df554f66440a7e6cabf53ac724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   time_End_Skill: 3
   is_Use_Skill: 0
   skill_Amount: 4
@@ -284,6 +320,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cc0384f2c800c429083ee42e6bc5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   animator_Name: []
 --- !u!114 &6508425098955451778
 MonoBehaviour:
@@ -297,11 +342,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49bf8cc67085cc4a95f0961d862ec8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   boxSize: {x: 0.5, y: 1}
   pos_Check_Ladder: {fileID: 6892351439274958983}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0
@@ -418,7 +472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9105795246708484150}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Ground_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,6 +502,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2902922339859384287}
     m_Modifications:
+    - target: {fileID: 281562360007397405, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 750379776061278153, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -80
@@ -544,13 +602,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1654335160383870243, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Name
       value: Health_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5056774024462078938, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010158263479292823, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

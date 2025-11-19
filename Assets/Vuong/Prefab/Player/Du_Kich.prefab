@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5607701661421223384}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Ground_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7958981926802068495}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Ladder_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 809317491705523178}
   - component: {fileID: 7854206916734771316}
   - component: {fileID: 4133994436073878153}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Du_Kich
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,11 +259,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3a37db4f4137c48893a6efefe263b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   groundCheck: {fileID: 5607701661421223384}
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 8
   IsGrounded: 0
 --- !u!114 &1602108724347602895
 MonoBehaviour:
@@ -277,6 +286,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ba02082486378478d8461ce8aaff81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   isAttack: 0
   checkDistance: 1
   Enemy_Layer:
@@ -295,6 +313,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d567ac8aef302f34186e09964f01bc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   time_End_Skill: 0
   is_Use_Skill: 0
   skill_Amount: 10
@@ -318,6 +345,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464aea75f5b5c204a9fde7ab04e89b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   animator_Name: []
 --- !u!114 &4675668079395273271
 MonoBehaviour:
@@ -331,11 +367,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49bf8cc67085cc4a95f0961d862ec8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   boxSize: {x: 0.5, y: 1}
   pos_Check_Ladder: {fileID: 7958981926802068495}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0
@@ -351,6 +396,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fcc98f149bdf14408675fdaa7368f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!95 &809317491705523178
 Animator:
   serializedVersion: 7
@@ -427,7 +481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526768401368133504}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Grass_Check_Pos (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3267426894086151798}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Grenade_Spawn_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7593599755715345085}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Attack_Origin_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

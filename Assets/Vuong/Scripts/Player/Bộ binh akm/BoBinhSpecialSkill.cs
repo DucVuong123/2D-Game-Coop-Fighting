@@ -20,7 +20,7 @@ public class BoBinhSpecialSkill : PlayerSpecialSkillBase
         if(!is_Use_Skill)
         {
             VfxAsset.Instance.SpawnVfx(VfxAsset.Instance.bo_Binh_Skill,new Vector2(transform.position.x, transform.position.y-1.3f) ,time_End_Skill,transform);
-            info.AttackSpeed = 0.2f;
+            info.AttackSpeed = 0.1f;
             GetComponent<PlayerAttackBase>().UpdateTimeAttack();
             is_Use_Skill = true;
         }    

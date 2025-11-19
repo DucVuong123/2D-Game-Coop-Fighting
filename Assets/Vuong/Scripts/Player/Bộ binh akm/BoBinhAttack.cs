@@ -37,39 +37,80 @@ public class BoBinhAttack : PlayerAttackBase
 
     protected override void TriggerAttackAffterAttackTime()
 {
-    if (!isShooting)
+        //if (!isShooting)
+        //{
+        //    StartCoroutine(BurstFire());
+        //}
+        BoBinhSpecialSkill skill = GetComponent<BoBinhSpecialSkill>();
+        if (!skill.is_Use_Skill)
+            BurstFire();
+        else
+            SkillFire();
+}
+    private void SkillFire()
     {
-        StartCoroutine(BurstFire());
+        BulletController bulletInstance1 = Instantiate(
+                   bullet_Prefab,
+                   bullet_Spawn_Pos.position,
+                   bullet_Prefab.transform.rotation
+               );
+        bulletInstance1.dame = info.Damge;
+        bulletInstance1.dir = Mathf.Sign(transform.localScale.x);
     }
-}
-
-private IEnumerator BurstFire()
+    private void BurstFire()
 {
-    isShooting = true;
+        //isShooting = true;
 
-    do
-    {
-        // Bắn 1 loạt
-        for (int i = 0; i < burstCount; i++)
-        {
-            BulletController bulletInstance = Instantiate(
-                bullet_Prefab,
-                bullet_Spawn_Pos.position,
-                bullet_Prefab.transform.rotation
-            );
+        //do
+        //{
+        //    // Bắn 1 loạt
+        //    for (int i = 0; i < burstCount; i++)
+        //    {
+        //        BulletController bulletInstance = Instantiate(
+        //            bullet_Prefab,
+        //            bullet_Spawn_Pos.position,
+        //            bullet_Prefab.transform.rotation
+        //        );
 
-            bulletInstance.dame = info.Damge;
-            bulletInstance.dir = Mathf.Sign(transform.localScale.x);
+        //        bulletInstance.dame = info.Damge;
+        //        bulletInstance.dir = Mathf.Sign(transform.localScale.x);
 
-            yield return new WaitForSeconds(burstInterval);
-        }
+        //        yield return new WaitForSeconds(burstInterval);
+        //    }
 
-        // Nếu vẫn giữ thì nghỉ rồi bắn tiếp
-        if (isAttack)
-            yield return new WaitForSeconds(restTime);
+        //    // Nếu vẫn giữ thì nghỉ rồi bắn tiếp
+        //    if (isAttack)
+        //        yield return new WaitForSeconds(restTime);
 
-    } while (isAttack); // Nếu không giữ nữa thì thoát
+        //} while (isAttack); // Nếu không giữ nữa thì thoát
 
-    isShooting = false;
-}
+        //isShooting = false;
+
+        Vector3 leftOffset = bullet_Spawn_Pos.right * -0.8f;
+        Vector3 rightOffset = bullet_Spawn_Pos.right * 0.8f;
+        BulletController bulletInstance1 = Instantiate(
+                   bullet_Prefab,
+                   bullet_Spawn_Pos.position + leftOffset,
+                   bullet_Prefab.transform.rotation
+               );
+        BulletController bulletInstance2 = Instantiate(
+                 bullet_Prefab,
+                 bullet_Spawn_Pos.position,
+                 bullet_Prefab.transform.rotation
+             );
+        BulletController bulletInstance3 = Instantiate(
+                 bullet_Prefab,
+                 bullet_Spawn_Pos.position + rightOffset,
+                 bullet_Prefab.transform.rotation
+             );
+
+        bulletInstance1.dame = info.Damge;
+        bulletInstance1.dir = Mathf.Sign(transform.localScale.x);
+
+        bulletInstance2.dame = info.Damge;
+        bulletInstance2.dir = Mathf.Sign(transform.localScale.x);
+
+        bulletInstance3.dame = info.Damge;
+        bulletInstance3.dir = Mathf.Sign(transform.localScale.x);
+    }
 }
