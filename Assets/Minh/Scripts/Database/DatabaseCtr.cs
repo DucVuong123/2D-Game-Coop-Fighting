@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Database;
@@ -109,5 +109,43 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
 
             callback?.Invoke(true, data, "Get success");
         });
+    }
+
+
+
+    // ===============================
+    // GENERATE_UNQUIE_ID_PLAYER_AC (READ)
+    // ===============================
+    public void GenerateUniquePlayerId(Action<string> callback)
+    {
+        string newId = "PLR_" + UnityEngine.Random.Range(100000, 999999).ToString();
+
+        // Kiểm tra xem ID này đã tồn tại trong "NguoiChoi" chưa
+        dbRef.Child("NguoiChoi")
+            .OrderByChild("MaNguoiChoi")
+            .EqualTo(newId)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    Debug.LogError("Lỗi kiểm tra ID: " + task.Exception);
+                    // Nếu lỗi, cứ trả ID hiện tại
+                    callback?.Invoke(newId);
+                    return;
+                }
+
+                var snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    // ID đã tồn tại → thử lại
+                    GenerateUniquePlayerId(callback);
+                }
+                else
+                {
+                    // ID chưa tồn tại → trả về
+                    callback?.Invoke(newId);
+                }
+            });
     }
 }
