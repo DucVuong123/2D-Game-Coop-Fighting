@@ -2116,6 +2116,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1042895932227886924, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2508815081840733741, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.3189383
@@ -2164,9 +2168,21 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5482420464890437950, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848980595247261581, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7917154365523663220, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362134917136909639, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8615225318939442460, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
       propertyPath: m_Name

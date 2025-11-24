@@ -1,5 +1,6 @@
 using UnityEngine;
-using System.Collections; // <-- cần để dùng Coroutine
+using System.Collections;
+using PurrNet; // <-- cần để dùng Coroutine
 
 public class BoBinhAttack : PlayerAttackBase
 {
@@ -85,7 +86,6 @@ public class BoBinhAttack : PlayerAttackBase
         //} while (isAttack); // Nếu không giữ nữa thì thoát
 
         //isShooting = false;
-
         Vector3 leftOffset = bullet_Spawn_Pos.right * -0.8f;
         Vector3 rightOffset = bullet_Spawn_Pos.right * 0.8f;
         BulletController bulletInstance1 = Instantiate(

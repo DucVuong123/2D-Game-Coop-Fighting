@@ -1,12 +1,18 @@
+using PurrNet;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+public class BulletController : NetworkBehaviour
 {
     public float dame;
     public float dir;
     [SerializeField] private LayerMask targetLayerName;
     [SerializeField] private float speed;
     // Start is called before the first frame update
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        enabled = isOwner;
+    }
     void Start()
     {
         Destroy(gameObject, 20);

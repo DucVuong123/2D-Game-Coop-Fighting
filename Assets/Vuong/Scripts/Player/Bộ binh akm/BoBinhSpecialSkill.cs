@@ -1,3 +1,4 @@
+using PurrNet;
 using UnityEngine;
 
 public class BoBinhSpecialSkill : PlayerSpecialSkillBase
@@ -9,12 +10,13 @@ public class BoBinhSpecialSkill : PlayerSpecialSkillBase
         base.Start();
         old_Attack = info.AttackSpeed;
     }
+    [ObserversRpc]
     protected override void EndSpecialSkill()
     {
         info.AttackSpeed = old_Attack;
         is_Use_Skill = false;
     }
-
+    [ObserversRpc]
     protected override void EnterSpecialSkill()
     {
         if(!is_Use_Skill)
