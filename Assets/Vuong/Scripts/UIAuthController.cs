@@ -18,6 +18,10 @@ public class UIAuthController : MonoBehaviour
     [SerializeField] private Button button_login;
     [SerializeField] private Button button_logintoRegister;
     [SerializeField] private GameObject panel_Login;
+    [Header("Player_Name")]
+    [SerializeField] private InputField Player_N;
+    [SerializeField] private GameObject Panel_Confirm_Username;
+
 
     [Header("Amin")]
     [SerializeField] private Animator Amin;
@@ -48,9 +52,23 @@ public class UIAuthController : MonoBehaviour
             if (ok)
             {
                 Debug.Log("Đăng nhập thành công! Xin chào " + acc.username);
-                // Lưu accountId vào PlayerPrefs để giữ session
-                PlayerPrefs.SetString("accountId", acc.accountId);
-                SceneManager.LoadScene(2);
+                GameController.Instance.Account_Player_AffterLogin = new GameDataModels.TaiKhoan() {
+                    MaTaiKhoan = acc.accountId,
+                    TenDangNhap = acc.username,
+                    Email = acc.email,
+                    SoDienThoai = acc.phone,
+                    MatKhau = acc.passwordHash
+                };
+                if (!GameController.Instance.check_Account_Players_AfterLogin(acc))
+                {
+                    Panel_Confirm_Username.SetActive(true);
+                }    
+                else if (GameController.Instance.check_Account_Players_AfterLogin(acc))
+                {
+                    // Lưu accountId vào PlayerPrefs để giữ session
+                    PlayerPrefs.SetString("accountId", acc.accountId);
+                    SceneManager.LoadScene(2);
+                }
             }
             else
             {
@@ -65,6 +83,32 @@ public class UIAuthController : MonoBehaviour
      public void OnRegisterToLogin()
     {
         Amin.SetBool("toRegis",false);
+    }
+
+    public void OnConfirmNamePlayer()
+    {
+        DatabaseCtr.Instance.GenerateUniquePlayerId(uniqueId =>
+        {
+            GameDataModels.NguoiChoi newPlayer = new GameDataModels.NguoiChoi
+            {
+                MaNguoiChoi = uniqueId,
+                TenNguoiChoi = Player_N.text.ToString(),
+                CapDo = 0,
+                TrangThai = "Online",
+                MaTranDau = "",
+                MaTaiKhoan = GameController.Instance.Account_Player_AffterLogin.MaTaiKhoan 
+            };
+
+            DatabaseCtr.Instance.AddData("NguoiChoi_Account", newPlayer, (addSuccess, addMessage) =>
+            {
+                if (addSuccess)
+                    Debug.Log("Người chơi mới đã được tạo!");
+                else
+                    Debug.LogError("Tạo người chơi mới thất bại: " + addMessage);
+            });
+        });
+        PlayerPrefs.SetString("accountId", GameController.Instance.Account_Player_AffterLogin.MaTaiKhoan);
+        SceneManager.LoadScene(2);
     }
     
 }
