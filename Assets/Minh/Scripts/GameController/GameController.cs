@@ -21,8 +21,11 @@ public class GameController : MonoBehaviour
     public GameObject Main_Player;
 
 
-    [Header("Account_Player")]
+    [Header("Player_Acc")]
     public GameDataModels.NguoiChoi Main_Player_Acc;
+
+    [Header("Account_Pl")]
+    public GameDataModels.TaiKhoan Account_Player_AffterLogin;
 
     public static GameController Instance;
 
@@ -136,7 +139,7 @@ public class GameController : MonoBehaviour
         });
 
 
-        return Main_Player_Acc != null;
+        return Main_Player_Acc.MaNguoiChoi != null;
     }
 
 }
