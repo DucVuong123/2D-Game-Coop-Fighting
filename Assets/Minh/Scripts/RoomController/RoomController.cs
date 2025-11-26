@@ -49,7 +49,7 @@ public class RoomController : MonoBehaviour
 
         };
 
-        DatabaseCtr.Instance.AddData<GameDataModels.PhongChoi>($"PhongChoi/{room.MaPhongChoi}", room, (success, message) =>
+        DatabaseCtr.Instance.AddData<GameDataModels.PhongChoi>("PhongChoi", room, (success, message) =>
         {
             if (success)
             {
@@ -67,12 +67,8 @@ public class RoomController : MonoBehaviour
             }
         });
 
-        /*       // Gán ID ra Text hiển thị
-               if (Id_Room != null)
-                   Id_Room.text = roomId;
-               else
-                   Debug.LogWarning("⚠️ Chưa gán Text Id_Room trong Inspector!");*/
-    }
+
+ }
 
     public void Join_Room(Text Id_Room)
     {
@@ -89,7 +85,7 @@ public class RoomController : MonoBehaviour
         string roomIdKey = inputRoomId.StartsWith("#") ? inputRoomId.Substring(1) : inputRoomId;
 
         // Lấy dữ liệu phòng từ Firebase
-        DatabaseCtr.Instance.GetData<GameDataModels.PhongChoi>($"PhongChoi/{roomIdKey}", (success, data, message) =>
+        /*DatabaseCtr.Instance.GetData<GameDataModels.PhongChoi>($"PhongChoi/{roomIdKey}", (success, data, message) =>
         {
             if (success)
             {
@@ -102,8 +98,27 @@ public class RoomController : MonoBehaviour
                 Curent_Room = null;
                 Debug.LogError($"❌ Không thể tham gia phòng: {message}");
             }
-        });
+        });*/
+        DatabaseCtr.Instance.GetDataByField<GameDataModels.PhongChoi>(
+"PhongChoi",
+"MaPhongChoi",
+roomIdKey.ToString(),
+(ok, msg, room) =>
+{
+    if (ok)
+    {
+        Debug.Log("phòng chơi tồn tại");
+        Curent_Room = room;
     }
+    else
+    {
+        Debug.Log("phòng chơi không tồn tại");
+        Curent_Room = null;
+    }
+
+});
+    }
+ 
 
     private string GenerateRoomID(int length)
     {

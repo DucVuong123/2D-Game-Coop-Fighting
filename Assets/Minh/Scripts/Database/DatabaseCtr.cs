@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Database;
 using Firebase.Extensions;
+using GameDataModels;
 
 public class DatabaseCtr : MonoBehaviour, IEDatabase
 {
@@ -31,8 +32,11 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
     // ===============================
     public void AddData<T>(string path, T data, Action<bool, string> callback = null)
     {
+        string newKey = dbRef.Child(path).Push().Key;
+
         string json = JsonUtility.ToJson(data);
-        dbRef.Child(path).SetRawJsonValueAsync(json)
+
+        dbRef.Child(path).Child(newKey).SetRawJsonValueAsync(json)
         .ContinueWithOnMainThread(task =>
         {
             if (task.IsFaulted)
@@ -113,6 +117,42 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
 
 
 
+
+    public void GetDataByField<T>(string path, string fieldName, string fieldValue,
+    Action<bool, string, T> callback)
+    {
+        dbRef.Child(path)
+            .OrderByChild(fieldName)
+            .EqualTo(fieldValue)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    callback(false, "Get error: " + task.Exception, default);
+                    return;
+                }
+
+                DataSnapshot snapshot = task.Result;
+
+                if (!snapshot.Exists)
+                {
+                    callback(false, "Không tìm thấy dữ liệu với " + fieldName + " = " + fieldValue, default);
+                    return;
+                }
+
+                // lấy item đầu tiên
+                foreach (var child in snapshot.Children)
+                {
+                    T data = JsonUtility.FromJson<T>(child.GetRawJsonValue());
+                    callback(true, "success", data);
+                    return;
+                }
+            });
+    }
+
+
+
     // ===============================
     // GENERATE_UNQUIE_ID_PLAYER_AC (READ)
     // ===============================
@@ -147,5 +187,50 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
                     callback?.Invoke(newId);
                 }
             });
+    }
+
+    // ===============================
+    // GET_ALL_PALYERS
+    // ===============================
+    public void GetPlayersList(Action<bool, List<NguoiChoi>, string> callback)
+    {
+        dbRef.Child("NguoiChoi_Account").GetValueAsync()
+        .ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                callback?.Invoke(false, null, "Get list error: " + task.Exception);
+                return;
+            }
+
+            DataSnapshot snapshot = task.Result;
+
+            List<NguoiChoi> list = new List<NguoiChoi>();
+
+            if (!snapshot.Exists)
+            {
+                callback?.Invoke(true, list, "No data");
+                return;
+            }
+
+            foreach (DataSnapshot child in snapshot.Children)
+            {
+                try
+                {
+                    string json = child.GetRawJsonValue();
+                    if (string.IsNullOrEmpty(json)) continue;
+
+                    NguoiChoi player = JsonUtility.FromJson<NguoiChoi>(json);
+                    if (player != null)
+                        list.Add(player);
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogWarning("JSON error: " + ex.Message);
+                }
+            }
+
+            callback?.Invoke(true, list, "Get list success");
+        });
     }
 }
