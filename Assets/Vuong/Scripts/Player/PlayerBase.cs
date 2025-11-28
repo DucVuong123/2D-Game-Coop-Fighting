@@ -12,7 +12,8 @@ public class PlayerBase : NetworkBehaviour
     private void Awake()
     {
        
-    }
+}
+
     void Start()
     {
         

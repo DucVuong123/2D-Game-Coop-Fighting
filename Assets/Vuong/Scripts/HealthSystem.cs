@@ -2,7 +2,8 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using DG.Tweening;
-public class HealthSystem : MonoBehaviour,IHitable
+using PurrNet;
+public class HealthSystem : NetworkBehaviour,IHitable
 {
     public event EventHandler OnHealthChange;
     public event EventHandler OnHealthReduce;
@@ -48,7 +49,7 @@ public class HealthSystem : MonoBehaviour,IHitable
     {
         return (float)healthAmount / healthAmountMax;
     }
-
+    [ObserversRpc(bufferLast:true)]
     public void OnHit(float Dame)
     {
         VfxAsset.Instance.SpawnVfx(VfxAsset.Instance.blood_Hit, transform.position, 3);
