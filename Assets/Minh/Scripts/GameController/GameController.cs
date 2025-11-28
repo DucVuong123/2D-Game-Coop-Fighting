@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -49,6 +50,32 @@ public class GameController : MonoBehaviour
             Chars[entry.name] = entry;
         }
     }
+
+    private void Start()
+    {
+       // Invoke(nameof(add_Players), 2f);
+
+    }
+    void add_Players()
+    {
+        GameDataModels.NguoiChoi newPlayer = new GameDataModels.NguoiChoi
+        {
+            MaNguoiChoi = "uniqueId",
+            TenNguoiChoi = "minh",
+            CapDo = 0,
+            TrangThai = "Online",
+            MaTranDau = "",
+            MaTaiKhoan = "123"
+        };
+
+        DatabaseCtr.Instance.AddData("NguoiChoi_Account", newPlayer, (addSuccess, addMessage) =>
+        {
+            if (addSuccess)
+                Debug.Log("Người chơi mới đã được tạo!");
+            else
+                Debug.LogError("Tạo người chơi mới thất bại: " + addMessage);
+        });
+    }    
 
     public void nextMap()
     {
@@ -101,7 +128,7 @@ public class GameController : MonoBehaviour
     public bool check_Account_Players_AfterLogin(Account acc)
     {
 
-        Main_Player_Acc = new GameDataModels.NguoiChoi();
+        /*Main_Player_Acc = new GameDataModels.NguoiChoi();
         // Lấy dữ liệu người chơi từ Firebase
         DatabaseCtr.Instance.GetData<GameDataModels.NguoiChoi>($"NguoiChoi/{acc.accountId}", (success, data, message) =>
         {
@@ -115,28 +142,29 @@ public class GameController : MonoBehaviour
             else
             {
                 Debug.Log("Người chơi là người chơi mới");
-             /*   DatabaseCtr.Instance.GenerateUniquePlayerId(uniqueId =>
-                {
-                    GameDataModels.NguoiChoi newPlayer = new GameDataModels.NguoiChoi
-                    {
-                        MaNguoiChoi = uniqueId,
-                        TenNguoiChoi = acc.username,
-                        CapDo = 1,
-                        TrangThai = "Online",
-                        MaTranDau = "",
-                        MaTaiKhoan = acc.accountId
-                    };
 
-                    DatabaseCtr.Instance.AddData($"NguoiChoi/{acc.accountId}", newPlayer, (addSuccess, addMessage) =>
-                    {
-                        if (addSuccess)
-                            Debug.Log("Người chơi mới đã được tạo!");
-                        else
-                            Debug.LogError("Tạo người chơi mới thất bại: " + addMessage);
-                    });
-                });*/
             }
         });
+*/
+
+        Main_Player_Acc = new GameDataModels.NguoiChoi();
+        DatabaseCtr.Instance.GetDataByField<GameDataModels.NguoiChoi>(
+    "NguoiChoi_Account",
+    "MaNguoiChoi",
+    "PLR_123456",
+    (ok, msg, player) =>
+    {
+        if (ok)
+        {
+            Main_Player_Acc = player;
+            Debug.Log($"Người chơi đã tồn tại: {player.TenNguoiChoi}");
+        }
+        else
+        {
+            Debug.Log("Người chơi là người chơi mới");
+        }
+    }
+);
 
 
         return Main_Player_Acc.MaNguoiChoi != null;

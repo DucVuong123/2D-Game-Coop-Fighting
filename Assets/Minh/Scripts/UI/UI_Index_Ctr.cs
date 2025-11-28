@@ -9,7 +9,10 @@ public enum Type_Index
 {
    Name_Room,
    Id_Room,
-   Name_Player
+   Name_Player,
+   Id_Player,
+   Level_player,
+   state_player
 }
 public class UI_Index_Ctr : MonoBehaviour
 {
@@ -26,7 +29,16 @@ public class UI_Index_Ctr : MonoBehaviour
                 GetComponent<Text>().text = GetComponent<Text>().text + " "+  RoomController.Instance.Curent_Room.MaPhongChoi;
                 break;
             case Type_Index.Name_Player:
-
+                GetComponent<TextMeshProUGUI>().text = GameController.Instance.Main_Player_Acc.TenNguoiChoi;
+                break;
+            case Type_Index.Id_Player:
+                GetComponent<TextMeshProUGUI>().text = GameController.Instance.Main_Player_Acc.MaNguoiChoi;
+                break;
+            case Type_Index.Level_player:
+                GetComponent<TextMeshProUGUI>().text = GameController.Instance.Main_Player_Acc.CapDo.ToString();
+                break;
+            case Type_Index.state_player:
+                GetComponent<TextMeshProUGUI>().text = GameController.Instance.Main_Player_Acc.TrangThai;
                 break;
 
         }
