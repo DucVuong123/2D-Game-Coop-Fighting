@@ -69,6 +69,53 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
         });
     }
 
+
+
+    public void UpdateDataByField(
+    string path,
+    string field,
+    string value,
+    Dictionary<string, object> updateData,
+    Action<bool, string> callback)
+    {
+        dbRef.Child(path)
+            .OrderByChild(field)
+            .EqualTo(value)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    callback(false, "Query error: " + task.Exception);
+                    return;
+                }
+
+                DataSnapshot snap = task.Result;
+
+                if (!snap.Exists)
+                {
+                    callback(false, "Không tìm thấy dữ liệu để update");
+                    return;
+                }
+
+                // Update bản ghi đầu tiên phù hợp
+                foreach (var child in snap.Children)
+                {
+                    dbRef.Child(path).Child(child.Key)
+                        .UpdateChildrenAsync(updateData)
+                        .ContinueWithOnMainThread(updateTask =>
+                        {
+                            if (updateTask.IsFaulted)
+                                callback(false, "Update error: " + updateTask.Exception);
+                            else
+                                callback(true, "Update success");
+                        });
+
+                    return;
+                }
+            });
+    }
+
     // ===============================
     // DELETE
     // ===============================
@@ -153,6 +200,98 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
 
 
 
+    public void GetAllData<T>(string path, System.Action<bool, string, List<T>> callback)
+    {
+        dbRef.Child(path).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                callback(false, "Lỗi khi đọc dữ liệu", null);
+                return;
+            }
+
+            if (!task.IsCompleted)
+            {
+                callback(false, "Không thể load dữ liệu", null);
+                return;
+            }
+
+            DataSnapshot snapshot = task.Result;
+            List<T> list = new List<T>();
+
+            foreach (var child in snapshot.Children)
+            {
+                try
+                {
+                    string json = child.GetRawJsonValue();
+                    T obj = JsonUtility.FromJson<T>(json);
+                    list.Add(obj);
+                }
+                catch
+                {
+                    Debug.LogError($"⚠ Lỗi convert JSON ở node: {child.Key}");
+                }
+            }
+
+            callback(true, "OK", list);
+        });
+    }
+
+
+
+
+    public void GetDataListByField<T>(
+    string path,
+    string field,
+    string value,
+    System.Action<bool, string, List<T>> callback)
+    {
+        dbRef.Child(path)
+            .OrderByChild(field)
+            .EqualTo(value)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    callback(false, "Lỗi khi truy vấn", null);
+                    return;
+                }
+
+                if (!task.IsCompleted)
+                {
+                    callback(false, "Query chưa hoàn thành", null);
+                    return;
+                }
+
+                DataSnapshot snapshot = task.Result;
+                List<T> list = new List<T>();
+
+                if (!snapshot.Exists)
+                {
+                    callback(true, "Không có dữ liệu", list);
+                    return;
+                }
+
+                foreach (var child in snapshot.Children)
+                {
+                    try
+                    {
+                        string json = child.GetRawJsonValue();
+                        T obj = JsonUtility.FromJson<T>(json);
+                        list.Add(obj);
+                    }
+                    catch
+                    {
+                        Debug.LogError("⚠ Lỗi convert JSON khi đọc dữ liệu query!");
+                    }
+                }
+
+                callback(true, "OK", list);
+            });
+    }
+
+
     // ===============================
     // GENERATE_UNQUIE_ID_PLAYER_AC (READ)
     // ===============================
@@ -233,4 +372,45 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
             callback?.Invoke(true, list, "Get list success");
         });
     }
+
+    // ===============================
+    // CHECK_PALYERS_ROOM
+    // ===============================
+
+    public void CheckPlayerInRoom(string roomId, string playerId, Action<bool, string> callback)
+    {
+        dbRef.Child("PhongChoi_NguoiChoi")
+            .OrderByChild("MaPhongChoi")
+            .EqualTo(roomId)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    callback(false, "error");
+                    return;
+                }
+
+                DataSnapshot snap = task.Result;
+
+                if (!snap.Exists)
+                {
+                    callback(false, "not_found");
+                    return;
+                }
+
+                foreach (var child in snap.Children)
+                {
+                    var item = JsonUtility.FromJson<GameDataModels.PhongChoi_NguoiChoi>(child.GetRawJsonValue());
+                    if (item.MaNguoiChoi == playerId)
+                    {
+                        callback(true, "exist");
+                        return;
+                    }
+                }
+
+                callback(false, "not_found");
+            });
+    }
+
 }

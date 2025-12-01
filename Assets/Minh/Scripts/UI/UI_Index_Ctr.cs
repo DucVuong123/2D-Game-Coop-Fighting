@@ -22,7 +22,6 @@ public class UI_Index_Ctr : MonoBehaviour
        switch(type_Index)
         {
             case Type_Index.Name_Room:
-                Debug.Log(RoomController.Instance.Curent_Room.TenPhongChoi);
                 GetComponent<Text>().text = GetComponent<Text>().text + " " + RoomController.Instance.Curent_Room.TenPhongChoi;
                 break;
             case Type_Index.Id_Room:

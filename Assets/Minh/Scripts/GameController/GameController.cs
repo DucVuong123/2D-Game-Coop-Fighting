@@ -150,8 +150,8 @@ public class GameController : MonoBehaviour
         Main_Player_Acc = new GameDataModels.NguoiChoi();
         DatabaseCtr.Instance.GetDataByField<GameDataModels.NguoiChoi>(
     "NguoiChoi_Account",
-    "MaNguoiChoi",
-    "PLR_123456",
+    "MaTaiKhoan",
+    acc.accountId,
     (ok, msg, player) =>
     {
         if (ok)
