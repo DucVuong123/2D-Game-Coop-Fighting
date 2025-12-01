@@ -69,6 +69,53 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
         });
     }
 
+
+
+    public void UpdateDataByField(
+    string path,
+    string field,
+    string value,
+    Dictionary<string, object> updateData,
+    Action<bool, string> callback)
+    {
+        dbRef.Child(path)
+            .OrderByChild(field)
+            .EqualTo(value)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    callback(false, "Query error: " + task.Exception);
+                    return;
+                }
+
+                DataSnapshot snap = task.Result;
+
+                if (!snap.Exists)
+                {
+                    callback(false, "Không tìm thấy dữ liệu để update");
+                    return;
+                }
+
+                // Update bản ghi đầu tiên phù hợp
+                foreach (var child in snap.Children)
+                {
+                    dbRef.Child(path).Child(child.Key)
+                        .UpdateChildrenAsync(updateData)
+                        .ContinueWithOnMainThread(updateTask =>
+                        {
+                            if (updateTask.IsFaulted)
+                                callback(false, "Update error: " + updateTask.Exception);
+                            else
+                                callback(true, "Update success");
+                        });
+
+                    return;
+                }
+            });
+    }
+
     // ===============================
     // DELETE
     // ===============================

@@ -181,7 +181,6 @@ roomIdKey.ToString(),
                 if (ok)
                 {
                     Debug.Log("👤 Thêm người chơi vào phòng thành công!");
-                    SceneManager.LoadScene(7);
                 }
                 else
                 {
@@ -191,7 +190,7 @@ roomIdKey.ToString(),
         });
         All_Room_Pl = new List<List_All_Room_Players>();
         LoadAllRoomsAndPlayers();
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(5f);
         foreach(List_All_Room_Players room_pl in All_Room_Pl)
         {
             if(room_pl.maPhongChoi == maPhongChoi)
@@ -199,7 +198,8 @@ roomIdKey.ToString(),
                 curent_list_players_room = room_pl;
                 break;
             }    
-        }    
+        }
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(1);
     }
 
@@ -255,5 +255,49 @@ roomIdKey.ToString(),
         );
     }
 
+    public void selcet_Charactor(GameObject Charactor_Select)
+    {
+        if(GameController.Instance.Player_Choice_Char == null)
+        {
+            GameDataModels.NhanVat_NguoiChoi data = new GameDataModels.NhanVat_NguoiChoi()
+            {
+                MaNhanVat = Charactor_Select.name.ToString(),
+                MaNguoiChoi = GameController.Instance.Main_Player_Acc.MaNguoiChoi
+            };
+            DatabaseCtr.Instance.AddData("NguoiChoi_NhanVat", data, (ok, msg2) =>
+            {
+                if (ok)
+                {
+                    Debug.Log("👤 Thêm nhân vật người chơi thành công");
+                    GameController.Instance.Player_Choice_Char = Charactor_Select;
+                }
+                else
+                {
+                    Debug.LogError("Thêm nhân vật người chơi thất bại " + msg2);
+                }
+            });
+        }
+        else
+        {
+            Dictionary<string, object> update = new Dictionary<string, object>();
+            update["MaNhanVat"] = Charactor_Select.name;
 
+            DatabaseCtr.Instance.UpdateDataByField(
+                "NguoiChoi_NhanVat",
+                "MaNguoiChoi",
+                GameController.Instance.Main_Player_Acc.MaNguoiChoi,
+                update,
+                (ok, msg) =>
+                {
+                    if (ok)
+                    {
+                        Debug.Log("🔄 Update nhân vật thành công");
+                        GameController.Instance.Player_Choice_Char = Charactor_Select;
+                    }
+                    else Debug.LogError(msg);
+                }
+            );
+        } 
+            
+    }    
 }

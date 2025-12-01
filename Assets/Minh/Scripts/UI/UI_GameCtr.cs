@@ -10,7 +10,9 @@ public enum type_Ctr
 {
    GameCtr_INGAME,
    RoomCtr_CreateRoom,
-    RoomCtr_JoinRoom
+    RoomCtr_JoinRoom,
+    RoomCtr_SelectCharacter
+
 }
 
 
@@ -24,6 +26,9 @@ public class UI_GameCtr : MonoBehaviour
     [SerializeField] private Text Name_Room;
     [SerializeField] private Text Id_Room;
 
+    [Header("Charactor_Select")]
+    [SerializeField] private GameObject Charactor;
+    [SerializeField] private Image[] Img_Button_Color;
 
 
     EventTrigger events;
@@ -51,6 +56,14 @@ public class UI_GameCtr : MonoBehaviour
 
             case type_Ctr.RoomCtr_JoinRoom: 
                 RoomController.Instance.Join_Room(Id_Room); 
+                break;
+            case type_Ctr.RoomCtr_SelectCharacter:
+                RoomController.Instance.selcet_Charactor(Charactor);
+                GetComponent<Image>().color = Color.red;
+                foreach (Image img in Img_Button_Color)
+                {
+                        img.color = Color.white;
+                }
                 break;
         }
     }

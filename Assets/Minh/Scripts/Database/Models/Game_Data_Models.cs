@@ -84,8 +84,6 @@ namespace GameDataModels
     {
         public string MaNhanVat;
         public string MaNguoiChoi;
-        public string MaSoHuu;
-        public string TrangThaiSoHuu;
     }
 
     [Serializable]
