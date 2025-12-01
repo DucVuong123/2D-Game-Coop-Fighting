@@ -1,6 +1,7 @@
+using System.Globalization;
 using UnityEngine;
-
-public abstract class EyeBotBase : MonoBehaviour
+using PurrNet;
+public abstract class EyeBotBase : NetworkBehaviour
 {
     [Header("Vision Settings")]
     public Transform eyePoint;
@@ -18,7 +19,11 @@ public abstract class EyeBotBase : MonoBehaviour
     private float lastFlipTime = -Mathf.Infinity;
 
     [SerializeField] private string botLayerName ="Enemy";
-
+    protected override void OnSpawned()
+    {
+        base.OnSpawned();
+        enabled = isServer;
+    }
     void Awake()
     {
         int botLayer = LayerMask.NameToLayer(botLayerName);
@@ -28,6 +33,7 @@ public abstract class EyeBotBase : MonoBehaviour
 
     protected virtual void Update()
     {
+        if(isSetup)
         ScanForPlayer();
     }
 

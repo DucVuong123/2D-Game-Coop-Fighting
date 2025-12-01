@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 118915024374297417}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,8 @@ GameObject:
   - component: {fileID: 7611810702343323318}
   - component: {fileID: -186592064592057473}
   - component: {fileID: 4665390621603538430}
-  m_Layer: 7
+  - component: {fileID: 1957189980996545376}
+  m_Layer: 6
   m_Name: Linh_quai_dungyen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,6 +160,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999bf167c8a852f4f84b618a41d1f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   eyePoint: {fileID: 118915024374297417}
   frontRange: 20
   backRange: 15
@@ -189,6 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e132cd60607efd4a834a0aa0fa92fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   healthAmount: 0
   healthAmountMax: 10
 --- !u!61 &4665390621603538430
@@ -237,6 +256,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2, y: 2.88}
   m_EdgeRadius: 0
+--- !u!114 &1957189980996545376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6150030111960028919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817fe5016bd0a2a49a95b6eb338bb132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncParent: 1
+  _interpolateSettings: 7
+  _minBufferSize: 1
+  _maxBufferSize: 2
+  _characterControllerPatch: 0
+  _ownerAuth: 1
+  _interpolationTiming: 0
 --- !u!1 &7988323719195188261
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8296868901167726680}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Atackpoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

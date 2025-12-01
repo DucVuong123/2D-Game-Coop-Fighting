@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5759110153194698825}
   - component: {fileID: 6265093691044145784}
   - component: {fileID: 1097527096390112010}
-  - component: {fileID: 1102007323350670522}
+  - component: {fileID: -9015079048052264913}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -172,7 +172,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1102007323350670522
+--- !u!114 &-9015079048052264913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7793214569999362818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cb763cfb0fbf2c44b3587223c4aad1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 817fe5016bd0a2a49a95b6eb338bb132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _isSetup: 0
@@ -193,6 +193,13 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
-  _trackedBehaviour: {fileID: 5759110153194698825}
-  _trackedFields: []
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncParent: 1
+  _interpolateSettings: 7
+  _minBufferSize: 1
+  _maxBufferSize: 2
+  _characterControllerPatch: 0
   _ownerAuth: 1
+  _interpolationTiming: 0

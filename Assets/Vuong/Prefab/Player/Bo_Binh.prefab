@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: 200002978559157880}
   - component: {fileID: 153750064303436034}
   - component: {fileID: -1773929297408573646}
+  - component: {fileID: 4230530072892526045}
   m_Layer: 8
   m_Name: Bo_Binh
   m_TagString: Untagged
@@ -256,7 +257,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 328
   IsGrounded: 0
 --- !u!114 &3103579514375002414
 MonoBehaviour:
@@ -431,8 +432,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e132cd60607efd4a834a0aa0fa92fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 0
-  healthAmountMax: 100
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  healthAmount:
+    _value: 100
+    _ownerAuth: 0
+    _sendIntervalInSeconds: 0
 --- !u!114 &153750064303436034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +501,32 @@ MonoBehaviour:
   _ownerAuth: 1
   _autoSyncParameters: 1
   _dontSyncParameters: []
+--- !u!114 &4230530072892526045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5132022772858213897}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb763cfb0fbf2c44b3587223c4aad1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _trackedBehaviour: {fileID: 200002978559157880}
+  _trackedFields:
+  - type: 0
+    name: healthAmount
+  _ownerAuth: 1
 --- !u!1 &6598728925875646608
 GameObject:
   m_ObjectHideFlags: 0

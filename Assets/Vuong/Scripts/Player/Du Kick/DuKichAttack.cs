@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-
+﻿using PurrNet;
+using UnityEngine;
 public class DuKichAttack : PlayerAttackBase
 {
     [Header("Raycast Settings")]
@@ -41,6 +41,7 @@ public class DuKichAttack : PlayerAttackBase
     {
         base.Update();
     }
+    [ObserversRpc(bufferLast:true)]
     protected override void TriggerAttackAffterAttackTime()
     {
         hitInfo = Physics2D.Raycast(rayOrigin.position, Vector2.right, checkDistance, Enemy_Layer);

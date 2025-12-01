@@ -15,7 +15,7 @@ MonoBehaviour:
   autoGenerate: 1
   networkOnly: 1
   poolByDefault: 0
-  folder: {fileID: 102900000, guid: 03ef8a701934ac54da3f18ec3c01765f, type: 3}
+  folder: {fileID: 102900000, guid: 00000000000000001000000000000000, type: 3}
   linkedNetworkPrefabs: []
   prefabs:
   - guid: 0f2a3ac6dc6028c4a99d78084b0d0d17
@@ -36,5 +36,37 @@ MonoBehaviour:
     warmupCount: 5
   - guid: 5b935a012e105b5468e8bb80c04050c3
     prefab: {fileID: 7793214569999362818, guid: 5b935a012e105b5468e8bb80c04050c3, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 2530324c820a56b4996bef7a1d00d927
+    prefab: {fileID: 8615225318939442460, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 298aad52096583b44ade78a1f3c28574
+    prefab: {fileID: 3035726959969779914, guid: 298aad52096583b44ade78a1f3c28574, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 347d7e407c099b245bf3b9f43d2609df
+    prefab: {fileID: 4048998831259969164, guid: 347d7e407c099b245bf3b9f43d2609df, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 499ce360b61df1c49a69488918f85fc8
+    prefab: {fileID: 8114327220025460158, guid: 499ce360b61df1c49a69488918f85fc8, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 5a313dd9afcee7e4e977682e73a16ef8
+    prefab: {fileID: 1738084738485682153, guid: 5a313dd9afcee7e4e977682e73a16ef8, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: 6c6491dc6d9d1ba45af525dd0f99ea15
+    prefab: {fileID: 6150030111960028919, guid: 6c6491dc6d9d1ba45af525dd0f99ea15, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: a41414d8fae9ec9499b8f5178f21dffc
+    prefab: {fileID: 8634783168629232308, guid: a41414d8fae9ec9499b8f5178f21dffc, type: 3}
+    pooled: 0
+    warmupCount: 5
+  - guid: b0453d743816b8548baae0f5a83d0efd
+    prefab: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
     pooled: 0
     warmupCount: 5
