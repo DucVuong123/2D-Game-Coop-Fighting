@@ -8,6 +8,8 @@ public class MapController : MonoBehaviour
     public int mapID;
     public TypeMap typeMap;
     public Transform Poss_Player;
+    public bool Unlock;
+    [SerializeField] private GameObject Map_Unlock_next;
 
     public enum TypeMap
     {

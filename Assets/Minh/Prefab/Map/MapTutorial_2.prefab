@@ -26378,6 +26378,8 @@ MonoBehaviour:
   mapID: 0
   typeMap: 0
   Poss_Player: {fileID: 6764099579874731}
+  Unlock: 1
+  Map_Unlock_next: {fileID: 0}
   Instance: {fileID: 0}
 --- !u!1 &9029764520941496998
 GameObject:

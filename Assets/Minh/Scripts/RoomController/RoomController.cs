@@ -299,5 +299,12 @@ roomIdKey.ToString(),
             );
         } 
             
-    }    
+    }
+
+    public void selcet_Map(GameObject Map_Select)
+    {
+
+        GameController.Instance.Main_Map = Map_Select; 
+
+    }
 }
