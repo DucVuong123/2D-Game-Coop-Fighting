@@ -236,7 +236,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   IsGrounded: 0
 --- !u!114 &3103579514375002414
 MonoBehaviour:
@@ -300,7 +300,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 6892351439274958983}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0

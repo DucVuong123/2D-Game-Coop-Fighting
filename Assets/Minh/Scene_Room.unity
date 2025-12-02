@@ -1802,10 +1802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6e00d4c2a60d74fb91c54c5cf8147c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Maps:
-  - {fileID: 8615225318939442460, guid: d4dd73c2a8acf2b4d993eacf6e9021a4, type: 3}
-  - {fileID: 8615225318939442460, guid: cf7efc4cf4f0bb0409c0d441dfab3680, type: 3}
-  - {fileID: 8615225318939442460, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+  Main_Map: {fileID: 0}
   currentMap: {fileID: 0}
   charsList:
   - {fileID: 5132022772858213897, guid: 416902f6013e6b5419aed6af91b32fcb, type: 3}

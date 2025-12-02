@@ -11,7 +11,8 @@ public enum type_Ctr
    GameCtr_INGAME,
    RoomCtr_CreateRoom,
     RoomCtr_JoinRoom,
-    RoomCtr_SelectCharacter
+    RoomCtr_SelectCharacter,
+    RoomCtr_MapSelect
 
 }
 
@@ -29,6 +30,8 @@ public class UI_GameCtr : MonoBehaviour
     [Header("Charactor_Select")]
     [SerializeField] private GameObject Charactor;
     [SerializeField] private Image[] Img_Button_Color;
+
+    [Header("Map_Select")]
 
 
     EventTrigger events;
@@ -64,6 +67,9 @@ public class UI_GameCtr : MonoBehaviour
                 {
                         img.color = Color.white;
                 }
+                break;
+            case type_Ctr.RoomCtr_MapSelect:
+                GetComponent<State_Map>().Instance.click_Select();
                 break;
         }
     }
