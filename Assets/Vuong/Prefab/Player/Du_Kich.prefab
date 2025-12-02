@@ -454,6 +454,7 @@ MonoBehaviour:
     _value: 100
     _ownerAuth: 0
     _sendIntervalInSeconds: 0
+  healthAmountMax: 100
 --- !u!114 &4133994436073878153
 MonoBehaviour:
   m_ObjectHideFlags: 0

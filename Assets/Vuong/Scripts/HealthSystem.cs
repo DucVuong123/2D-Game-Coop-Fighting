@@ -10,9 +10,10 @@ public class HealthSystem : NetworkBehaviour,IHitable
     public event EventHandler OnDead;
 
     [SerializeField] public SyncVar<float> healthAmount=new();
+    public float healthAmountMax;
     private void Awake()
     {
-        
+ 
     }
     private void Start()
     {

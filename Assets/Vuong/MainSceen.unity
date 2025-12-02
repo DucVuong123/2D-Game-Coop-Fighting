@@ -164,6 +164,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1029778792}
     m_Modifications:
     - target: {fileID: -186592064592057473, guid: 6c6491dc6d9d1ba45af525dd0f99ea15, type: 3}
+      propertyPath: healthAmountMax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -186592064592057473, guid: 6c6491dc6d9d1ba45af525dd0f99ea15, type: 3}
       propertyPath: healthAmount._value
       value: 20
       objectReference: {fileID: 0}
@@ -280,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stopPlayingOnDisconnect: 0
   _startServerFlags: 9
-  _startClientFlags: 7
+  _startClientFlags: 5
   _cookieScope: 1
   _dontDestroyOnLoad: 0
   _transport: {fileID: 390726993}
