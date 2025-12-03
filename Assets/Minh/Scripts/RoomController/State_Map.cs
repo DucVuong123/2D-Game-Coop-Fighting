@@ -8,6 +8,7 @@ public class State_Map : MonoBehaviour
 
 
 
+
     public State_Map Instance;
     private void Awake()
     {
