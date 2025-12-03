@@ -77,9 +77,11 @@ public class GameController : NetworkBehaviour
 
     public void nextMap(string _type)
     {
-        if(Main_Map!= null)
-        {
-            if(_type.Contains("Map"))
+
+        //if(Main_Map!= null)
+        //{
+        //    Debug.Log(_type);
+            if (_type.Contains("Map"))
             {
                 if (currentMap != null) Destroy(currentMap);
                 currentMap = Instantiate(Main_Map, Vector2.zero, Quaternion.identity);
@@ -93,12 +95,12 @@ public class GameController : NetworkBehaviour
                 }    
               else
                 {
-                                    if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, FindObjectOfType<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
+                 if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, FindObjectOfType<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
                 Main_Player.transform.position = FindObjectOfType<MapController>().Instance.Poss_Player.position;
                 }    
             } 
             
-        }
+        //}
 
         
     }

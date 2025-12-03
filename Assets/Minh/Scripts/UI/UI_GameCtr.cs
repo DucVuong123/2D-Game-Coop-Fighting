@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
+using PurrNet;
 
 
 
@@ -19,7 +19,7 @@ public enum type_Ctr
 
 
 [RequireComponent(typeof(EventTrigger))]
-public class UI_GameCtr : MonoBehaviour
+public class UI_GameCtr : NetworkBehaviour
 {
     [SerializeField] private type_Ctr type_UI;
 
@@ -35,6 +35,15 @@ public class UI_GameCtr : MonoBehaviour
 
 
     EventTrigger events;
+    protected override void OnSpawned()
+    {
+        base.OnSpawned();
+        Debug.Log(isServer);
+        if (!isServer && type_UI == type_Ctr.GameCtr_INGAME)
+            gameObject.SetActive(false);
+        if (!isServer && type_UI == type_Ctr.RoomCtr_MapSelect)
+            gameObject.transform.parent.gameObject.SetActive(false);
+    }
     private void Start()
     {
         events = GetComponent<EventTrigger>();
@@ -50,9 +59,9 @@ public class UI_GameCtr : MonoBehaviour
     {
         switch (type_UI)
         {
-            case type_Ctr.GameCtr_INGAME:
-                GameController.Instance.In_Game();
-                break;
+            //case type_Ctr.GameCtr_INGAME:
+            //    GameController.Instance.In_Game();
+            //    break;
             case type_Ctr.RoomCtr_CreateRoom:
                 RoomController.Instance.Creat_Room(Name_Room); 
                 break;
@@ -72,5 +81,10 @@ public class UI_GameCtr : MonoBehaviour
                 GetComponent<State_Map>().Instance.click_Select();
                 break;
         }
+    }
+    [ObserversRpc]
+    public void OnClickButtonStart()
+    {
+        GameController.Instance.In_Game();
     }
 }

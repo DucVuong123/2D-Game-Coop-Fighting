@@ -288,8 +288,11 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
-  healthAmount: 0
-  healthAmountMax: 15
+  healthAmount:
+    _value: 100
+    _ownerAuth: 0
+    _sendIntervalInSeconds: 0
+  healthAmountMax: 100
 --- !u!114 &-2710492741437450999
 MonoBehaviour:
   m_ObjectHideFlags: 0

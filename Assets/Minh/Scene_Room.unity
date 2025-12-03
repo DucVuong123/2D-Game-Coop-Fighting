@@ -1006,6 +1006,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cd160cc0c2ab5499d114f9722ba210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   type_UI: 1
   Name_Room: {fileID: 1878627386}
   Id_Room: {fileID: 0}
@@ -1802,6 +1811,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6e00d4c2a60d74fb91c54c5cf8147c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   Main_Map: {fileID: 0}
   currentMap: {fileID: 0}
   charsList:
@@ -3006,9 +3024,6 @@ MonoBehaviour:
     MaPhongChoi: 
     TenPhongChoi: 
   All_Room_Pl: []
-  curent_list_players_room:
-    maPhongChoi: 
-    list_MaNguoiChoi: []
 --- !u!4 &1630087281
 Transform:
   m_ObjectHideFlags: 0
@@ -3276,6 +3291,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cd160cc0c2ab5499d114f9722ba210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   type_UI: 2
   Name_Room: {fileID: 0}
   Id_Room: {fileID: 431586537}

@@ -208,8 +208,11 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
-  healthAmount: 0
-  healthAmountMax: 10
+  healthAmount:
+    _value: 100
+    _ownerAuth: 0
+    _sendIntervalInSeconds: 0
+  healthAmountMax: 100
 --- !u!61 &4665390621603538430
 BoxCollider2D:
   m_ObjectHideFlags: 0

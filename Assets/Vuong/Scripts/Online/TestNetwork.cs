@@ -1,6 +1,5 @@
 using PurrNet;
-using PurrNet.Transports;
-using UnityEditor.PackageManager;
+
 using UnityEngine;
 
 public class TestNetwork : NetworkBehaviour
