@@ -7,7 +7,8 @@ public class Door : MonoBehaviour
     {
         if(collision.TryGetComponent<PlayerMovementBase>(out PlayerMovementBase _Player))
         {
-             GameController.Instance.nextMap();
+             GameController.Instance.nextMap("Map");
+            GameController.Instance.nextMap("Player");
             Debug.Log(GameController.Instance.Main_Player.gameObject.name);
         }    
     }

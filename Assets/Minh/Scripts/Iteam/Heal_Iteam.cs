@@ -4,7 +4,7 @@ public class Heal_Iteam : Iteam_Base
 {
     protected override void OnReciveItem(PlayerMovementBase player)
     {
-        player.gameObject.GetComponent<HealthSystem>().healthAmount += Number_Increast_Index;
+        player.gameObject.GetComponent<HealthSystem>().healthAmount.value += Number_Increast_Index;
         Destroy(this.gameObject, 0.05f);
     }
 

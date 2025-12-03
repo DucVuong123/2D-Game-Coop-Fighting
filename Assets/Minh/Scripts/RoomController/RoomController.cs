@@ -12,6 +12,13 @@ public class List_All_Room_Players
     public  List<string> list_MaNguoiChoi = new List<string>();
 }
 
+public class Players_Infor_Room
+{
+
+    public string maPhongChoi;
+    public string MaNguoiChoi;
+
+}
 
 
 public class RoomController : MonoBehaviour
@@ -22,7 +29,7 @@ public class RoomController : MonoBehaviour
     public static RoomController Instance;
 
     public List<List_All_Room_Players> All_Room_Pl;
-    public List_All_Room_Players curent_list_players_room;
+    public Players_Infor_Room curent_list_players_room;
 
     private void Awake()
     {
@@ -188,19 +195,24 @@ roomIdKey.ToString(),
                 }
             });
         });
+        yield return new WaitForSeconds(3f);
         All_Room_Pl = new List<List_All_Room_Players>();
         LoadAllRoomsAndPlayers();
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         foreach(List_All_Room_Players room_pl in All_Room_Pl)
         {
             if(room_pl.maPhongChoi == maPhongChoi)
             {
-                curent_list_players_room = room_pl;
+                curent_list_players_room = new Players_Infor_Room()
+                {
+                    maPhongChoi = maPhongChoi,
+                    MaNguoiChoi = GameController.Instance.Main_Player_Acc.MaNguoiChoi
+                };
                 break;
             }    
         }
         yield return new WaitForSeconds(0.2f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Scene_In_Room");
     }
 
 

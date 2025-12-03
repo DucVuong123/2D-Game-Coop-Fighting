@@ -4,8 +4,8 @@ using System.Linq;
 using System.Xml;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class GameController : MonoBehaviour
+using PurrNet;
+public class GameController : NetworkBehaviour
 {
     [Header("Map")]
     public GameObject Main_Map;
@@ -75,14 +75,29 @@ public class GameController : MonoBehaviour
         });
     }    
 
-    public void nextMap()
+    public void nextMap(string _type)
     {
         if(Main_Map!= null)
         {
-            if (currentMap != null) Destroy(currentMap);
-            currentMap = Instantiate(Main_Map, Vector2.zero, Quaternion.identity);
-            if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, currentMap.GetComponent<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
-            Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
+            if(_type.Contains("Map"))
+            {
+                if (currentMap != null) Destroy(currentMap);
+                currentMap = Instantiate(Main_Map, Vector2.zero, Quaternion.identity);
+            }
+            else
+            {
+             if(isServer)
+                {
+                    if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, currentMap.GetComponent<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
+                    Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
+                }    
+              else
+                {
+                                    if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, FindObjectOfType<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
+                Main_Player.transform.position = FindObjectOfType<MapController>().Instance.Poss_Player.position;
+                }    
+            } 
+            
         }
 
         
@@ -106,11 +121,11 @@ public class GameController : MonoBehaviour
 
     public void In_Game()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded_InGame;
-        SceneManager.LoadScene(2);
+        //SceneManager.sceneLoaded += OnSceneLoaded_InGame;
+        SceneManager.LoadScene("Scene_MapEdit");
     }
 
-    private void OnSceneLoaded_InGame(Scene scene, LoadSceneMode mode)
+/*    private void OnSceneLoaded_InGame(Scene scene, LoadSceneMode mode)
     {
         // Hủy đăng ký event để không bị gọi lại nhiều lần
         SceneManager.sceneLoaded -= OnSceneLoaded_InGame;
@@ -118,8 +133,14 @@ public class GameController : MonoBehaviour
         nextMap();
 
 
-    }
+    }*/
 
+    public void spawm_Player_Map(string _type)
+    {
+
+      //  if (Main_Player == null) Main_Player = Instantiate(Player_Choice_Char, Vector2.zero, Quaternion.identity);
+        nextMap(_type);
+    }    
 
 
     public bool check_Account_Players_AfterLogin(Account acc)

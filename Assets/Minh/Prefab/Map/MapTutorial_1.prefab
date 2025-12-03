@@ -33688,6 +33688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2508815081840733741}
   - component: {fileID: -117017652273703710}
+  - component: {fileID: -637899335199633496}
   m_Layer: 0
   m_Name: MapTutorial_1
   m_TagString: Untagged
@@ -33734,6 +33735,27 @@ MonoBehaviour:
   Unlock: 1
   Map_Unlock_next: {fileID: 0}
   Instance: {fileID: 0}
+--- !u!114 &-637899335199633496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615225318939442460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d589309a8b0b45f44a0ddd1e2e82017a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!1 &8856769132860077252
 GameObject:
   m_ObjectHideFlags: 0
