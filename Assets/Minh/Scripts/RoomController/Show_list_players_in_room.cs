@@ -13,7 +13,7 @@ public class Show_list_players_in_room : NetworkBehaviour
     }
     private void Start()
     {
-      
+       // RefreshList();
     }
     public void RefreshList()
     {
@@ -51,7 +51,8 @@ public class Show_list_players_in_room : NetworkBehaviour
 
 
             GameObject item = Instantiate(player_InRoom_ItemPrefab, content);
-            item.GetComponent<Inddex_Players_In_Room>().SetData( RoomController.Instance.curent_list_players_room.MaNguoiChoi);
-        
+           if(GameController.Instance.mode is mode_Select.Co_op) item.GetComponent<Inddex_Players_In_Room>().SetData( RoomController.Instance.curent_list_players_room.MaNguoiChoi);
+        else item.GetComponent<Inddex_Players_In_Room>().SetData(RoomController.Instance.curent_list_players_room_PvP.MaNguoiChoi);
+
     }
 }

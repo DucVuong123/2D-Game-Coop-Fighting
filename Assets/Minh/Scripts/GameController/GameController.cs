@@ -5,6 +5,14 @@ using System.Xml;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using PurrNet;
+
+public enum mode_Select
+{
+    Co_op,
+    PvP
+}
+
+
 public class GameController : NetworkBehaviour
 {
     [Header("Map")]
@@ -25,6 +33,11 @@ public class GameController : NetworkBehaviour
 
     [Header("Account_Pl")]
     public GameDataModels.TaiKhoan Account_Player_AffterLogin;
+
+    [Header("Mode_Select")]
+    public mode_Select mode;
+    [SerializeField] private GameObject Map_PvP;
+    public GameObject currentMap_PvP;
 
     public static GameController Instance;
 
@@ -84,20 +97,40 @@ public class GameController : NetworkBehaviour
             if (_type.Contains("Map"))
             {
                 if (currentMap != null) Destroy(currentMap);
-                currentMap = Instantiate(Main_Map, Vector2.zero, Quaternion.identity);
+               if(mode is mode_Select.Co_op) currentMap = Instantiate(Main_Map, Vector2.zero, Quaternion.identity);
+               else currentMap_PvP = Instantiate(Map_PvP, Vector2.zero, Quaternion.identity);
             }
             else
             {
              if(isServer)
+             {
+                    if (Main_Player == null)
                 {
-                    if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, currentMap.GetComponent<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
-                    Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
-                }    
+                    Main_Player = Instantiate(Player_Choice_Char, Vector3.zero, Quaternion.identity);
+                    if (mode is mode_Select.Co_op) Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
+                    else
+                    {
+                        Main_Player.layer = LayerMask.NameToLayer("Player_PvP1");
+                        Main_Player.transform.position = currentMap_PvP.GetComponent<MapController>().Instance.Poss_Player_PvP1.position;
+                    }
+                    return; 
+                }
+            }    
               else
                 {
-                 if (Main_Player == null) { Main_Player = Instantiate(Player_Choice_Char, FindObjectOfType<MapController>().Instance.Poss_Player.position, Quaternion.identity); return; };
-                Main_Player.transform.position = FindObjectOfType<MapController>().Instance.Poss_Player.position;
-                }    
+                 if (Main_Player == null)
+                {
+                    Main_Player = Instantiate(Player_Choice_Char, Vector3.zero, Quaternion.identity);
+                    if (mode is mode_Select.Co_op) Main_Player.transform.position = FindObjectOfType<MapController>().Instance.Poss_Player.position;
+                    else
+                    {
+                        Main_Player.transform.position = FindAnyObjectByType<MapController>().Instance.Poss_Player_PvP2.position;
+                        Main_Player.layer = LayerMask.NameToLayer("Player_PvP2");
+                    }
+
+                }
+
+            }    
             } 
             
         //}

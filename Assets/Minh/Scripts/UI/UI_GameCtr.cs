@@ -12,7 +12,9 @@ public enum type_Ctr
    RoomCtr_CreateRoom,
     RoomCtr_JoinRoom,
     RoomCtr_SelectCharacter,
-    RoomCtr_MapSelect
+    RoomCtr_MapSelect,
+    RoomCtr_CreateRoom_PvP,
+    RoomCtr_JoinRoom_PvP
 
 }
 
@@ -68,6 +70,13 @@ public class UI_GameCtr : NetworkBehaviour
 
             case type_Ctr.RoomCtr_JoinRoom: 
                 RoomController.Instance.Join_Room(Id_Room); 
+                break;
+            case type_Ctr.RoomCtr_CreateRoom_PvP:
+                RoomController.Instance.Creat_Room_PvP(Name_Room);
+                break;
+
+            case type_Ctr.RoomCtr_JoinRoom_PvP:
+                RoomController.Instance.Join_Room_PvP(Id_Room);
                 break;
             case type_Ctr.RoomCtr_SelectCharacter:
                 RoomController.Instance.selcet_Charactor(Charactor);

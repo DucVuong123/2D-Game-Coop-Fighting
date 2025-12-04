@@ -413,4 +413,40 @@ public class DatabaseCtr : MonoBehaviour, IEDatabase
             });
     }
 
+
+    public void CheckPlayerInRoom_PvP(string roomId, string playerId, Action<bool, string> callback)
+    {
+        dbRef.Child("PhongChoi_NguoiChoi_PvP")
+            .OrderByChild("MaPhongChoi")
+            .EqualTo(roomId)
+            .GetValueAsync()
+            .ContinueWithOnMainThread(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    callback(false, "error");
+                    return;
+                }
+
+                DataSnapshot snap = task.Result;
+
+                if (!snap.Exists)
+                {
+                    callback(false, "not_found");
+                    return;
+                }
+
+                foreach (var child in snap.Children)
+                {
+                    var item = JsonUtility.FromJson<GameDataModels.PhongChoi_NguoiChoi>(child.GetRawJsonValue());
+                    if (item.MaNguoiChoi == playerId)
+                    {
+                        callback(true, "exist");
+                        return;
+                    }
+                }
+
+                callback(false, "not_found");
+            });
+    }
 }

@@ -140,6 +140,7 @@ public class Ui_Click : MonoBehaviour
         OnAnimationEnd();
         TextInforModeCoop.SetActive(false);
         tmpText.text = "Chế độ Co-op";
+        GameController.Instance.mode = mode_Select.Co_op;
     }
 
     public void OnclickSelectDK()
@@ -150,6 +151,7 @@ public class Ui_Click : MonoBehaviour
         OnAnimationEnd();
         TextInforModeDK.SetActive(false);
         tmpText.text = "Chế độ Đối kháng";
+        GameController.Instance.mode = mode_Select.PvP;
     }
 
     public void OnSetting()

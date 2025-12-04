@@ -26,13 +26,14 @@ public class Inddex_Players_In_Room : NetworkBehaviour
         txtName.text = _name.value;
     }
 
-    [ServerRpc(requireOwnership:false)]
+    [ServerRpc(requireOwnership: false)]
     public void SetData(string TenNguoiChoi = "null", string TenNhanVatDuocChon = "null")
     {
         _name.value = TenNguoiChoi;
         _select.value = TenNhanVatDuocChon;
         txtName.text = _name.value;
         txt_char_select.text = _select.value;
+
     }
 
 }
