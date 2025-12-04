@@ -1,6 +1,7 @@
 using PurrNet;
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TestNetwork : NetworkBehaviour
 {
@@ -8,17 +9,18 @@ public class TestNetwork : NetworkBehaviour
    [SerializeField] private GameObject duKich_Prefab;
    [SerializeField] private Transform spawn_Pos;
     [SerializeField] private bool isSpawnBoBinh;
+    [SerializeField] private Text textDebug;
     private void Awake()
     {
        
     }
-    protected override void OnSpawned(bool asServer)
-    {
-        base.OnSpawned(asServer);
-        if (asServer)
-            return;
 
-        if(PlayerPrefs.GetInt("Character")==1)
+
+    protected override void OnSpawned()
+    {
+        base.OnSpawned();
+        textDebug.text = "Conected";
+        if (PlayerPrefs.GetInt("Character")==1)
             isSpawnBoBinh = true;
         else
             isSpawnBoBinh = false;
