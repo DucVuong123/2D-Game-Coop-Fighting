@@ -11,10 +11,15 @@ public class MapController : MonoBehaviour
     public bool Unlock;
     [SerializeField] private GameObject Map_Unlock_next;
 
+    [Header("PvP")]
+    public Transform Poss_Player_PvP1;
+    public Transform Poss_Player_PvP2;
+
     public enum TypeMap
     {
         Tutorial,
-        Normalmap
+        Normalmap,
+        PvPMap
     }
 
 

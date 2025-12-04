@@ -6930,6 +6930,17 @@ MonoBehaviour:
   Curent_Room:
     MaPhongChoi: 
     TenPhongChoi: 
+  All_Room_Pl: []
+  curent_list_players_room:
+    maPhongChoi: 
+    MaNguoiChoi: 
+  Curent_Room_PvP:
+    MaPhongChoi: 
+    TenPhongChoi: 
+  All_Room_Pl_PvP: []
+  curent_list_players_room_PvP:
+    maPhongChoi: 
+    MaNguoiChoi: 
 --- !u!4 &1758283919
 Transform:
   m_ObjectHideFlags: 0
