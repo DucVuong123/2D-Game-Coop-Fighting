@@ -2,6 +2,7 @@
 
 public class AudioManage : MonoBehaviour
 {
+    public Transform RootAudio;
     [SerializeField]
     public AudioSource
     audioSource_Ak,
@@ -33,8 +34,13 @@ public class AudioManage : MonoBehaviour
 
     public void Start()
     {
+        AudioSource[] audioSources = RootAudio.GetComponentsInChildren<AudioSource>();
+        foreach (AudioSource audioSource in audioSources) {
+            audioSource.Stop();
+        }
         audioSource_scene.Play(); 
-        
+
+               
     }
     public void StopScene_audio()
     {
@@ -242,20 +248,46 @@ public class AudioManage : MonoBehaviour
     //-------------------------------------
     // BOSS 2: chạy, gọi viện binh
     //-------------------------------------
-    public void startAudioSource_boss1_Run()
+    public void startAudioSource_boss2_Run()
     {
         audioSource_boss2_callReinforce.Stop();
         audioSource_boss2_run.Play();
     }
 
-    public void stopAudioSource_boss1_Run()
+    public void stopAudioSource_boss2_Run()
     {
         audioSource_boss2_run.Stop();
     }
 
-    public void startAudioSource_boss1_CallReinforce()
+    public void startAudioSource_boss2_CallReinforce()
     {
         audioSource_boss2_run.Stop();
+        audioSource_boss2_callReinforce.Play();
+    }
+
+    public void stopAudioSource_boss2_CallReinforce()
+    {
+        audioSource_boss2_callReinforce.Stop();
+    }
+    //-------------------------------------
+    // BOSS 1: dịch chuyển, gọi viện binh, bắn
+    //-------------------------------------
+    public void startAudioSource_boss1_Teleport()
+    {
+        audioSource_boss1_callReinforce.Stop();
+        audioSource_boss1_shoot.Stop();
+        audioSource_boss1_teleport.Play();
+    }
+
+    public void stopAudioSource_boss1_Teleport()
+    {
+        audioSource_boss1_teleport.Stop();
+    }
+
+    public void startAudioSource_boss1_CallReinforce()
+    {
+        audioSource_boss1_teleport.Stop();
+        audioSource_boss1_shoot.Stop();
         audioSource_boss1_callReinforce.Play();
     }
 
@@ -263,41 +295,15 @@ public class AudioManage : MonoBehaviour
     {
         audioSource_boss1_callReinforce.Stop();
     }
-    //-------------------------------------
-    // BOSS 1: dịch chuyển, gọi viện binh, bắn
-    //-------------------------------------
-    public void startAudioSource_boss2_Teleport()
-    {
-        audioSource_boss1_callReinforce.Stop();
-        audioSource_boss1_shoot.Stop();
-        audioSource_boss1_teleport.Play();
-    }
 
-    public void stopAudioSource_boss2_Teleport()
-    {
-        audioSource_boss1_teleport.Stop();
-    }
-
-    public void startAudioSource_boss2_CallReinforce()
-    {
-        audioSource_boss1_teleport.Stop();
-        audioSource_boss1_shoot.Stop();
-        audioSource_boss1_callReinforce.Play();
-    }
-
-    public void stopAudioSource_boss2_CallReinforce()
-    {
-        audioSource_boss2_callReinforce.Stop();
-    }
-
-    public void startAudioSource_boss2_Shoot()
+    public void startAudioSource_boss1_Shoot()
     {
         audioSource_boss1_teleport.Stop();
         audioSource_boss1_callReinforce.Stop();
         audioSource_boss1_shoot.Play();
     }
 
-    public void stopAudioSource_boss2_Shoot()
+    public void stopAudioSource_boss1_Shoot()
     {
         audioSource_boss1_shoot.Stop();
     }
