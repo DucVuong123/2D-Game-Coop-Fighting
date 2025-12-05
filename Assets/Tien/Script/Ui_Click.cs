@@ -13,6 +13,8 @@ public class Ui_Click : MonoBehaviour
     [SerializeField] private Button SelectModeDk;
     [SerializeField] private Button inforMenu;
     [SerializeField] private Button PlayGame;
+    [SerializeField] private Button Players_Admin;
+
 
     [SerializeField] private Button SelectSetting;
     [SerializeField] private Button SaveSetting;
@@ -45,6 +47,20 @@ public class Ui_Click : MonoBehaviour
     private Sprite coopSprite;
     private Sprite dkSprite;
 
+
+    private void Start()
+    {
+        if (GameController.Instance.isAdmin())
+        {
+            Players_Admin.gameObject.SetActive(true);
+        }
+        else
+        {
+            Players_Admin.gameObject.SetActive(false);
+        } 
+            
+            
+    }
     void Awake()
     {
 
@@ -178,5 +194,9 @@ public class Ui_Click : MonoBehaviour
     public void PlayonGame()
     {
         SceneManager.LoadScene(4);
+    }
+    public void Information_Player()
+    {
+        SceneManager.LoadScene("Information_Scene");
     }
 }

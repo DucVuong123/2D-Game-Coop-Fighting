@@ -5,7 +5,8 @@ public class State_Map : MonoBehaviour
 {
     [SerializeField] private GameObject Map;
     [SerializeField] private GameObject[] Others_Map_Img;
-
+    [SerializeField] private GameObject Lock_Img;
+    [SerializeField] private GameObject Select_map_img;
 
 
 
@@ -18,15 +19,24 @@ public class State_Map : MonoBehaviour
     {
         Instance = null;
     }
+    private void Start()
+    {
+        if (Map.GetComponent<MapController>().Unlock)
+        {
+            Lock_Img.SetActive(false);
+        }
+            
+    }
     public void click_Select()
     {
         if(Map.GetComponent<MapController>().Unlock)
         {
+            Select_map_img.SetActive(true);
             RoomController.Instance.selcet_Map(Map);
             transform.GetChild(0).gameObject.SetActive(true);
             foreach (GameObject img in Others_Map_Img)
             {
-                if(img.GetComponent<State_Map>().Instance.GetMap().GetComponent<MapController>().Unlock) img.transform.GetChild(0).gameObject.SetActive(false);
+                if(img.GetComponent<State_Map>().Instance.GetMap().GetComponent<MapController>().Unlock) img.transform.GetChild(2).gameObject.SetActive(false);
             }
         }
         else

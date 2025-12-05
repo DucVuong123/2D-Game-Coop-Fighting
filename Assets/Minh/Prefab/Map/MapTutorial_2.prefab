@@ -26379,8 +26379,11 @@ MonoBehaviour:
   mapID: 0
   typeMap: 0
   Poss_Player: {fileID: 6764099579874731}
-  Unlock: 1
-  Map_Unlock_next: {fileID: 0}
+  Unlock: 0
+  Map_Unlock_next: {fileID: 8615225318939442460, guid: 2530324c820a56b4996bef7a1d00d927, type: 3}
+  score_Map: 0
+  Poss_Player_PvP1: {fileID: 0}
+  Poss_Player_PvP2: {fileID: 0}
   Instance: {fileID: 0}
 --- !u!114 &5784890444770230454
 MonoBehaviour:

@@ -2088,7 +2088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: -217}
+  m_AnchoredPosition: {x: 85, y: -200}
   m_SizeDelta: {x: 475.39, y: 106.19}
   m_Pivot: {x: 0.5, y: 0.52}
 --- !u!114 &625004917
@@ -2137,7 +2137,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1840540698}
         m_TargetAssemblyTypeName: Ui_Click, Assembly-CSharp
-        m_MethodName: PlayonGame
+        m_MethodName: Information_Player
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3186,7 +3186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5407,9 +5407,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1840540698}
-        m_TargetAssemblyTypeName: Ui_Click, Assembly-CSharp
-        m_MethodName: PlayonGame
+      - m_Target: {fileID: 1840540699}
+        m_TargetAssemblyTypeName: ShowListPlayers, Assembly-CSharp
+        m_MethodName: RefreshList
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7340,6 +7340,7 @@ MonoBehaviour:
   SelectModeDk: {fileID: 2081425032}
   inforMenu: {fileID: 640649043}
   PlayGame: {fileID: 989817954}
+  Players_Admin: {fileID: 1351908837}
   SelectSetting: {fileID: 2125708527}
   SaveSetting: {fileID: 1009585787}
   tmpText: {fileID: 1390191719}

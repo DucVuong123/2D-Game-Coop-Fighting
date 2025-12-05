@@ -11,10 +11,11 @@ public class ShowListPlayers : MonoBehaviour
 
     private void Start()
     {
-        RefreshList();
+
     }
     public void RefreshList()
     {
+        panel_list_players.SetActive(true);
         // Xóa item cũ
         foreach (Transform child in content)
         {
