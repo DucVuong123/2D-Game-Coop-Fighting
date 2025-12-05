@@ -16,7 +16,7 @@ public class BoBinhSpecialSkill : PlayerSpecialSkillBase
         info.AttackSpeed = old_Attack;
         is_Use_Skill = false;
     }
-    [ObserversRpc]
+    [ObserversRpc(bufferLast:true)]
     protected override void EnterSpecialSkill()
     {
         if(!is_Use_Skill)

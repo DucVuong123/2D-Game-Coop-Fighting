@@ -9,7 +9,7 @@ public class UIFindPlayerMovement : NetworkBehaviour
         base.OnSpawned(asServer);
         if (asServer)
             return;
-        Invoke(nameof(Delay_FindPlayer), 0.2f);
+        Invoke(nameof(Delay_FindPlayer), 0);
 
     }
 

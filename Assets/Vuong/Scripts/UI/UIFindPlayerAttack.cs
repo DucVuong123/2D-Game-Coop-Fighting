@@ -9,7 +9,7 @@ public class UIFindPlayerAttack : NetworkBehaviour
         base.OnSpawned(asServer);
         if (asServer)
             return;
-        Invoke(nameof(Find_Player), 0.2f);
+        Invoke(nameof(Find_Player), 0);
 
     }
     private void Awake()

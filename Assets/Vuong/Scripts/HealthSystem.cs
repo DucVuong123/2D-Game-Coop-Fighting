@@ -63,7 +63,7 @@ public class HealthSystem : NetworkBehaviour,IHitable
         CheckHealth();
     }
     [ObserversRpc(bufferLast: true)]
-    private void CheckHealth()
+    public void CheckHealth()
     {
         VfxAsset.Instance.SpawnVfx(VfxAsset.Instance.blood_Hit, transform.position, 3);
         if (healthAmount.value <= 0)

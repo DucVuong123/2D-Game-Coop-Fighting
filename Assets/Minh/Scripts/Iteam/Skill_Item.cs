@@ -4,7 +4,7 @@ public class Skill_Item : Iteam_Base
 {
     protected override void OnReciveItem(PlayerMovementBase player)
     {
-        player.gameObject.GetComponent<PlayerSpecialSkillBase>().skill_Amount += Number_Increast_Index;
+        player.gameObject.GetComponent<PlayerSpecialSkillBase>().OnIncreaseSkill(Number_Increast_Index);
         Destroy(this.gameObject, 0.05f);
     }
 

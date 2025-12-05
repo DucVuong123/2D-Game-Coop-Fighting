@@ -1030,7 +1030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 144.1607}
+  m_AnchoredPosition: {x: 0, y: 153.10895}
   m_SizeDelta: {x: 0, y: 4838.2}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &425625348
@@ -1838,7 +1838,7 @@ MonoBehaviour:
   type_UI: 3
   Name_Room: {fileID: 0}
   Id_Room: {fileID: 0}
-  Charactor: {fileID: 5132022772858213897, guid: 416902f6013e6b5419aed6af91b32fcb, type: 3}
+  Charactor: {fileID: 5132022772858213897, guid: de1ec9bb0d2618b41bcb959faaf945fe, type: 3}
   Img_Button_Color:
   - {fileID: 925709587}
 --- !u!114 &744834712
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   type_UI: 3
   Name_Room: {fileID: 0}
   Id_Room: {fileID: 0}
-  Charactor: {fileID: 2683548934471377769, guid: 778d41130600a8d4c838755b184cb2d1, type: 3}
+  Charactor: {fileID: 2683548934471377769, guid: 558333a10a2b694418ca525f7f0ed781, type: 3}
   Img_Button_Color:
   - {fileID: 744834710}
 --- !u!114 &925709585
@@ -4676,6 +4676,8 @@ MonoBehaviour:
   Map: {fileID: 8615225318939442460, guid: cf7efc4cf4f0bb0409c0d441dfab3680, type: 3}
   Others_Map_Img:
   - {fileID: 1972280307}
+  Lock_Img: {fileID: 0}
+  Select_map_img: {fileID: 0}
   Instance: {fileID: 0}
 --- !u!114 &1588137003
 MonoBehaviour:
@@ -5850,6 +5852,8 @@ MonoBehaviour:
   Map: {fileID: 8615225318939442460, guid: d4dd73c2a8acf2b4d993eacf6e9021a4, type: 3}
   Others_Map_Img:
   - {fileID: 1588136997}
+  Lock_Img: {fileID: 0}
+  Select_map_img: {fileID: 0}
   Instance: {fileID: 0}
 --- !u!114 &1972280313
 MonoBehaviour:
@@ -5972,8 +5976,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 484898079}
   m_HandleRect: {fileID: 484898078}
   m_Direction: 2
-  m_Value: 0.96835417
-  m_Size: 0.058443222
+  m_Value: 0.9663899
+  m_Size: 0.05844323
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -39,6 +39,11 @@ public abstract class PlayerSpecialSkillBase : NetworkBehaviour
             OnEnterSkill?.Invoke(this, EventArgs.Empty);
         }    
     }
+    public virtual void OnIncreaseSkill(int amount)
+    {
+        skill_Amount+=amount;
+        OnEnterSkill?.Invoke(this, EventArgs.Empty);
+    }
     public virtual void OnPointerUpSkill()
     {
 

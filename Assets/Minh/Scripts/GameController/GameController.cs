@@ -109,17 +109,19 @@ public class GameController : NetworkBehaviour
             {
              if(isServer)
              {
-                    if (Main_Player == null)
-                {
-                    Main_Player = Instantiate(Player_Choice_Char, Vector3.zero, Quaternion.identity);
-                    if (mode is mode_Select.Co_op) Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
-                    else
-                    {
-                        Main_Player.layer = LayerMask.NameToLayer("Player_PvP1");
-                        Main_Player.transform.position = currentMap_PvP.GetComponent<MapController>().Instance.Poss_Player_PvP1.position;
-                    }
-                    return; 
-                }
+                //    if (Main_Player == null)
+                //{
+                //    Main_Player = Instantiate(Player_Choice_Char, Vector3.zero, Quaternion.identity);
+                //    if (mode is mode_Select.Co_op) Main_Player.transform.position = currentMap.GetComponent<MapController>().Instance.Poss_Player.position;
+                //    else
+                //    {
+                //        Main_Player.layer = LayerMask.NameToLayer("Player_PvP1");
+                //        Main_Player.transform.position = currentMap_PvP.GetComponent<MapController>().Instance.Poss_Player_PvP1.position;
+                //        Debug.Log(LayerMask.LayerToName(gameObject.layer));
+                //        Debug.Log(LayerMask.LayerToName(LayerMask.NameToLayer("Player_PvP2")));
+                //    }
+                //    return; 
+                //}
             }    
               else
                 {
@@ -130,9 +132,7 @@ public class GameController : NetworkBehaviour
                     else
                     {
                         Main_Player.transform.position = FindAnyObjectByType<MapController>().Instance.Poss_Player_PvP2.position;
-                        Main_Player.layer = LayerMask.NameToLayer("Player_PvP2");
                     }
-
                 }
 
             }    

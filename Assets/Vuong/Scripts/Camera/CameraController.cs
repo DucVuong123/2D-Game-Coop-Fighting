@@ -14,7 +14,7 @@ public class CameraController : NetworkBehaviour
         base.OnSpawned(asServer);
         if (asServer)
             return;
-        Invoke(nameof(DelayFindPlayer), 1f);
+        Invoke(nameof(DelayFindPlayer), 2f);
         networkManager.onNetworkStarted += NetworkManager_onNetworkStarted;
       
     }
@@ -40,17 +40,34 @@ public class CameraController : NetworkBehaviour
     }
     private void CameraFolowPlayer()
     {
-        if (player[0] != null && player[1] != null)
+        if(GameController.Instance.mode == mode_Select.Co_op)
         {
-            Vector2 pos = (player[0].transform.position + player[1].transform.position) / 2f;
-            transform.position = new Vector3(pos.x, pos.y, -10);
-        }
-        else if (player[0] == null  || player[1] == null)
+            if (player[0] != null && player[1] != null)
+            {
+                Vector2 pos = (player[0].transform.position + player[1].transform.position) / 2f;
+                transform.position = new Vector3(pos.x, pos.y, -10);
+            }
+            else if (player[0] == null || player[1] == null)
+            {
+                if (player[0] != null)
+                    transform.position = new Vector3(player[0].transform.position.x, player[0].transform.position.y, -10);
+                else if (player[1] != null)
+                    transform.position = new Vector3(player[1].transform.position.x, player[1].transform.position.y, -10);
+            }
+        }    
+        else
         {
-            if (player[0]!=null)
-                transform.position = new Vector3(player[0].transform.position.x, player[0].transform.position.y, -10);
-            else if(player[1] != null)
-                transform.position = new Vector3(player[1].transform.position.x, player[1].transform.position.y, -10);
+            if(isServer)
+            {
+                if (player[0] != null)
+                    transform.position = new Vector3(player[0].transform.position.x, player[0].transform.position.y, -10);
+            }
+            else if(isClient)
+            {
+                 if (player[1] != null)
+                    transform.position = new Vector3(player[1].transform.position.x, player[1].transform.position.y, -10);
+            }
         }
+       
     }    
 }
