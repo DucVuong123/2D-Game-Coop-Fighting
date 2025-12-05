@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using PurrNet;
+using UnityEngine.SceneManagement;
 
 
 
@@ -14,7 +15,8 @@ public enum type_Ctr
     RoomCtr_SelectCharacter,
     RoomCtr_MapSelect,
     RoomCtr_CreateRoom_PvP,
-    RoomCtr_JoinRoom_PvP
+    RoomCtr_JoinRoom_PvP,
+    Information_go_back
 
 }
 
@@ -88,6 +90,9 @@ public class UI_GameCtr : NetworkBehaviour
                 break;
             case type_Ctr.RoomCtr_MapSelect:
                 GetComponent<State_Map>().Instance.click_Select();
+                break;
+            case type_Ctr.Information_go_back:
+                SceneManager.LoadScene("MenuGame");
                 break;
         }
     }

@@ -50,6 +50,7 @@ public class Ui_Click : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(GameController.Instance.isAdmin());
         if (GameController.Instance.isAdmin())
         {
             Players_Admin.gameObject.SetActive(true);
@@ -193,7 +194,8 @@ public class Ui_Click : MonoBehaviour
     }
     public void PlayonGame()
     {
-        SceneManager.LoadScene(4);
+        if(GameController.Instance.mode == mode_Select.Co_op) SceneManager.LoadScene("Scene_Room");
+        else SceneManager.LoadScene("CreateRoomPvP");
     }
     public void Information_Player()
     {

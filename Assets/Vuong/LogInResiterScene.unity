@@ -535,7 +535,7 @@ MonoBehaviour:
   mode: 0
   Map_PvP: {fileID: 0}
   currentMap_PvP: {fileID: 0}
-  Panel_TongKet: {fileID: 0}
+  Panel_TongKet: {fileID: 460190332076019982, guid: 2a3c06a392354974c948bd5fb0ebca9d, type: 3}
 --- !u!4 &319656165
 Transform:
   m_ObjectHideFlags: 0
