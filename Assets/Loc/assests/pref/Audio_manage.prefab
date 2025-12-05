@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4189bd28048ebf545aa3179e19e24882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RootAudio: {fileID: 6672781694444980592}
   audioSource_Ak: {fileID: 5950755822326374408}
   audioSource_scene: {fileID: 5104147517350707968}
   audioSource_Ak_run: {fileID: 3316207559660243361}
@@ -1500,10 +1501,8 @@ MonoBehaviour:
   audioSource_heli_shoot: {fileID: 6073969934009195012}
   audioSource_heli_explode: {fileID: 8493154036637599326}
   AudioSource_gunner_idle_shoot: {fileID: 2088004576338775384}
-  AudioSource_gunner_idle_explode: {fileID: 0}
   AudioSource_gunner_move: {fileID: 1203414600366884748}
   AudioSource_gunner_move_shoot: {fileID: 7698507939406513497}
-  AudioSource_gunner_move_explode: {fileID: 0}
   audioSource_boss2_run: {fileID: 7878048669065791666}
   audioSource_boss2_callReinforce: {fileID: 2353376235839677206}
   audioSource_boss1_teleport: {fileID: 3426336025294696677}
