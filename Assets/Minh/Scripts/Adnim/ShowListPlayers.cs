@@ -39,4 +39,5 @@ public class ShowListPlayers : MonoBehaviour
         });
     }
 
+    public void Close_list()=> panel_list_players.SetActive(false);
 }

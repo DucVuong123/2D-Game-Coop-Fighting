@@ -103,7 +103,6 @@ public class UIAuthController : MonoBehaviour
                 MaTranDau = "",
                 MaTaiKhoan = GameController.Instance.Account_Player_AffterLogin.MaTaiKhoan 
             };
-
             DatabaseCtr.Instance.AddData("NguoiChoi_Account", newPlayer, (addSuccess, addMessage) =>
             {
                 if (addSuccess)
@@ -111,6 +110,7 @@ public class UIAuthController : MonoBehaviour
                 else
                     Debug.LogError("Tạo người chơi mới thất bại: " + addMessage);
             });
+            GameController.Instance.Main_Player_Acc = newPlayer;
         });
         PlayerPrefs.SetString("accountId", GameController.Instance.Account_Player_AffterLogin.MaTaiKhoan);
         SceneManager.LoadScene("MenuGame");

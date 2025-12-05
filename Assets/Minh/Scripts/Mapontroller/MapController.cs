@@ -54,7 +54,7 @@ public class MapController : NetworkBehaviour
 
     public string Unlock_NextMap()
     {
-        Map_Unlock_next.GetComponent<MapController>().Unlock = true;
+       // Map_Unlock_next.GetComponent<MapController>().Unlock = true;
         return Map_Unlock_next.name;
     }    
 }
