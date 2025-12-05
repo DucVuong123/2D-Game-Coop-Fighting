@@ -16,10 +16,11 @@ public class TestNetwork : NetworkBehaviour
     }
 
 
-    protected override void OnSpawned()
+    protected override void OnSpawned(bool asServer)
     {
-        base.OnSpawned();
-        textDebug.text = "Conected";
+        base.OnSpawned(asServer);
+        if (asServer)
+            return;
         if (PlayerPrefs.GetInt("Character")==1)
             isSpawnBoBinh = true;
         else

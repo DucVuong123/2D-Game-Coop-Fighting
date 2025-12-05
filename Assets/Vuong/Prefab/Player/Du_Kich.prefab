@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5607701661421223384}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Ground_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7958981926802068495}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Ladder_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 7854206916734771316}
   - component: {fileID: 4133994436073878153}
   - component: {fileID: -31824021805485312}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Du_Kich
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 328
+    m_Bits: 128
   IsGrounded: 0
 --- !u!114 &1602108724347602895
 MonoBehaviour:
@@ -301,7 +301,7 @@ MonoBehaviour:
   checkDistance: 1
   Enemy_Layer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   rayOrigin: {fileID: 7593599755715345085}
 --- !u!114 &655958094946987374
 MonoBehaviour:
@@ -382,7 +382,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 7958981926802068495}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0
@@ -520,7 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526768401368133504}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Grass_Check_Pos (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3267426894086151798}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Grenade_Spawn_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7593599755715345085}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Attack_Origin_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 281562360007397405, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 750379776061278153, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -714,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1654335160383870243, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Name
@@ -722,7 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5056774024462078938, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -730,7 +730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9010158263479292823, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

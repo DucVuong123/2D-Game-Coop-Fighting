@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4015287802084902698}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 7351108467664835552}
   - component: {fileID: 3730501748623850883}
   - component: {fileID: 457239579157328765}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Boss_chapter_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,15 +159,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c64669eea04281e41b2a661cd5cf3fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   eyePoint: {fileID: 4015287802084902698}
   frontRange: 10000
   backRange: 10000
   playerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
   faceRight: 1
   flipCooldown: 0.5
   botLayerName: Enemy
@@ -196,8 +205,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e132cd60607efd4a834a0aa0fa92fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 0
-  healthAmountMax: 40
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  healthAmount:
+    _value: 100
+    _ownerAuth: 0
+    _sendIntervalInSeconds: 0
+  healthAmountMax: 100
 --- !u!1 &5084403628179453175
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4078977342472017541}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Spanw_Linh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7219432476615056301}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Attackpoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,6 +289,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 963493662723629268}
     m_Modifications:
+    - target: {fileID: 281562360007397405, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1364691456491978169, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -360,9 +385,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1654335160383870243, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Name
       value: Health_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010158263479292823, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

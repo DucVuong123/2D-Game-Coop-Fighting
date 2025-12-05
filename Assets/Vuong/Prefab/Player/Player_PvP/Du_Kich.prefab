@@ -274,7 +274,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 264
+    m_Bits: 128
   IsGrounded: 0
 --- !u!114 &1602108724347602895
 MonoBehaviour:
@@ -301,7 +301,7 @@ MonoBehaviour:
   checkDistance: 1
   Enemy_Layer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   rayOrigin: {fileID: 7593599755715345085}
 --- !u!114 &655958094946987374
 MonoBehaviour:
@@ -507,7 +507,7 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
-  _animator: {fileID: 809317491705523178}
+  _animator: {fileID: 0}
   _ownerAuth: 1
   _autoSyncParameters: 1
   _dontSyncParameters: []

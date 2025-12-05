@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1036966108788691395}
   - component: {fileID: 8648278419868999579}
   - component: {fileID: -5669789752189371772}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,11 +103,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f758f0494ec7e1e49a2501320826fda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   dame: 10
   dir: 10
   targetLayerName:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
   speed: 10
 --- !u!61 &1036966108788691395
 BoxCollider2D:

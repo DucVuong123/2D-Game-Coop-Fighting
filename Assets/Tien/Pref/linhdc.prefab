@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1870956933521943376}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Eyepoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2784656433134345523}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: PoinB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4897019629694873069}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Actackpoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 982473984388269264}
   - component: {fileID: 4691654895961832334}
   - component: {fileID: 6605719339804135757}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: linhdc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,15 +288,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf94c6b94f55ed84596bf056fcfabb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   eyePoint: {fileID: 1870956933521943376}
   frontRange: 20
   backRange: 10
   playerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
   faceRight: 1
   flipCooldown: 0.5
   botLayerName: Enemy
@@ -321,7 +330,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e132cd60607efd4a834a0aa0fa92fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 0
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  healthAmount:
+    _value: 0
+    _ownerAuth: 0
+    _sendIntervalInSeconds: 0
   healthAmountMax: 20
 --- !u!1 &8865295062798260169
 GameObject:
@@ -332,7 +353,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5309155410699098346}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: PoinA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,6 +383,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4536417444963312715}
     m_Modifications:
+    - target: {fileID: 281562360007397405, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1364691456491978169, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -454,9 +479,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1654335160383870243, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Name
       value: Health_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010158263479292823, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

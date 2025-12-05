@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6892351439274958983}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Ladder_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168968509996185058}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Bullet_Spanw_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 200002978559157880}
   - component: {fileID: 153750064303436034}
   - component: {fileID: -1773929297408573646}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Bo_Binh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ MonoBehaviour:
   radius: 0.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 328
+    m_Bits: 128
   IsGrounded: 0
 --- !u!114 &3103579514375002414
 MonoBehaviour:
@@ -356,7 +356,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 6892351439274958983}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0
@@ -510,7 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9105795246708484150}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Ground_Check_Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 281562360007397405, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 750379776061278153, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1654335160383870243, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Name
@@ -650,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1905808128382998008, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5056774024462078938, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -658,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9010158263479292823, guid: b0453d743816b8548baae0f5a83d0efd, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
