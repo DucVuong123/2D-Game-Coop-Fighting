@@ -11,6 +11,11 @@ public class MapController : MonoBehaviour
     public bool Unlock;
     [SerializeField] private GameObject Map_Unlock_next;
 
+
+    [Header("Score")]
+    public int score_Map;
+
+
     [Header("PvP")]
     public Transform Poss_Player_PvP1;
     public Transform Poss_Player_PvP2;
@@ -28,9 +33,19 @@ public class MapController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        score_Map = 0;
     }
     private void OnDestroy()
     {
         Instance = null;
     }
+
+
+    public void Increast_Point(int _point) => score_Map += _point;
+
+    public string Unlock_NextMap()
+    {
+        Map_Unlock_next.GetComponent<MapController>().Unlock = true;
+        return Map_Unlock_next.name;
+    }    
 }

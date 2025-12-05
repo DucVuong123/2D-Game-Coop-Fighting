@@ -39,6 +39,11 @@ public class GameController : NetworkBehaviour
     [SerializeField] private GameObject Map_PvP;
     public GameObject currentMap_PvP;
 
+    [Header("TongKet")]
+    public GameObject Panel_TongKet;
+
+
+
     public static GameController Instance;
 
     private void Awake()
@@ -178,7 +183,7 @@ public class GameController : NetworkBehaviour
     }    
 
 
-    public bool check_Account_Players_AfterLogin(Account acc)
+    public void check_Account_Players_AfterLogin(Account acc, Action<bool> callback)
     {
 
         /*Main_Player_Acc = new GameDataModels.NguoiChoi();
@@ -211,16 +216,28 @@ public class GameController : NetworkBehaviour
         {
             Main_Player_Acc = player;
             Debug.Log($"Người chơi đã tồn tại: {player.TenNguoiChoi}");
+            callback(true);
         }
         else
         {
             Debug.Log("Người chơi là người chơi mới");
+            callback(false);
         }
     }
 );
 
 
-        return Main_Player_Acc.MaNguoiChoi != null;
     }
 
+
+    public void OnEndMap()
+    {
+        GameObject Panel_tk = Instantiate(Panel_TongKet, GameObject.Find("Canvas_Scene_Play").transform);
+        Panel_tk.GetComponent<TongKet_EndMap>().setData(currentMap.GetComponent<MapController>().Instance.score_Map.ToString(), currentMap.GetComponent<MapController>().Instance.Unlock_NextMap());
+    }    
+
+    public bool isAdmin()
+    {
+        return Account_Player_AffterLogin.TenDangNhap.Contains("Admin");
+    }    
 }

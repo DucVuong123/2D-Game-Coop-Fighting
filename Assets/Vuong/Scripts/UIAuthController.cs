@@ -59,16 +59,21 @@ public class UIAuthController : MonoBehaviour
                     SoDienThoai = acc.phone,
                     MatKhau = acc.passwordHash
                 };
-                if (!GameController.Instance.check_Account_Players_AfterLogin(acc))
+
+                GameController.Instance.check_Account_Players_AfterLogin(acc, (exists) =>
                 {
-                    Panel_Confirm_Username.SetActive(true);
-                }    
-                else if (GameController.Instance.check_Account_Players_AfterLogin(acc))
-                {
-                    // Lưu accountId vào PlayerPrefs để giữ session
-                    PlayerPrefs.SetString("accountId", acc.accountId);
-                    SceneManager.LoadScene(2);
-                }
+                    if (exists)
+                    {
+                        PlayerPrefs.SetString("accountId", acc.accountId);
+                        SceneManager.LoadScene("MenuGame");
+                    }
+                    else
+                    {
+                        Panel_Confirm_Username.SetActive(true);
+                        Debug.Log("Log");
+                    }
+                });
+
             }
             else
             {
@@ -108,7 +113,7 @@ public class UIAuthController : MonoBehaviour
             });
         });
         PlayerPrefs.SetString("accountId", GameController.Instance.Account_Player_AffterLogin.MaTaiKhoan);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("MenuGame");
     }
     
 }
