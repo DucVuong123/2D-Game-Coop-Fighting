@@ -1,16 +1,36 @@
+using System.Linq;
 using UnityEngine;
-
-public class CameraController : MonoBehaviour
+using PurrNet;
+public class CameraController : NetworkBehaviour
 {
-    private PlayerBase player;
+    public PlayerBase[] player = new PlayerBase[10];
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         
     }
+   protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        if (asServer)
+            return;
+        Invoke(nameof(DelayFindPlayer), 1f);
+        networkManager.onNetworkStarted += NetworkManager_onNetworkStarted;
+      
+    }
+
+    private void NetworkManager_onNetworkStarted(NetworkManager manager, bool asServer)
+    {
+        DelayFindPlayer();
+    }
+
+    private void DelayFindPlayer()
+    {
+        player = FindObjectsOfType<PlayerBase>();
+    }
     void Start()
     {
-        player = FindObjectOfType<PlayerBase>();
+        
     }
 
     // Update is called once per frame
@@ -20,7 +40,17 @@ public class CameraController : MonoBehaviour
     }
     private void CameraFolowPlayer()
     {
-        if(player!=null)
-        transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+        if (player[0] != null && player[1] != null)
+        {
+            Vector2 pos = (player[0].transform.position + player[1].transform.position) / 2f;
+            transform.position = new Vector3(pos.x, pos.y, -10);
+        }
+        else if (player[0] == null  || player[1] == null)
+        {
+            if (player[0]!=null)
+                transform.position = new Vector3(player[0].transform.position.x, player[0].transform.position.y, -10);
+            else if(player[1] != null)
+                transform.position = new Vector3(player[1].transform.position.x, player[1].transform.position.y, -10);
+        }
     }    
 }

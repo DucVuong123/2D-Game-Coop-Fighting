@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackSpeed: 0.5
-  Damge: 0.5
+  Damge: 50
   WalkSpeed: 5
   RunSpeed: 8
   JumpForce: 22
@@ -298,7 +298,7 @@ MonoBehaviour:
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
   isAttack: 0
-  checkDistance: 1
+  checkDistance: 4
   Enemy_Layer:
     serializedVersion: 2
     m_Bits: 256

@@ -1,14 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
-
-public class UIFindPlayerSpecialSkill : MonoBehaviour
+using PurrNet;
+public class UIFindPlayerSpecialSkill : NetworkBehaviour
 {
     private PlayerSpecialSkillBase m_Player;
    [SerializeField] private Text skill_Amount_Text;
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        if (asServer)
+            return;
+        Invoke(nameof(FinPlayer_Delay), 0.2f);
+
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
-        Invoke(nameof(FinPlayer_Delay), 0.2f);
+  
     }
     private void Start()
     {

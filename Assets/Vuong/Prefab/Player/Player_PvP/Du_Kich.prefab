@@ -103,7 +103,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.1, y: 2, z: 0}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5607701661421223384}
   - {fileID: 7958981926802068495}
@@ -298,7 +298,7 @@ MonoBehaviour:
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
   isAttack: 0
-  checkDistance: 1
+  checkDistance: 4
   Enemy_Layer:
     serializedVersion: 2
     m_Bits: 256

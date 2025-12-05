@@ -1,8 +1,8 @@
 using UnityEngine;
+using PurrNet;
 
 
-
-public class MapController : MonoBehaviour
+public class MapController : NetworkBehaviour
 {
     [Header("InfoMap")]
     public int mapID;
@@ -13,7 +13,7 @@ public class MapController : MonoBehaviour
 
 
     [Header("Score")]
-    public int score_Map;
+    public SyncVar<int> score_Map = new(0);
 
 
     [Header("PvP")]
@@ -27,21 +27,30 @@ public class MapController : MonoBehaviour
         PvPMap
     }
 
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        if (asServer)
+            return;
+        Resert_Point();
 
+    }
     public MapController Instance;
 
     private void Awake()
     {
         Instance = this;
-        score_Map = 0;
+
     }
     private void OnDestroy()
     {
         Instance = null;
     }
 
-
-    public void Increast_Point(int _point) => score_Map += _point;
+    [ServerRpc]
+    public void Increast_Point(int _point) => score_Map.value += _point;
+    [ServerRpc]
+    public void Resert_Point() => score_Map.value =0;
 
     public string Unlock_NextMap()
     {

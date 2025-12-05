@@ -44,7 +44,7 @@ public class DuKichAttack : PlayerAttackBase
     [ObserversRpc(bufferLast:true)]
     protected override void TriggerAttackAffterAttackTime()
     {
-        hitInfo = Physics2D.Raycast(rayOrigin.position, Vector2.right, checkDistance, Enemy_Layer);
+        hitInfo = Physics2D.Raycast(rayOrigin.position, Vector2.right, checkDistance*Mathf.Sign(transform.localScale.x), Enemy_Layer);
 
         // debug hiển thị tia trong Scene view
         if (hitInfo.collider != null)
@@ -59,7 +59,7 @@ public class DuKichAttack : PlayerAttackBase
     {
         Gizmos.color = Color.blue;
         Vector2 start = rayOrigin.position;
-        Vector2 end = start + Vector2.right * checkDistance;
+        Vector2 end = start + Vector2.right * checkDistance * Mathf.Sign(transform.localScale.x);
         Gizmos.DrawLine(start, end);
     }
 }

@@ -490,7 +490,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1506308655
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1955448553306655712, guid: d6de7e5d3c44a4e458171d89c72ee763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4476,7 +4476,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1506308655
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1955448553306655712, guid: d6de7e5d3c44a4e458171d89c72ee763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -69197,7 +69197,7 @@ MonoBehaviour:
   mapID: 1
   typeMap: 1
   Poss_Player: {fileID: 8007425588433387435}
-  Unlock: 0
+  Unlock: 1
   Map_Unlock_next: {fileID: 0}
   score_Map: 0
   Poss_Player_PvP1: {fileID: 0}

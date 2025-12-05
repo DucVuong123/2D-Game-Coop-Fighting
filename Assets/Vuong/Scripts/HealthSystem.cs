@@ -15,13 +15,41 @@ public class HealthSystem : NetworkBehaviour,IHitable
     {
  
     }
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+        if (asServer)
+        {
+            SetEvent();
+            return;
+        }
+
+
+    }
     private void Start()
+    {
+       
+    }
+    [ObserversRpc(bufferLast: true)]
+    private void SetEvent()
     {
         OnDead += HealthSystem_OnDead;
     }
-
+    
     private void HealthSystem_OnDead(object sender, EventArgs e)
     {
+        Debug.Log("Dead");
+        if(gameObject.GetComponent<Boss>() != null)
+        {
+            Debug.Log("Minhhhhhhhhhhhhh");
+            GameController.Instance.OnEndMap();
+
+            Destroy(gameObject);
+            return;
+        }
+        if (gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            GameController.Instance.currentMap.GetComponent<MapController>().Instance.Increast_Point(10);
+
         Destroy(gameObject);
     }
     [ServerRpc]

@@ -1,12 +1,16 @@
 using UnityEngine;
-
-public class UIFindPlayerMovement : MonoBehaviour
+using PurrNet;
+public class UIFindPlayerMovement : NetworkBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is create
     private PlayerMovementBase m_Player;
-    private void Awake()
+    protected override void OnSpawned(bool asServer)
     {
+        base.OnSpawned(asServer);
+        if (asServer)
+            return;
         Invoke(nameof(Delay_FindPlayer), 0.2f);
+
     }
 
     private void Delay_FindPlayer() => m_Player = FindObjectOfType<PlayerMovementBase>();
