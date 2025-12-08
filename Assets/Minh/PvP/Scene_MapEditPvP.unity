@@ -129,8 +129,6 @@ GameObject:
   - component: {fileID: 82043540}
   - component: {fileID: 82043538}
   - component: {fileID: 82043541}
-  - component: {fileID: 82043543}
-  - component: {fileID: 82043542}
   m_Layer: 0
   m_Name: NetworkManage
   m_TagString: Untagged
@@ -189,7 +187,7 @@ MonoBehaviour:
   _startClientFlags: 7
   _cookieScope: 1
   _dontDestroyOnLoad: 0
-  _transport: {fileID: 82043542}
+  _transport: {fileID: 82043538}
   _networkPrefabs: {fileID: 11400000, guid: 098178fa277e6054d85b4c728bd5ea33, type: 2}
   _networkAssets: {fileID: 0}
   _networkRules: {fileID: 11400000, guid: 747e061513ae392488b31690e00d22c7, type: 2}
@@ -197,42 +195,6 @@ MonoBehaviour:
   _authenticator: {fileID: 0}
   _tickRate: 20
   _patchLingeringProcessBug: 0
---- !u!114 &82043542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82043537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 332e746c3c3253246aacad4d5559f1fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _masterServer: https://purrtransport.purrservers.com/
-  _roomName: 1245bf3a9054490b8c1e7efeb64b8d7b
-  _region: japan
-  _host: purrtransport-japan.purrservers.com
-  _timeoutInSeconds: 5
-  _pollEventsInUpdate: 0
---- !u!114 &82043543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82043537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef882a0e84c58df4885b0e1e59320b49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkInterval: 0.33
-  placement: 1
-  _displayType: 1
-  _displayTarget: 6
-  fontSize: 13
-  textColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &132281000
 GameObject:
   m_ObjectHideFlags: 0

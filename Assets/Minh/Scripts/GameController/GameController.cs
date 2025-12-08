@@ -128,11 +128,7 @@ public class GameController : NetworkBehaviour
                  if (Main_Player == null)
                 {
                     Main_Player = Instantiate(Player_Choice_Char, Vector3.zero, Quaternion.identity);
-                    if (mode is mode_Select.Co_op) Main_Player.transform.position = FindObjectOfType<MapController>().Instance.Poss_Player.position;
-                    else
-                    {
-                        Main_Player.transform.position = FindAnyObjectByType<MapController>().Instance.Poss_Player_PvP2.position;
-                    }
+                    Invoke(nameof(DelaySetPos), 1);
                 }
 
             }    
@@ -143,7 +139,14 @@ public class GameController : NetworkBehaviour
         
     }
 
-
+    private void DelaySetPos()
+    {
+        if (mode is mode_Select.Co_op) Main_Player.transform.position =/* FindObjectOfType<MapController>().Instance.Poss_Player.position*/new Vector2(0,3);
+        else
+        {
+            Main_Player.transform.position = FindAnyObjectByType<MapController>().Instance.Poss_Player_PvP2.position/*new Vector2(0, 6)*/;
+        }
+    }    
     public void Get_Main_Player(PlayerMovementBase _Charactor)
     {
         switch (_Charactor)
@@ -162,7 +165,10 @@ public class GameController : NetworkBehaviour
     public void In_Game()
     {
         //SceneManager.sceneLoaded += OnSceneLoaded_InGame;
+        if(mode == mode_Select.Co_op)
         SceneManager.LoadScene("Scene_MapEdit");
+        else
+            SceneManager.LoadScene("Scene_MapEditPvP");
     }
 
 /*    private void OnSceneLoaded_InGame(Scene scene, LoadSceneMode mode)
@@ -233,11 +239,11 @@ public class GameController : NetworkBehaviour
     public void OnEndMap()
     {
         GameObject Panel_tk = Instantiate(Panel_TongKet, GameObject.Find("Canvas_Scene_Play").transform);
-        Panel_tk.GetComponent<TongKet_EndMap>().setData(currentMap.GetComponent<MapController>().Instance.score_Map.ToString(), currentMap.GetComponent<MapController>().Instance.Unlock_NextMap());
+        Panel_tk.GetComponent<TongKet_EndMap>().setData("Tổng điểm: "+currentMap.GetComponent<MapController>().Instance.score_Map.value.ToString(),"Màn chơi mở khóa: "+ currentMap.GetComponent<MapController>().Instance.Unlock_NextMap());
     }    
 
     public bool isAdmin()
     {
-        return Account_Player_AffterLogin.TenDangNhap.Contains("Admin");
+        return Account_Player_AffterLogin.TenDangNhap == "Admin";
     }    
 }

@@ -10,7 +10,7 @@ public class UIFindPlayerSpecialSkill : NetworkBehaviour
         base.OnSpawned(asServer);
         if (asServer)
             return;
-        Invoke(nameof(FinPlayer_Delay), 0);
+        Invoke(nameof(FinPlayer_Delay), 0.2f);
 
     }
 

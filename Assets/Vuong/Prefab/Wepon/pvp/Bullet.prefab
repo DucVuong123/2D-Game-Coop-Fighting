@@ -116,7 +116,7 @@ MonoBehaviour:
   dir: 10
   targetLayerName:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 8
   speed: 10
 --- !u!61 &1036966108788691395
 BoxCollider2D:

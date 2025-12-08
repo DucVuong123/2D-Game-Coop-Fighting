@@ -108,7 +108,7 @@ MonoBehaviour:
   maxDamage: 50
   damageMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 256
 --- !u!58 &6265093691044145784
 CircleCollider2D:
   m_ObjectHideFlags: 0

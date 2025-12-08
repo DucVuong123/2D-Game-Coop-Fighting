@@ -9,7 +9,7 @@ public class UIFindPlayerClamLadder : NetworkBehaviour
         base.OnSpawned(asServer);
         if (asServer)
             return;
-        Invoke(nameof(Find_Player), 0);
+        Invoke(nameof(Find_Player), 0.2f);
 
     }
     private void Awake()

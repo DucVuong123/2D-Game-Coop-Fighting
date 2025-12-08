@@ -382,7 +382,7 @@ MonoBehaviour:
   pos_Check_Ladder: {fileID: 7958981926802068495}
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 64
   clamp_Speed: 8
   isClimbingUp: 0
   isClimbingDown: 0

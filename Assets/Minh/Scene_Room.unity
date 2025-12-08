@@ -170,6 +170,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1ec601b13ec5a4eae8080c3aa16ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &132281003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +415,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294a73b073d869143b1cd501d5dd1479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &210245414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,6 +1307,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593f17bb1c435f744b324eeb957764ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
   skill_Amount_Text: {fileID: 670817763}
 --- !u!114 &689661152
 MonoBehaviour:
@@ -1621,6 +1648,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294a73b073d869143b1cd501d5dd1479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &957208359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1025785371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,6 +1876,10 @@ MonoBehaviour:
     Email: 
     SoDienThoai: 
     MatKhau: 
+  mode: 0
+  Map_PvP: {fileID: 0}
+  currentMap_PvP: {fileID: 0}
+  Panel_TongKet: {fileID: 0}
 --- !u!4 &1025785372
 Transform:
   m_ObjectHideFlags: 0
@@ -2422,6 +2462,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f620d4277b6b89d46a2ceaf2785fa511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &1273809716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2620,6 +2669,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1ec601b13ec5a4eae8080c3aa16ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &1349955791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3007,7 +3065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1630087280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3024,6 +3082,16 @@ MonoBehaviour:
     MaPhongChoi: 
     TenPhongChoi: 
   All_Room_Pl: []
+  curent_list_players_room:
+    maPhongChoi: 
+    MaNguoiChoi: 
+  Curent_Room_PvP:
+    MaPhongChoi: 
+    TenPhongChoi: 
+  All_Room_Pl_PvP: []
+  curent_list_players_room_PvP:
+    maPhongChoi: 
+    MaNguoiChoi: 
 --- !u!4 &1630087281
 Transform:
   m_ObjectHideFlags: 0
@@ -3416,7 +3484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1782407640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3721,6 +3789,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1ec601b13ec5a4eae8080c3aa16ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!114 &1974326600
 MonoBehaviour:
   m_ObjectHideFlags: 0
